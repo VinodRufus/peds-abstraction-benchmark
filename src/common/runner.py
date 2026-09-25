@@ -130,11 +130,50 @@ class OllamaRunner(BaseRunner):
                 d.get("prompt_eval_count"), d.get("eval_count"))
 
 
+class OpenAICompatRunner(BaseRunner):
+    """Any OpenAI-compatible endpoint (xAI, DeepSeek, Together, ...)."""
+    provider = "compat"
+    base_url = None
+    key_env = None
+
+    def _call(self, system, user, temperature, max_tokens, seed):
+        from openai import OpenAI
+        client = OpenAI(base_url=self.base_url, api_key=os.environ[self.key_env])
+        r = client.chat.completions.create(
+            model=self.model, temperature=temperature, max_tokens=max_tokens,
+            messages=[{"role": "system", "content": system},
+                      {"role": "user", "content": user}])
+        u = r.usage
+        return (r.choices[0].message.content or "", r.model,
+                u.prompt_tokens if u else None, u.completion_tokens if u else None)
+
+
+class XAIRunner(OpenAICompatRunner):
+    provider = "xai"
+    base_url = "https://api.x.ai/v1"
+    key_env = "XAI_API_KEY"
+
+
+class DeepSeekRunner(OpenAICompatRunner):
+    provider = "deepseek"
+    base_url = "https://api.deepseek.com"
+    key_env = "DEEPSEEK_API_KEY"
+
+
+class TogetherRunner(OpenAICompatRunner):
+    """For hosted open-weights models (Llama, MedGemma, etc.)."""
+    provider = "together"
+    base_url = "https://api.together.xyz/v1"
+    key_env = "TOGETHER_API_KEY"
+
+
 def make_runner(model_id: str) -> BaseRunner:
     """model_id format: 'provider:model_name' e.g. 'openai:gpt-4o'."""
     provider, _, model = model_id.partition(":")
     cls = {"openai": OpenAIRunner, "anthropic": AnthropicRunner,
-           "google": GoogleRunner, "ollama": OllamaRunner}[provider]
+           "google": GoogleRunner, "ollama": OllamaRunner,
+           "xai": XAIRunner, "deepseek": DeepSeekRunner,
+           "together": TogetherRunner}[provider]
     return cls(model)
 
 
