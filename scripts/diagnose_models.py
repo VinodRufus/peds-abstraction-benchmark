@@ -109,7 +109,7 @@ def google_diag():
             def ping(c=cand):
                 model = genai.GenerativeModel(c)
                 r = model.generate_content("Say ok",
-                                           generation_config={"max_output_tokens": 16})
+                                           generation_config={"max_output_tokens": 256})
                 return f"{c}"
             if try_ping("google", ping):
                 return
