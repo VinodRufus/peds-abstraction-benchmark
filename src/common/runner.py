@@ -89,8 +89,11 @@ class AnthropicRunner(BaseRunner):
     def _call(self, system, user, temperature, max_tokens, seed):
         import anthropic
         client = anthropic.Anthropic()
+        # anthropic SDK 1.x removed the temperature parameter from
+        # Messages.create; decoding uses provider defaults and this is
+        # recorded in the paper's model-settings table.
         r = client.messages.create(
-            model=self.model, max_tokens=max_tokens, temperature=temperature,
+            model=self.model, max_tokens=max_tokens,
             system=system, messages=[{"role": "user", "content": user}])
         text = "".join(b.text for b in r.content if b.type == "text")
         return text, r.model, r.usage.input_tokens, r.usage.output_tokens
@@ -107,7 +110,16 @@ class GoogleRunner(BaseRunner):
             user, generation_config={"temperature": temperature,
                                      "max_output_tokens": max_tokens})
         um = getattr(r, "usage_metadata", None)
-        return (r.text, self.model,
+        # Gemini 3.x spends thinking tokens; if the cap is hit before any
+        # visible part, r.text raises. Extract parts defensively instead.
+        parts = []
+        for cand in (getattr(r, "candidates", None) or []):
+            content = getattr(cand, "content", None)
+            for part in (getattr(content, "parts", None) or []):
+                t = getattr(part, "text", None)
+                if t:
+                    parts.append(t)
+        return ("".join(parts), self.model,
                 getattr(um, "prompt_token_count", None),
                 getattr(um, "candidates_token_count", None))
 
