@@ -1,8 +1,15 @@
-"""Unified model runner: one interface, four provider adapters.
+"""Unified model runner: one interface, seven provider adapters.
 
 Every call records: model id + returned version, prompt SHA-256, decoding
 params, latency, token counts, raw text, parse status, retry count.
 Outputs are appended to JSONL files under runs/.
+
+Parameter policy (recorded, never silent): some current models reject a
+fixed temperature or seed, and newer OpenAI models take
+max_completion_tokens instead of max_tokens. Any parameter a model refuses
+is dropped or renamed automatically, and the adjustment is appended to the
+model_version string of that call's log record so the paper's
+model-settings table can report exactly what each model ran with.
 """
 from __future__ import annotations
 import hashlib
@@ -13,9 +20,17 @@ from dataclasses import dataclass, asdict
 from typing import Optional
 
 from dotenv import load_dotenv
-from tenacity import retry, stop_after_attempt, wait_exponential
+from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
 load_dotenv()
+
+# Errors that will not change on retry: fail fast and surface the real message.
+NON_RETRYABLE = {"BadRequestError", "AuthenticationError", "PermissionDeniedError",
+                 "NotFoundError", "UnprocessableEntityError", "InvalidArgument"}
+
+
+def _retryable(e: BaseException) -> bool:
+    return type(e).__name__ not in NON_RETRYABLE
 
 
 @dataclass
@@ -48,6 +63,7 @@ class BaseRunner:
         retries = {"n": 0}
 
         @retry(stop=stop_after_attempt(4), wait=wait_exponential(min=2, max=30),
+               retry=retry_if_exception(_retryable),
                before_sleep=lambda st: retries.__setitem__("n", retries["n"] + 1))
         def _call():
             return self._call(system, user, temperature, max_tokens, seed)
@@ -56,6 +72,8 @@ class BaseRunner:
             text, version, tin, tout = _call()
             err = None
         except Exception as e:  # counted, never hidden
+            if hasattr(e, "last_attempt"):  # tenacity RetryError: unwrap the real cause
+                e = e.last_attempt.exception() or e
             text, version, tin, tout, err = "", "ERROR", None, None, repr(e)
         return Completion(text=text, model_id=f"{self.provider}:{self.model}",
                           model_version=version, prompt_sha256=prompt_hash,
@@ -67,20 +85,56 @@ class BaseRunner:
         raise NotImplementedError
 
 
+def _adaptive_chat(client, kwargs):
+    """chat.completions call that negotiates per-model parameter rules.
+
+    Reasoning-class models reject a fixed temperature or seed; newer OpenAI
+    models require max_completion_tokens in place of max_tokens. Whatever the
+    model refuses is dropped or renamed, and every adjustment is returned so
+    the caller records it in the run log.
+    """
+    from openai import BadRequestError
+    adjusted = []
+    for _ in range(4):
+        try:
+            return client.chat.completions.create(**kwargs), adjusted
+        except BadRequestError as e:
+            msg = str(e)
+            if "max_tokens" in kwargs and "max_tokens" in msg:
+                kwargs["max_completion_tokens"] = kwargs.pop("max_tokens")
+                adjusted.append("max_tokens renamed to max_completion_tokens")
+                continue
+            victim = next((p for p in ("temperature", "seed")
+                           if p in kwargs and p in msg), None)
+            if victim is None:
+                raise
+            kwargs.pop(victim)
+            adjusted.append(f"{victim} rejected by model; provider default used")
+    raise RuntimeError("model parameter negotiation did not converge")
+
+
+def _version_with(adjustments, base):
+    return base + (f" [{'; '.join(adjustments)}]" if adjustments else "")
+
+
 class OpenAIRunner(BaseRunner):
     provider = "openai"
 
     def _call(self, system, user, temperature, max_tokens, seed):
         from openai import OpenAI
         client = OpenAI()
-        r = client.chat.completions.create(
-            model=self.model, temperature=temperature, max_tokens=max_tokens,
-            seed=seed,
-            messages=[{"role": "system", "content": system},
-                      {"role": "user", "content": user}])
+        kwargs = {"model": self.model,
+                  "messages": [{"role": "system", "content": system},
+                               {"role": "user", "content": user}],
+                  "max_completion_tokens": max_tokens,
+                  "temperature": temperature,
+                  "seed": seed}
+        r, adjusted = _adaptive_chat(client, kwargs)
         u = r.usage
-        return (r.choices[0].message.content or "", r.model,
-                u.prompt_tokens if u else None, u.completion_tokens if u else None)
+        return (r.choices[0].message.content or "",
+                _version_with(adjusted, r.model),
+                u.prompt_tokens if u else None,
+                u.completion_tokens if u else None)
 
 
 class AnthropicRunner(BaseRunner):
@@ -90,8 +144,8 @@ class AnthropicRunner(BaseRunner):
         import anthropic
         client = anthropic.Anthropic()
         # anthropic SDK 1.x removed the temperature parameter from
-        # Messages.create; decoding uses provider defaults and this is
-        # recorded in the paper's model-settings table.
+        # Messages.create; the provider default applies and is recorded in
+        # the paper's model-settings table.
         r = client.messages.create(
             model=self.model, max_tokens=max_tokens,
             system=system, messages=[{"role": "user", "content": user}])
@@ -109,17 +163,16 @@ class GoogleRunner(BaseRunner):
         r = model.generate_content(
             user, generation_config={"temperature": temperature,
                                      "max_output_tokens": max_tokens})
+        # Gemini 3.x: r.text raises when no simple text part exists (e.g.
+        # thinking tokens exhausted the cap), so extract parts defensively.
+        text = ""
+        for cand in getattr(r, "candidates", None) or []:
+            parts = getattr(getattr(cand, "content", None), "parts", None) or []
+            text = "".join(getattr(p, "text", "") or "" for p in parts)
+            if text:
+                break
         um = getattr(r, "usage_metadata", None)
-        # Gemini 3.x spends thinking tokens; if the cap is hit before any
-        # visible part, r.text raises. Extract parts defensively instead.
-        parts = []
-        for cand in (getattr(r, "candidates", None) or []):
-            content = getattr(cand, "content", None)
-            for part in (getattr(content, "parts", None) or []):
-                t = getattr(part, "text", None)
-                if t:
-                    parts.append(t)
-        return ("".join(parts), self.model,
+        return (text, self.model,
                 getattr(um, "prompt_token_count", None),
                 getattr(um, "candidates_token_count", None))
 
@@ -151,13 +204,17 @@ class OpenAICompatRunner(BaseRunner):
     def _call(self, system, user, temperature, max_tokens, seed):
         from openai import OpenAI
         client = OpenAI(base_url=self.base_url, api_key=os.environ[self.key_env])
-        r = client.chat.completions.create(
-            model=self.model, temperature=temperature, max_tokens=max_tokens,
-            messages=[{"role": "system", "content": system},
-                      {"role": "user", "content": user}])
+        kwargs = {"model": self.model,
+                  "messages": [{"role": "system", "content": system},
+                               {"role": "user", "content": user}],
+                  "max_tokens": max_tokens,
+                  "temperature": temperature}
+        r, adjusted = _adaptive_chat(client, kwargs)
         u = r.usage
-        return (r.choices[0].message.content or "", r.model,
-                u.prompt_tokens if u else None, u.completion_tokens if u else None)
+        return (r.choices[0].message.content or "",
+                _version_with(adjusted, r.model),
+                u.prompt_tokens if u else None,
+                u.completion_tokens if u else None)
 
 
 class XAIRunner(OpenAICompatRunner):
