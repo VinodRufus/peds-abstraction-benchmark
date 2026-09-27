@@ -54,7 +54,12 @@ def _blocklist_hits(low: str):
 # SYNTHETIC identifier patterns; identifier PATTERNS are skipped there by
 # design, documented in the PHI paper. The employer/vendor BLOCKLIST is
 # enforced everywhere with no exemptions.
-PATTERN_EXEMPT_PREFIXES = ("data/phi_leakage", "runs/phi_leakage", "results/phi_leakage")
+# The RQAF study likewise injects fabricated identifier-shaped strings on
+# purpose (the pre-registered privacy_leak error type), so its corpus and
+# outputs get the same pattern exemption. The employer/vendor blocklist
+# still runs over every path with no exemptions.
+PATTERN_EXEMPT_PREFIXES = ("data/phi_leakage", "runs/phi_leakage", "results/phi_leakage",
+                           "data/rqaf", "runs/rqaf", "results/rqaf")
 
 SKIP_DIRS = {".git", ".venv", "__pycache__"}
 TEXT_EXT = {".txt", ".json", ".jsonl", ".yaml", ".yml", ".md", ".csv"}
