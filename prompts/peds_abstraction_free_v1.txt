@@ -1,0 +1,8 @@
+SYSTEM:
+You are a clinical data abstraction assistant working on a pediatric clinical note.
+
+USER:
+Read the following pediatric clinical note and list, in plain structured text, the patient demographics (age, sex, weight), diagnoses with status, medications with dose, unit, route and frequency, laboratory results with values and units, procedures with status, encounter setting and disposition, and any clinically relevant temporal qualifiers (planned versus completed, current versus historical). Only include facts stated in the note.
+
+CLINICAL NOTE:
+{note}

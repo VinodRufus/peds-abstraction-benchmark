@@ -1,0 +1,27 @@
+id: REC-chi-icu-007
+review_required: true
+age_band: child
+age_value:
+  unit: years
+  value: 3
+weight_kg: 17.5
+sex: female
+encounter: icu
+disposition: transferred to inpatient unit
+diagnoses:
+- name: asthma exacerbation
+  status: active
+medications:
+- name: prednisolone
+  dose: 2
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q24h
+  weight_based: true
+labs: []
+procedures:
+- name: peak flow measurement
+  status: completed
+distractors:
+- kind: planned
+  text: repeat CBC planned for tomorrow morning

@@ -1,0 +1,27 @@
+id: REC-chi-inp-001
+review_required: true
+age_band: child
+age_value:
+  unit: years
+  value: 11
+weight_kg: 21.2
+sex: male
+encounter: inpatient
+disposition: discharged home
+diagnoses:
+- name: asthma exacerbation
+  status: active
+medications:
+- name: prednisolone
+  dose: 2
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q24h
+  weight_based: true
+labs: []
+procedures:
+- name: peak flow measurement
+  status: completed
+distractors:
+- kind: negation
+  text: no history of penicillin allergy

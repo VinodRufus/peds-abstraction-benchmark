@@ -1,0 +1,42 @@
+{
+ "demographics": {
+  "age_value": 10,
+  "age_unit": "months",
+  "sex": "female",
+  "weight_kg": 9.1
+ },
+ "diagnoses": [
+  {
+   "name": "acute otitis media",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "amoxicillin",
+   "dose": 45,
+   "dose_unit": "mg/kg/day",
+   "route": "PO",
+   "frequency": "q12h",
+   "weight_based": true
+  }
+ ],
+ "labs": [],
+ "procedures": [
+  {
+   "name": "tympanic membrane exam",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "icu",
+  "disposition": "transferred to inpatient unit"
+ },
+ "temporal": [
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+id: REC-ado-icu-006
+review_required: true
+age_band: adolescent
+age_value:
+  unit: years
+  value: 14
+weight_kg: 73.3
+sex: female
+encounter: icu
+disposition: transferred to inpatient unit
+diagnoses:
+- name: sports-related concussion
+  status: active
+medications:
+- name: acetaminophen
+  dose: 650
+  dose_unit: mg
+  route: PO
+  frequency: prn
+  weight_based: false
+labs: []
+procedures:
+- name: head CT
+  status: planned
+distractors:
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved

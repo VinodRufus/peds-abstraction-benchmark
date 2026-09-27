@@ -1,0 +1,29 @@
+id: REC-ado-out-009
+review_required: true
+age_band: adolescent
+age_value:
+  unit: years
+  value: 12
+weight_kg: 85.5
+sex: male
+encounter: outpatient
+disposition: discharged home
+diagnoses:
+- name: sports-related concussion
+  status: active
+medications:
+- name: acetaminophen
+  dose: 650
+  dose_unit: mg
+  route: PO
+  frequency: prn
+  weight_based: false
+labs: []
+procedures:
+- name: head CT
+  status: planned
+distractors:
+- kind: planned
+  text: repeat CBC planned for tomorrow morning
+- kind: negation
+  text: no history of penicillin allergy

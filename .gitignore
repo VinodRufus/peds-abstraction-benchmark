@@ -6,3 +6,4 @@ runs/
 results/
 .DS_Store
 API Keys*
+.pytest_cache/

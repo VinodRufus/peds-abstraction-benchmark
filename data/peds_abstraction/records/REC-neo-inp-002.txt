@@ -1,0 +1,1 @@
+Patient is a 14-day-old male weighing 2.7 kg, admitted to the inpatient ward. Assessment: neonatal jaundice. Laboratory results: total bilirubin 14.2 mg/dL, flagged high. Phototherapy was performed. Denies fever at home. Prior clinic note listed the dose per day rather than per dose. Disposition: discharged home.

@@ -1,0 +1,47 @@
+{
+ "demographics": {
+  "age_value": 14,
+  "age_unit": "years",
+  "sex": "male",
+  "weight_kg": 69.3
+ },
+ "diagnoses": [
+  {
+   "name": "sports-related concussion",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "acetaminophen",
+   "dose": 650,
+   "dose_unit": "mg",
+   "route": "PO",
+   "frequency": "prn",
+   "weight_based": false
+  }
+ ],
+ "labs": [],
+ "procedures": [
+  {
+   "name": "head CT",
+   "status": "planned"
+  }
+ ],
+ "encounter": {
+  "setting": "emergency",
+  "disposition": "admitted to inpatient unit"
+ },
+ "temporal": [
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "history of RSV bronchiolitis last winter, resolved",
+   "when": null,
+   "qualifier": "historical"
+  }
+ ]
+}

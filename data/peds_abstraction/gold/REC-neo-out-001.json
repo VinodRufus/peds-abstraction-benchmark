@@ -1,0 +1,49 @@
+{
+ "demographics": {
+  "age_value": 13,
+  "age_unit": "days",
+  "sex": "female",
+  "weight_kg": 3.1
+ },
+ "diagnoses": [
+  {
+   "name": "early-onset sepsis",
+   "status": "suspected"
+  }
+ ],
+ "medications": [
+  {
+   "name": "ampicillin",
+   "dose": 100,
+   "dose_unit": "mg/kg/dose",
+   "route": "IV",
+   "frequency": "q8h",
+   "weight_based": true
+  }
+ ],
+ "labs": [
+  {
+   "test": "WBC",
+   "value": 4.1,
+   "unit": "10^3/uL",
+   "flag": "low"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "lumbar puncture",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "outpatient",
+  "disposition": "discharged home"
+ },
+ "temporal": [
+  {
+   "event": "follow-up echocardiogram to be scheduled",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
+}

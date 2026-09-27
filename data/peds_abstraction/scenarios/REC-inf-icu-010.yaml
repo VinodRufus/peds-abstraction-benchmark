@@ -1,0 +1,31 @@
+id: REC-inf-icu-010
+review_required: true
+age_band: infant
+age_value:
+  unit: months
+  value: 9
+weight_kg: 5.8
+sex: female
+encounter: icu
+disposition: transferred to inpatient unit
+diagnoses:
+- name: bronchiolitis
+  status: active
+medications:
+- name: albuterol
+  dose: 2.5
+  dose_unit: mg
+  route: nebulized
+  frequency: q6h
+  weight_based: false
+labs:
+- test: WBC
+  value: 11.8
+  unit: 10^3/uL
+  flag: normal
+procedures:
+- name: nasal suctioning
+  status: completed
+distractors:
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved

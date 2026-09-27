@@ -1,0 +1,49 @@
+{
+ "demographics": {
+  "age_value": 5,
+  "age_unit": "days",
+  "sex": "male",
+  "weight_kg": 3.9
+ },
+ "diagnoses": [
+  {
+   "name": "hypoglycemia of the newborn",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "dextrose 10%",
+   "dose": 2,
+   "dose_unit": "mL/kg",
+   "route": "IV",
+   "frequency": "prn",
+   "weight_based": true
+  }
+ ],
+ "labs": [
+  {
+   "test": "glucose",
+   "value": 38,
+   "unit": "mg/dL",
+   "flag": "low"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "heel-stick glucose check",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "icu",
+  "disposition": "transferred to inpatient unit"
+ },
+ "temporal": [
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
+}

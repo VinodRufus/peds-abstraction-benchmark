@@ -1,0 +1,29 @@
+id: REC-chi-icu-010
+review_required: true
+age_band: child
+age_value:
+  unit: years
+  value: 5
+weight_kg: 20.8
+sex: female
+encounter: icu
+disposition: transferred to inpatient unit
+diagnoses:
+- name: asthma exacerbation
+  status: active
+medications:
+- name: prednisolone
+  dose: 2
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q24h
+  weight_based: true
+labs: []
+procedures:
+- name: peak flow measurement
+  status: completed
+distractors:
+- kind: negation
+  text: no history of penicillin allergy
+- kind: planned
+  text: follow-up echocardiogram to be scheduled

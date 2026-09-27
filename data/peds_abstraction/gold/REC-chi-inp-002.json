@@ -1,0 +1,54 @@
+{
+ "demographics": {
+  "age_value": 9,
+  "age_unit": "years",
+  "sex": "male",
+  "weight_kg": 33.2
+ },
+ "diagnoses": [
+  {
+   "name": "community-acquired pneumonia",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "amoxicillin",
+   "dose": 90,
+   "dose_unit": "mg/kg/day",
+   "route": "PO",
+   "frequency": "q12h",
+   "weight_based": true
+  }
+ ],
+ "labs": [
+  {
+   "test": "WBC",
+   "value": 16.2,
+   "unit": "10^3/uL",
+   "flag": "high"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "chest radiograph",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "inpatient",
+  "disposition": "discharged home"
+ },
+ "temporal": [
+  {
+   "event": "follow-up echocardiogram to be scheduled",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
+}

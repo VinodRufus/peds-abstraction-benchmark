@@ -1,0 +1,29 @@
+id: REC-neo-out-002
+review_required: true
+age_band: neonate
+age_value:
+  unit: days
+  value: 18
+weight_kg: 2.9
+sex: male
+encounter: outpatient
+disposition: discharged home
+diagnoses:
+- name: neonatal jaundice
+  status: active
+medications: []
+labs:
+- test: total bilirubin
+  value: 14.2
+  unit: mg/dL
+  flag: high
+procedures:
+- name: phototherapy
+  status: completed
+distractors:
+- kind: negation
+  text: denies fever at home
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved
+- kind: negation
+  text: no history of penicillin allergy

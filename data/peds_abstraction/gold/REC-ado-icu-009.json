@@ -1,0 +1,36 @@
+{
+ "demographics": {
+  "age_value": 17,
+  "age_unit": "years",
+  "sex": "male",
+  "weight_kg": 66.0
+ },
+ "diagnoses": [
+  {
+   "name": "sports-related concussion",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "acetaminophen",
+   "dose": 650,
+   "dose_unit": "mg",
+   "route": "PO",
+   "frequency": "prn",
+   "weight_based": false
+  }
+ ],
+ "labs": [],
+ "procedures": [
+  {
+   "name": "head CT",
+   "status": "planned"
+  }
+ ],
+ "encounter": {
+  "setting": "icu",
+  "disposition": "transferred to inpatient unit"
+ },
+ "temporal": []
+}

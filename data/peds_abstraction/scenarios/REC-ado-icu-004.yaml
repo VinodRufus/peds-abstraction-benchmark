@@ -1,0 +1,31 @@
+id: REC-ado-icu-004
+review_required: true
+age_band: adolescent
+age_value:
+  unit: years
+  value: 12
+weight_kg: 44.4
+sex: male
+encounter: icu
+disposition: transferred to inpatient unit
+diagnoses:
+- name: diabetic ketoacidosis
+  status: active
+medications:
+- name: insulin
+  dose: 0.1
+  dose_unit: units/kg/hour
+  route: IV
+  frequency: continuous
+  weight_based: true
+labs:
+- test: glucose
+  value: 486
+  unit: mg/dL
+  flag: high
+procedures:
+- name: venous blood gas
+  status: completed
+distractors:
+- kind: planned
+  text: repeat CBC planned for tomorrow morning

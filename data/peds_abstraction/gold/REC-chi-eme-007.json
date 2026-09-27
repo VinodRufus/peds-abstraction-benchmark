@@ -1,0 +1,36 @@
+{
+ "demographics": {
+  "age_value": 8,
+  "age_unit": "years",
+  "sex": "male",
+  "weight_kg": 19.5
+ },
+ "diagnoses": [
+  {
+   "name": "asthma exacerbation",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "prednisolone",
+   "dose": 2,
+   "dose_unit": "mg/kg/day",
+   "route": "PO",
+   "frequency": "q24h",
+   "weight_based": true
+  }
+ ],
+ "labs": [],
+ "procedures": [
+  {
+   "name": "peak flow measurement",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "emergency",
+  "disposition": "admitted to inpatient unit"
+ },
+ "temporal": []
+}

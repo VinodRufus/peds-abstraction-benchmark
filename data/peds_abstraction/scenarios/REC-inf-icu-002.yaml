@@ -1,0 +1,27 @@
+id: REC-inf-icu-002
+review_required: true
+age_band: infant
+age_value:
+  unit: months
+  value: 6
+weight_kg: 9.4
+sex: female
+encounter: icu
+disposition: transferred to inpatient unit
+diagnoses:
+- name: acute otitis media
+  status: active
+medications:
+- name: amoxicillin
+  dose: 45
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q12h
+  weight_based: true
+labs: []
+procedures:
+- name: tympanic membrane exam
+  status: completed
+distractors:
+- kind: negation
+  text: denies fever at home

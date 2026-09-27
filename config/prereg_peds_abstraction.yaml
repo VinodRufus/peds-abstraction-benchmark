@@ -1,0 +1,57 @@
+# Pre-registered design, Paper: Pediatric LLM Abstraction Benchmark
+# Model lineup pinned 2026-09-25 from live API listings (scripts/diagnose_models.py).
+# Freeze after verification:
+#   git add config/prereg_peds_abstraction.yaml && git commit -m "pin prereg B model lineup" && git tag prereg-peds_abstraction-v1
+# After the tag, no changes. Deviations are logged in DEVIATIONS.md and reported in the paper.
+study: peds_abstraction_benchmark_v1
+
+models:
+  # Core comparison set: one current flagship per lab, dated snapshots where the
+  # provider offers them. "version" is filled from the server-reported model
+  # string that every run log records (runs/peds_abstraction/*/run*.jsonl).
+  - {id: "openai:gpt-5.5-2026-04-23", version: "RECORDED_AT_RUN_TIME"}
+  - {id: "anthropic:claude-sonnet-5", version: "RECORDED_AT_RUN_TIME"}
+  - {id: "google:gemini-3.1-pro-preview", version: "RECORDED_AT_RUN_TIME"}   # the only pro tier Google offers is preview-labeled; noted in the paper
+  - {id: "deepseek:deepseek-v4-pro", version: "RECORDED_AT_RUN_TIME"}
+
+extended_models:
+  # Secondary and exploratory arms, reported separately from the core comparison.
+  # NOT read by src/peds_abstraction/run_models.py. To promote one into the core set before
+  # gold-peds_abstraction-v1, move it into models: and log the change; after prereg-peds_abstraction-v1 any
+  # such change goes through DEVIATIONS.md.
+  - {id: "xai:grok-4.6", note: "frontier arm outside the core four"}
+  - {id: "together:MEDGEMMA_ID_TBD", note: "medical-tuned arm; pin exact Together id when TOGETHER_API_KEY is added"}
+  - {id: "ollama:llama3.1:8b", note: "local small-open-weights reference; pin digest at run time"}
+
+corpus:
+  n_records: 160
+  per_age_band: 40
+  age_bands: [neonate, infant, child, adolescent]
+  encounters: [outpatient, emergency, inpatient, icu]
+
+runs_per_record: 3
+
+decoding:
+  temperature: 0.0   # requested where supported; models that reject a fixed temperature (Anthropic SDK 1.x exposes none; OpenAI reasoning models refuse non-default values) run at provider default, recorded per call in the run logs
+  max_tokens: 4000   # raised from 2000: Gemini 3.x counts thinking tokens against this cap; it is a cap, not a target, so other providers are unaffected
+  seed: 20260923
+
+prompt: {primary: peds_abstraction_schema_v1, ablation: peds_abstraction_free_v1, ablation_subset: 40}
+
+metrics: [precision, recall, f1, field_accuracy, exact_match, stability_rate]
+
+aggregation: [macro_by_domain, micro]
+
+stats:
+  paired_bootstrap_resamples: 10000
+  ci: 0.95
+  pairwise_test: mcnemar
+  multiple_comparison: holm
+  alpha: 0.05
+
+primary_hypothesis: "macro-F1 differs between adolescent and neonate records (per model)"
+
+gold:
+  reviewers: 2            # MUST be clinically qualified; record credential types
+  double_reviewed_fraction: 0.25
+  agreement: cohen_kappa

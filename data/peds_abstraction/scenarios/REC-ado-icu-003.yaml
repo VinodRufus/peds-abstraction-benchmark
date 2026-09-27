@@ -1,0 +1,31 @@
+id: REC-ado-icu-003
+review_required: true
+age_band: adolescent
+age_value:
+  unit: years
+  value: 14
+weight_kg: 46.7
+sex: female
+encounter: icu
+disposition: transferred to inpatient unit
+diagnoses:
+- name: sports-related concussion
+  status: active
+medications:
+- name: acetaminophen
+  dose: 650
+  dose_unit: mg
+  route: PO
+  frequency: prn
+  weight_based: false
+labs: []
+procedures:
+- name: head CT
+  status: planned
+distractors:
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
+- kind: planned
+  text: follow-up echocardiogram to be scheduled
+- kind: negation
+  text: denies fever at home

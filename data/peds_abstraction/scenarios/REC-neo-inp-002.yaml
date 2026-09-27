@@ -1,0 +1,27 @@
+id: REC-neo-inp-002
+review_required: true
+age_band: neonate
+age_value:
+  unit: days
+  value: 14
+weight_kg: 2.7
+sex: male
+encounter: inpatient
+disposition: discharged home
+diagnoses:
+- name: neonatal jaundice
+  status: active
+medications: []
+labs:
+- test: total bilirubin
+  value: 14.2
+  unit: mg/dL
+  flag: high
+procedures:
+- name: phototherapy
+  status: completed
+distractors:
+- kind: negation
+  text: denies fever at home
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose

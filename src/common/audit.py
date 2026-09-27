@@ -50,11 +50,11 @@ def _blocklist_hits(low: str):
                 hits.append(pair)
     return sorted(set(hits))
 
-# The PHI-leakage study corpus (data/phi, runs/phi) intentionally contains
+# The PHI-leakage study corpus (data/phi_leakage, runs/phi_leakage) intentionally contains
 # SYNTHETIC identifier patterns; identifier PATTERNS are skipped there by
 # design, documented in the PHI paper. The employer/vendor BLOCKLIST is
 # enforced everywhere with no exemptions.
-PATTERN_EXEMPT_PREFIXES = ("data/phi", "runs/phi", "results/phi")
+PATTERN_EXEMPT_PREFIXES = ("data/phi_leakage", "runs/phi_leakage", "results/phi_leakage")
 
 SKIP_DIRS = {".git", ".venv", "__pycache__"}
 TEXT_EXT = {".txt", ".json", ".jsonl", ".yaml", ".yml", ".md", ".csv"}

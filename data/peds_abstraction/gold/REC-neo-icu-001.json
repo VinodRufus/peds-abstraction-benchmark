@@ -1,0 +1,49 @@
+{
+ "demographics": {
+  "age_value": 18,
+  "age_unit": "days",
+  "sex": "female",
+  "weight_kg": 3.8
+ },
+ "diagnoses": [
+  {
+   "name": "early-onset sepsis",
+   "status": "suspected"
+  }
+ ],
+ "medications": [
+  {
+   "name": "ampicillin",
+   "dose": 100,
+   "dose_unit": "mg/kg/dose",
+   "route": "IV",
+   "frequency": "q8h",
+   "weight_based": true
+  }
+ ],
+ "labs": [
+  {
+   "test": "WBC",
+   "value": 4.1,
+   "unit": "10^3/uL",
+   "flag": "low"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "lumbar puncture",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "icu",
+  "disposition": "transferred to inpatient unit"
+ },
+ "temporal": [
+  {
+   "event": "history of RSV bronchiolitis last winter, resolved",
+   "when": null,
+   "qualifier": "historical"
+  }
+ ]
+}

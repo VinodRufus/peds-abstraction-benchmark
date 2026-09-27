@@ -1,0 +1,49 @@
+{
+ "demographics": {
+  "age_value": 11,
+  "age_unit": "years",
+  "sex": "male",
+  "weight_kg": 19.9
+ },
+ "diagnoses": [
+  {
+   "name": "appendicitis",
+   "status": "suspected"
+  }
+ ],
+ "medications": [
+  {
+   "name": "morphine",
+   "dose": 0.05,
+   "dose_unit": "mg/kg/dose",
+   "route": "IV",
+   "frequency": "prn",
+   "weight_based": true
+  }
+ ],
+ "labs": [
+  {
+   "test": "WBC",
+   "value": 14.9,
+   "unit": "10^3/uL",
+   "flag": "high"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "abdominal ultrasound",
+   "status": "planned"
+  }
+ ],
+ "encounter": {
+  "setting": "inpatient",
+  "disposition": "discharged home"
+ },
+ "temporal": [
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
+}

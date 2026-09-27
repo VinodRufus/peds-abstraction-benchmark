@@ -1,0 +1,31 @@
+id: REC-chi-out-001
+review_required: true
+age_band: child
+age_value:
+  unit: years
+  value: 9
+weight_kg: 26.5
+sex: female
+encounter: outpatient
+disposition: discharged home
+diagnoses:
+- name: asthma exacerbation
+  status: active
+medications:
+- name: prednisolone
+  dose: 2
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q24h
+  weight_based: true
+labs: []
+procedures:
+- name: peak flow measurement
+  status: completed
+distractors:
+- kind: planned
+  text: repeat CBC planned for tomorrow morning
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved

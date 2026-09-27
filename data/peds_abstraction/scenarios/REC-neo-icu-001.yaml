@@ -1,0 +1,31 @@
+id: REC-neo-icu-001
+review_required: true
+age_band: neonate
+age_value:
+  unit: days
+  value: 18
+weight_kg: 3.8
+sex: female
+encounter: icu
+disposition: transferred to inpatient unit
+diagnoses:
+- name: early-onset sepsis
+  status: suspected
+medications:
+- name: ampicillin
+  dose: 100
+  dose_unit: mg/kg/dose
+  route: IV
+  frequency: q8h
+  weight_based: true
+labs:
+- test: WBC
+  value: 4.1
+  unit: 10^3/uL
+  flag: low
+procedures:
+- name: lumbar puncture
+  status: completed
+distractors:
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved

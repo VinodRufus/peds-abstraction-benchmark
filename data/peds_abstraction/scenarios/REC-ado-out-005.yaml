@@ -1,0 +1,31 @@
+id: REC-ado-out-005
+review_required: true
+age_band: adolescent
+age_value:
+  unit: years
+  value: 15
+weight_kg: 78.3
+sex: female
+encounter: outpatient
+disposition: discharged home
+diagnoses:
+- name: major depressive disorder
+  status: historical
+medications:
+- name: sertraline
+  dose: 50
+  dose_unit: mg
+  route: PO
+  frequency: q24h
+  weight_based: false
+labs: []
+procedures:
+- name: safety screening
+  status: completed
+distractors:
+- kind: negation
+  text: denies fever at home
+- kind: planned
+  text: repeat CBC planned for tomorrow morning
+- kind: negation
+  text: no history of penicillin allergy

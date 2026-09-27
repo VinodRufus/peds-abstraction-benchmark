@@ -1,0 +1,42 @@
+{
+ "demographics": {
+  "age_value": 14,
+  "age_unit": "years",
+  "sex": "female",
+  "weight_kg": 46.7
+ },
+ "diagnoses": [
+  {
+   "name": "sports-related concussion",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "acetaminophen",
+   "dose": 650,
+   "dose_unit": "mg",
+   "route": "PO",
+   "frequency": "prn",
+   "weight_based": false
+  }
+ ],
+ "labs": [],
+ "procedures": [
+  {
+   "name": "head CT",
+   "status": "planned"
+  }
+ ],
+ "encounter": {
+  "setting": "icu",
+  "disposition": "transferred to inpatient unit"
+ },
+ "temporal": [
+  {
+   "event": "follow-up echocardiogram to be scheduled",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
+}

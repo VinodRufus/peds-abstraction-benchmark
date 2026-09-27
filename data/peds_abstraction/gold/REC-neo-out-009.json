@@ -1,0 +1,54 @@
+{
+ "demographics": {
+  "age_value": 4,
+  "age_unit": "days",
+  "sex": "female",
+  "weight_kg": 3.5
+ },
+ "diagnoses": [
+  {
+   "name": "hypoglycemia of the newborn",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "dextrose 10%",
+   "dose": 2,
+   "dose_unit": "mL/kg",
+   "route": "IV",
+   "frequency": "prn",
+   "weight_based": true
+  }
+ ],
+ "labs": [
+  {
+   "test": "glucose",
+   "value": 38,
+   "unit": "mg/dL",
+   "flag": "low"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "heel-stick glucose check",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "outpatient",
+  "disposition": "discharged home"
+ },
+ "temporal": [
+  {
+   "event": "history of RSV bronchiolitis last winter, resolved",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "follow-up echocardiogram to be scheduled",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
+}

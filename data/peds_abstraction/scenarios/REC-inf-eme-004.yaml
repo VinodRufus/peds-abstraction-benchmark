@@ -1,0 +1,33 @@
+id: REC-inf-eme-004
+review_required: true
+age_band: infant
+age_value:
+  unit: months
+  value: 4
+weight_kg: 7.1
+sex: male
+encounter: emergency
+disposition: admitted to inpatient unit
+diagnoses:
+- name: bronchiolitis
+  status: active
+medications:
+- name: albuterol
+  dose: 2.5
+  dose_unit: mg
+  route: nebulized
+  frequency: q6h
+  weight_based: false
+labs:
+- test: WBC
+  value: 11.8
+  unit: 10^3/uL
+  flag: normal
+procedures:
+- name: nasal suctioning
+  status: completed
+distractors:
+- kind: negation
+  text: no history of penicillin allergy
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose

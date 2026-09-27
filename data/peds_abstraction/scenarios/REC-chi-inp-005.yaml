@@ -1,0 +1,31 @@
+id: REC-chi-inp-005
+review_required: true
+age_band: child
+age_value:
+  unit: years
+  value: 11
+weight_kg: 23.9
+sex: female
+encounter: inpatient
+disposition: discharged home
+diagnoses:
+- name: community-acquired pneumonia
+  status: active
+medications:
+- name: amoxicillin
+  dose: 90
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q12h
+  weight_based: true
+labs:
+- test: WBC
+  value: 16.2
+  unit: 10^3/uL
+  flag: high
+procedures:
+- name: chest radiograph
+  status: completed
+distractors:
+- kind: planned
+  text: repeat CBC planned for tomorrow morning

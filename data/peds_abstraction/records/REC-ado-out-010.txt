@@ -1,0 +1,1 @@
+Patient is a 14-year-old male weighing 43.9 kg, seen in the outpatient clinic. Assessment: diabetic ketoacidosis. Started insulin 0.1 units/kg/hour IV continuous (weight-based). Laboratory results: glucose 486 mg/dL, flagged high. Venous blood gas was performed. Denies fever at home. Disposition: discharged home.

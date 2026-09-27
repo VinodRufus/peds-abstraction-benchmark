@@ -1,0 +1,31 @@
+id: REC-inf-out-009
+review_required: true
+age_band: infant
+age_value:
+  unit: months
+  value: 4
+weight_kg: 6.0
+sex: female
+encounter: outpatient
+disposition: discharged home
+diagnoses:
+- name: febrile urinary tract infection
+  status: active
+medications:
+- name: ceftriaxone
+  dose: 50
+  dose_unit: mg/kg/dose
+  route: IV
+  frequency: q24h
+  weight_based: true
+labs:
+- test: CRP
+  value: 6.4
+  unit: mg/dL
+  flag: high
+procedures:
+- name: urine culture
+  status: completed
+distractors:
+- kind: planned
+  text: repeat CBC planned for tomorrow morning

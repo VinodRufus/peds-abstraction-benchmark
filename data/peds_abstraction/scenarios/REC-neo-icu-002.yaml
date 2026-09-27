@@ -1,0 +1,25 @@
+id: REC-neo-icu-002
+review_required: true
+age_band: neonate
+age_value:
+  unit: days
+  value: 18
+weight_kg: 3.0
+sex: female
+encounter: icu
+disposition: transferred to inpatient unit
+diagnoses:
+- name: neonatal jaundice
+  status: active
+medications: []
+labs:
+- test: total bilirubin
+  value: 14.2
+  unit: mg/dL
+  flag: high
+procedures:
+- name: phototherapy
+  status: completed
+distractors:
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved

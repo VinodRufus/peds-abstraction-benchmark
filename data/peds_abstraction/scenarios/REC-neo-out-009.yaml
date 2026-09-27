@@ -1,0 +1,35 @@
+id: REC-neo-out-009
+review_required: true
+age_band: neonate
+age_value:
+  unit: days
+  value: 4
+weight_kg: 3.5
+sex: female
+encounter: outpatient
+disposition: discharged home
+diagnoses:
+- name: hypoglycemia of the newborn
+  status: active
+medications:
+- name: dextrose 10%
+  dose: 2
+  dose_unit: mL/kg
+  route: IV
+  frequency: prn
+  weight_based: true
+labs:
+- test: glucose
+  value: 38
+  unit: mg/dL
+  flag: low
+procedures:
+- name: heel-stick glucose check
+  status: completed
+distractors:
+- kind: negation
+  text: denies fever at home
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved
+- kind: planned
+  text: follow-up echocardiogram to be scheduled

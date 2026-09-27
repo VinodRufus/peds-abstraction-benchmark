@@ -1,0 +1,49 @@
+{
+ "demographics": {
+  "age_value": 9,
+  "age_unit": "months",
+  "sex": "female",
+  "weight_kg": 9.0
+ },
+ "diagnoses": [
+  {
+   "name": "bronchiolitis",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "albuterol",
+   "dose": 2.5,
+   "dose_unit": "mg",
+   "route": "nebulized",
+   "frequency": "q6h",
+   "weight_based": false
+  }
+ ],
+ "labs": [
+  {
+   "test": "WBC",
+   "value": 11.8,
+   "unit": "10^3/uL",
+   "flag": "normal"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "nasal suctioning",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "icu",
+  "disposition": "transferred to inpatient unit"
+ },
+ "temporal": [
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
+}
