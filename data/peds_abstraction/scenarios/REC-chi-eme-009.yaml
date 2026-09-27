@@ -1,0 +1,35 @@
+id: REC-chi-eme-009
+review_required: true
+age_band: child
+age_value:
+  unit: years
+  value: 5
+weight_kg: 23.8
+sex: male
+encounter: emergency
+disposition: admitted to inpatient unit
+diagnoses:
+- name: appendicitis
+  status: suspected
+medications:
+- name: morphine
+  dose: 0.05
+  dose_unit: mg/kg/dose
+  route: IV
+  frequency: prn
+  weight_based: true
+labs:
+- test: WBC
+  value: 14.9
+  unit: 10^3/uL
+  flag: high
+procedures:
+- name: abdominal ultrasound
+  status: planned
+distractors:
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved
+- kind: planned
+  text: follow-up echocardiogram to be scheduled

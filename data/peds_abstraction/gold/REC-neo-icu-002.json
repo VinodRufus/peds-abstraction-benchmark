@@ -1,0 +1,40 @@
+{
+ "demographics": {
+  "age_value": 18,
+  "age_unit": "days",
+  "sex": "female",
+  "weight_kg": 3.0
+ },
+ "diagnoses": [
+  {
+   "name": "neonatal jaundice",
+   "status": "active"
+  }
+ ],
+ "medications": [],
+ "labs": [
+  {
+   "test": "total bilirubin",
+   "value": 14.2,
+   "unit": "mg/dL",
+   "flag": "high"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "phototherapy",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "icu",
+  "disposition": "transferred to inpatient unit"
+ },
+ "temporal": [
+  {
+   "event": "history of RSV bronchiolitis last winter, resolved",
+   "when": null,
+   "qualifier": "historical"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+id: REC-inf-inp-007
+review_required: true
+age_band: infant
+age_value:
+  unit: months
+  value: 4
+weight_kg: 6.1
+sex: male
+encounter: inpatient
+disposition: discharged home
+diagnoses:
+- name: bronchiolitis
+  status: active
+medications:
+- name: albuterol
+  dose: 2.5
+  dose_unit: mg
+  route: nebulized
+  frequency: q6h
+  weight_based: false
+labs:
+- test: WBC
+  value: 11.8
+  unit: 10^3/uL
+  flag: normal
+procedures:
+- name: nasal suctioning
+  status: completed
+distractors:
+- kind: planned
+  text: follow-up echocardiogram to be scheduled
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved
+- kind: negation
+  text: no history of penicillin allergy

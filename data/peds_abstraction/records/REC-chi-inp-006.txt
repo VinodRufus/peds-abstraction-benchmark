@@ -1,0 +1,1 @@
+Patient is a 11-year-old male weighing 19.9 kg, admitted to the inpatient ward. Assessment: suspected appendicitis; workup in progress. Started morphine 0.05 mg/kg/dose IV prn (weight-based). Laboratory results: WBC 14.9 10^3/uL, flagged high. Abdominal ultrasound is planned. Repeat cbc planned for tomorrow morning. Disposition: discharged home.

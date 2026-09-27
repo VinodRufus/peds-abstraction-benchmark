@@ -1,0 +1,31 @@
+id: REC-ado-inp-005
+review_required: true
+age_band: adolescent
+age_value:
+  unit: years
+  value: 14
+weight_kg: 69.4
+sex: male
+encounter: inpatient
+disposition: discharged home
+diagnoses:
+- name: major depressive disorder
+  status: historical
+medications:
+- name: sertraline
+  dose: 50
+  dose_unit: mg
+  route: PO
+  frequency: q24h
+  weight_based: false
+labs: []
+procedures:
+- name: safety screening
+  status: completed
+distractors:
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
+- kind: negation
+  text: denies fever at home
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved

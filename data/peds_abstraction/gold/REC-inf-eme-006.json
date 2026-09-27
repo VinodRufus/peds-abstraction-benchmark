@@ -1,0 +1,54 @@
+{
+ "demographics": {
+  "age_value": 6,
+  "age_unit": "months",
+  "sex": "female",
+  "weight_kg": 6.0
+ },
+ "diagnoses": [
+  {
+   "name": "febrile urinary tract infection",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "ceftriaxone",
+   "dose": 50,
+   "dose_unit": "mg/kg/dose",
+   "route": "IV",
+   "frequency": "q24h",
+   "weight_based": true
+  }
+ ],
+ "labs": [
+  {
+   "test": "CRP",
+   "value": 6.4,
+   "unit": "mg/dL",
+   "flag": "high"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "urine culture",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "emergency",
+  "disposition": "admitted to inpatient unit"
+ },
+ "temporal": [
+  {
+   "event": "follow-up echocardiogram to be scheduled",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "history of RSV bronchiolitis last winter, resolved",
+   "when": null,
+   "qualifier": "historical"
+  }
+ ]
+}

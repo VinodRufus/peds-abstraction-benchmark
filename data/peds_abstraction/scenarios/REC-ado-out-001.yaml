@@ -1,0 +1,35 @@
+id: REC-ado-out-001
+review_required: true
+age_band: adolescent
+age_value:
+  unit: years
+  value: 17
+weight_kg: 61.9
+sex: female
+encounter: outpatient
+disposition: discharged home
+diagnoses:
+- name: diabetic ketoacidosis
+  status: active
+medications:
+- name: insulin
+  dose: 0.1
+  dose_unit: units/kg/hour
+  route: IV
+  frequency: continuous
+  weight_based: true
+labs:
+- test: glucose
+  value: 486
+  unit: mg/dL
+  flag: high
+procedures:
+- name: venous blood gas
+  status: completed
+distractors:
+- kind: negation
+  text: denies fever at home
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved
+- kind: planned
+  text: follow-up echocardiogram to be scheduled

@@ -1,0 +1,31 @@
+id: REC-chi-out-008
+review_required: true
+age_band: child
+age_value:
+  unit: years
+  value: 5
+weight_kg: 29.5
+sex: female
+encounter: outpatient
+disposition: discharged home
+diagnoses:
+- name: community-acquired pneumonia
+  status: active
+medications:
+- name: amoxicillin
+  dose: 90
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q12h
+  weight_based: true
+labs:
+- test: WBC
+  value: 16.2
+  unit: 10^3/uL
+  flag: high
+procedures:
+- name: chest radiograph
+  status: completed
+distractors:
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose

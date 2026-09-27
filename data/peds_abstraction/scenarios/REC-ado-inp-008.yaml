@@ -1,0 +1,27 @@
+id: REC-ado-inp-008
+review_required: true
+age_band: adolescent
+age_value:
+  unit: years
+  value: 17
+weight_kg: 50.4
+sex: female
+encounter: inpatient
+disposition: discharged home
+diagnoses:
+- name: major depressive disorder
+  status: historical
+medications:
+- name: sertraline
+  dose: 50
+  dose_unit: mg
+  route: PO
+  frequency: q24h
+  weight_based: false
+labs: []
+procedures:
+- name: safety screening
+  status: completed
+distractors:
+- kind: planned
+  text: follow-up echocardiogram to be scheduled

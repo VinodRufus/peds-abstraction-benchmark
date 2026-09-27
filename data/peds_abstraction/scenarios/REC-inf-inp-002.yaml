@@ -1,0 +1,31 @@
+id: REC-inf-inp-002
+review_required: true
+age_band: infant
+age_value:
+  unit: months
+  value: 8
+weight_kg: 7.5
+sex: male
+encounter: inpatient
+disposition: discharged home
+diagnoses:
+- name: acute otitis media
+  status: active
+medications:
+- name: amoxicillin
+  dose: 45
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q12h
+  weight_based: true
+labs: []
+procedures:
+- name: tympanic membrane exam
+  status: completed
+distractors:
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
+- kind: negation
+  text: denies fever at home

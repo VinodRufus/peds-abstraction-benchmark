@@ -39,3 +39,20 @@ def test_audit_catches_blocklist(tmp_path):
     p = tmp_path / "x.txt"
     p.write_text("data exported from Epic yesterday")
     assert scan(str(tmp_path))
+
+
+def test_scenario_gold_derivation():
+    from peds_abstraction.generate_records import derive_gold, render_narrative
+    sc = {"id": "t", "age_band": "child", "age_value": {"unit": "years", "value": 6},
+          "weight_kg": 20.0, "sex": "male", "encounter": "emergency",
+          "disposition": "discharged home",
+          "diagnoses": [{"name": "asthma exacerbation", "status": "active"}],
+          "medications": [{"name": "prednisolone", "dose": 2, "dose_unit": "mg/kg/day",
+                           "route": "PO", "frequency": "q24h", "weight_based": True}],
+          "labs": [], "procedures": [{"name": "peak flow measurement", "status": "completed"}],
+          "distractors": [{"kind": "planned", "text": "repeat exam planned tomorrow"}]}
+    gold = derive_gold(sc)
+    note = render_narrative(sc)
+    assert gold["demographics"]["age_value"] == 6
+    assert gold["temporal"][0]["qualifier"] == "planned"
+    assert "2 mg/kg/day" in note and "planned" in note.lower()

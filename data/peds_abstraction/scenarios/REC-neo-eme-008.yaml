@@ -1,0 +1,25 @@
+id: REC-neo-eme-008
+review_required: true
+age_band: neonate
+age_value:
+  unit: days
+  value: 15
+weight_kg: 3.1
+sex: male
+encounter: emergency
+disposition: admitted to inpatient unit
+diagnoses:
+- name: neonatal jaundice
+  status: active
+medications: []
+labs:
+- test: total bilirubin
+  value: 14.2
+  unit: mg/dL
+  flag: high
+procedures:
+- name: phototherapy
+  status: completed
+distractors:
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose

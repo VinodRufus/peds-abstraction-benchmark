@@ -1,0 +1,49 @@
+{
+ "demographics": {
+  "age_value": 14,
+  "age_unit": "years",
+  "sex": "female",
+  "weight_kg": 58.2
+ },
+ "diagnoses": [
+  {
+   "name": "diabetic ketoacidosis",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "insulin",
+   "dose": 0.1,
+   "dose_unit": "units/kg/hour",
+   "route": "IV",
+   "frequency": "continuous",
+   "weight_based": true
+  }
+ ],
+ "labs": [
+  {
+   "test": "glucose",
+   "value": 486,
+   "unit": "mg/dL",
+   "flag": "high"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "venous blood gas",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "outpatient",
+  "disposition": "discharged home"
+ },
+ "temporal": [
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
+}

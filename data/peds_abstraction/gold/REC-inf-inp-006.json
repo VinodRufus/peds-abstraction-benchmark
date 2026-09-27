@@ -1,0 +1,49 @@
+{
+ "demographics": {
+  "age_value": 4,
+  "age_unit": "months",
+  "sex": "male",
+  "weight_kg": 7.1
+ },
+ "diagnoses": [
+  {
+   "name": "febrile urinary tract infection",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "ceftriaxone",
+   "dose": 50,
+   "dose_unit": "mg/kg/dose",
+   "route": "IV",
+   "frequency": "q24h",
+   "weight_based": true
+  }
+ ],
+ "labs": [
+  {
+   "test": "CRP",
+   "value": 6.4,
+   "unit": "mg/dL",
+   "flag": "high"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "urine culture",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "inpatient",
+  "disposition": "discharged home"
+ },
+ "temporal": [
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
+}

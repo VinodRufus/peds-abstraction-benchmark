@@ -1,0 +1,49 @@
+{
+ "demographics": {
+  "age_value": 10,
+  "age_unit": "months",
+  "sex": "female",
+  "weight_kg": 8.2
+ },
+ "diagnoses": [
+  {
+   "name": "bronchiolitis",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "albuterol",
+   "dose": 2.5,
+   "dose_unit": "mg",
+   "route": "nebulized",
+   "frequency": "q6h",
+   "weight_based": false
+  }
+ ],
+ "labs": [
+  {
+   "test": "WBC",
+   "value": 11.8,
+   "unit": "10^3/uL",
+   "flag": "normal"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "nasal suctioning",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "outpatient",
+  "disposition": "discharged home"
+ },
+ "temporal": [
+  {
+   "event": "history of RSV bronchiolitis last winter, resolved",
+   "when": null,
+   "qualifier": "historical"
+  }
+ ]
+}

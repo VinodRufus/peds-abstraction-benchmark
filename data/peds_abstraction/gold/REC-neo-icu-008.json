@@ -1,0 +1,34 @@
+{
+ "demographics": {
+  "age_value": 17,
+  "age_unit": "days",
+  "sex": "male",
+  "weight_kg": 3.2
+ },
+ "diagnoses": [
+  {
+   "name": "neonatal jaundice",
+   "status": "active"
+  }
+ ],
+ "medications": [],
+ "labs": [
+  {
+   "test": "total bilirubin",
+   "value": 14.2,
+   "unit": "mg/dL",
+   "flag": "high"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "phototherapy",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "icu",
+  "disposition": "transferred to inpatient unit"
+ },
+ "temporal": []
+}

@@ -1,0 +1,43 @@
+{
+ "demographics": {
+  "age_value": 11,
+  "age_unit": "years",
+  "sex": "female",
+  "weight_kg": 16.5
+ },
+ "diagnoses": [
+  {
+   "name": "community-acquired pneumonia",
+   "status": "active"
+  }
+ ],
+ "medications": [
+  {
+   "name": "amoxicillin",
+   "dose": 90,
+   "dose_unit": "mg/kg/day",
+   "route": "PO",
+   "frequency": "q12h",
+   "weight_based": true
+  }
+ ],
+ "labs": [
+  {
+   "test": "WBC",
+   "value": 16.2,
+   "unit": "10^3/uL",
+   "flag": "high"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "chest radiograph",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "emergency",
+  "disposition": "admitted to inpatient unit"
+ },
+ "temporal": []
+}

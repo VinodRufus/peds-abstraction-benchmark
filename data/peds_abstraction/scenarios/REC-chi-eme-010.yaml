@@ -1,0 +1,27 @@
+id: REC-chi-eme-010
+review_required: true
+age_band: child
+age_value:
+  unit: years
+  value: 11
+weight_kg: 18.8
+sex: male
+encounter: emergency
+disposition: admitted to inpatient unit
+diagnoses:
+- name: asthma exacerbation
+  status: active
+medications:
+- name: prednisolone
+  dose: 2
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q24h
+  weight_based: true
+labs: []
+procedures:
+- name: peak flow measurement
+  status: completed
+distractors:
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved

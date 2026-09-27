@@ -1,0 +1,1 @@
+Patient is a 10-year-old female weighing 30.1 kg, seen in the outpatient clinic. Assessment: community-acquired pneumonia. Started amoxicillin 90 mg/kg/day PO q12h (weight-based). Laboratory results: WBC 16.2 10^3/uL, flagged high. Chest radiograph was performed. History of rsv bronchiolitis last winter, resolved. Disposition: discharged home.

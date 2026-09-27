@@ -1,0 +1,35 @@
+id: REC-inf-inp-001
+review_required: true
+age_band: infant
+age_value:
+  unit: months
+  value: 10
+weight_kg: 8.2
+sex: male
+encounter: inpatient
+disposition: discharged home
+diagnoses:
+- name: bronchiolitis
+  status: active
+medications:
+- name: albuterol
+  dose: 2.5
+  dose_unit: mg
+  route: nebulized
+  frequency: q6h
+  weight_based: false
+labs:
+- test: WBC
+  value: 11.8
+  unit: 10^3/uL
+  flag: normal
+procedures:
+- name: nasal suctioning
+  status: completed
+distractors:
+- kind: planned
+  text: repeat CBC planned for tomorrow morning
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
+- kind: planned
+  text: follow-up echocardiogram to be scheduled

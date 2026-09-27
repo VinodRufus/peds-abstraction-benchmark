@@ -1,0 +1,31 @@
+id: REC-chi-icu-003
+review_required: true
+age_band: child
+age_value:
+  unit: years
+  value: 8
+weight_kg: 35.9
+sex: male
+encounter: icu
+disposition: transferred to inpatient unit
+diagnoses:
+- name: appendicitis
+  status: suspected
+medications:
+- name: morphine
+  dose: 0.05
+  dose_unit: mg/kg/dose
+  route: IV
+  frequency: prn
+  weight_based: true
+labs:
+- test: WBC
+  value: 14.9
+  unit: 10^3/uL
+  flag: high
+procedures:
+- name: abdominal ultrasound
+  status: planned
+distractors:
+- kind: planned
+  text: repeat CBC planned for tomorrow morning

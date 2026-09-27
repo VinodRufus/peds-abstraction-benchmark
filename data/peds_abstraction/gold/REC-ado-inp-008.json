@@ -1,0 +1,42 @@
+{
+ "demographics": {
+  "age_value": 17,
+  "age_unit": "years",
+  "sex": "female",
+  "weight_kg": 50.4
+ },
+ "diagnoses": [
+  {
+   "name": "major depressive disorder",
+   "status": "historical"
+  }
+ ],
+ "medications": [
+  {
+   "name": "sertraline",
+   "dose": 50,
+   "dose_unit": "mg",
+   "route": "PO",
+   "frequency": "q24h",
+   "weight_based": false
+  }
+ ],
+ "labs": [],
+ "procedures": [
+  {
+   "name": "safety screening",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "inpatient",
+  "disposition": "discharged home"
+ },
+ "temporal": [
+  {
+   "event": "follow-up echocardiogram to be scheduled",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+id: REC-chi-eme-002
+review_required: true
+age_band: child
+age_value:
+  unit: years
+  value: 6
+weight_kg: 34.3
+sex: male
+encounter: emergency
+disposition: admitted to inpatient unit
+diagnoses:
+- name: community-acquired pneumonia
+  status: active
+medications:
+- name: amoxicillin
+  dose: 90
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q12h
+  weight_based: true
+labs:
+- test: WBC
+  value: 16.2
+  unit: 10^3/uL
+  flag: high
+procedures:
+- name: chest radiograph
+  status: completed
+distractors:
+- kind: planned
+  text: follow-up echocardiogram to be scheduled
+- kind: negation
+  text: denies fever at home
+- kind: negation
+  text: no history of penicillin allergy

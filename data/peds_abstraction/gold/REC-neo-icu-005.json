@@ -1,0 +1,45 @@
+{
+ "demographics": {
+  "age_value": 4,
+  "age_unit": "days",
+  "sex": "female",
+  "weight_kg": 2.7
+ },
+ "diagnoses": [
+  {
+   "name": "neonatal jaundice",
+   "status": "active"
+  }
+ ],
+ "medications": [],
+ "labs": [
+  {
+   "test": "total bilirubin",
+   "value": 14.2,
+   "unit": "mg/dL",
+   "flag": "high"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "phototherapy",
+   "status": "completed"
+  }
+ ],
+ "encounter": {
+  "setting": "icu",
+  "disposition": "transferred to inpatient unit"
+ },
+ "temporal": [
+  {
+   "event": "follow-up echocardiogram to be scheduled",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
+}

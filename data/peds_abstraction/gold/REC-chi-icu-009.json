@@ -1,0 +1,49 @@
+{
+ "demographics": {
+  "age_value": 10,
+  "age_unit": "years",
+  "sex": "female",
+  "weight_kg": 26.1
+ },
+ "diagnoses": [
+  {
+   "name": "appendicitis",
+   "status": "suspected"
+  }
+ ],
+ "medications": [
+  {
+   "name": "morphine",
+   "dose": 0.05,
+   "dose_unit": "mg/kg/dose",
+   "route": "IV",
+   "frequency": "prn",
+   "weight_based": true
+  }
+ ],
+ "labs": [
+  {
+   "test": "WBC",
+   "value": 14.9,
+   "unit": "10^3/uL",
+   "flag": "high"
+  }
+ ],
+ "procedures": [
+  {
+   "name": "abdominal ultrasound",
+   "status": "planned"
+  }
+ ],
+ "encounter": {
+  "setting": "icu",
+  "disposition": "transferred to inpatient unit"
+ },
+ "temporal": [
+  {
+   "event": "history of RSV bronchiolitis last winter, resolved",
+   "when": null,
+   "qualifier": "historical"
+  }
+ ]
+}

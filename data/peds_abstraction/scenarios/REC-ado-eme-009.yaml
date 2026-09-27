@@ -1,0 +1,29 @@
+id: REC-ado-eme-009
+review_required: true
+age_band: adolescent
+age_value:
+  unit: years
+  value: 12
+weight_kg: 68.3
+sex: female
+encounter: emergency
+disposition: admitted to inpatient unit
+diagnoses:
+- name: sports-related concussion
+  status: active
+medications:
+- name: acetaminophen
+  dose: 650
+  dose_unit: mg
+  route: PO
+  frequency: prn
+  weight_based: false
+labs: []
+procedures:
+- name: head CT
+  status: planned
+distractors:
+- kind: negation
+  text: denies fever at home
+- kind: historical
+  text: history of RSV bronchiolitis last winter, resolved

@@ -1,0 +1,1 @@
+Patient is a 7-year-old female weighing 33.4 kg, admitted to the inpatient ward. Assessment: suspected appendicitis; workup in progress. Started morphine 0.05 mg/kg/dose IV prn (weight-based). Laboratory results: WBC 14.9 10^3/uL, flagged high. Abdominal ultrasound is planned. No history of penicillin allergy. Disposition: discharged home.

@@ -1,0 +1,29 @@
+id: REC-ado-icu-005
+review_required: true
+age_band: adolescent
+age_value:
+  unit: years
+  value: 15
+weight_kg: 76.6
+sex: female
+encounter: icu
+disposition: transferred to inpatient unit
+diagnoses:
+- name: major depressive disorder
+  status: historical
+medications:
+- name: sertraline
+  dose: 50
+  dose_unit: mg
+  route: PO
+  frequency: q24h
+  weight_based: false
+labs: []
+procedures:
+- name: safety screening
+  status: completed
+distractors:
+- kind: planned
+  text: follow-up echocardiogram to be scheduled
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
