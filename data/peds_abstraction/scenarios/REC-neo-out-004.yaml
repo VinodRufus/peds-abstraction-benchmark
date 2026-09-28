@@ -3,31 +3,29 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 9
-weight_kg: 2.8
-sex: female
+  value: 5
+weight_kg: 3.1
+sex: male
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: early-onset sepsis
-  status: suspected
-medications:
-- name: ampicillin
-  dose: 100
-  dose_unit: mg/kg/dose
-  route: IV
-  frequency: q8h
-  weight_based: true
+- name: neonatal jaundice
+  status: active
+medications: []
 labs:
-- test: WBC
-  value: 4.1
-  unit: 10^3/uL
-  flag: low
+- test: total bilirubin
+  value: 14.2
+  unit: mg/dL
+  flag: high
 procedures:
-- name: lumbar puncture
+- name: phototherapy
   status: completed
 distractors:
+- kind: historical
+  text: born at 36 weeks gestation, exclusively breastfed
+- kind: historical
+  text: born by uncomplicated vaginal delivery
+- kind: planned
+  text: follow-up with the primary care clinic in one week
 - kind: negation
-  text: no history of penicillin allergy
-- kind: negation
-  text: denies fever at home
+  text: no fever reported at home

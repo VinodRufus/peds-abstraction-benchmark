@@ -4,32 +4,30 @@ age_band: child
 age_value:
   unit: years
   value: 6
-weight_kg: 19.2
+weight_kg: 34.8
 sex: male
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: appendicitis
-  status: suspected
+- name: community-acquired pneumonia
+  status: active
 medications:
-- name: morphine
-  dose: 0.05
-  dose_unit: mg/kg/dose
-  route: IV
-  frequency: prn
+- name: amoxicillin
+  dose: 90
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q12h
   weight_based: true
 labs:
 - test: WBC
-  value: 14.9
+  value: 16.2
   unit: 10^3/uL
   flag: high
 procedures:
-- name: abdominal ultrasound
-  status: planned
+- name: chest radiograph
+  status: completed
 distractors:
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
-- kind: negation
-  text: denies fever at home
-- kind: negation
-  text: no history of penicillin allergy
+- kind: planned
+  text: repeat CBC planned for tomorrow morning
+- kind: planned
+  text: follow-up with the primary care clinic in one week

@@ -1,28 +1,41 @@
 {
  "demographics": {
-  "age_value": 17,
+  "age_value": 2,
   "age_unit": "days",
   "sex": "male",
-  "weight_kg": 3.2
+  "weight_kg": 2.6
  },
  "diagnoses": [
   {
-   "name": "neonatal jaundice",
+   "name": "hypoglycemia of the newborn",
    "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
- "medications": [],
+ "medications": [
+  {
+   "name": "dextrose 10%",
+   "dose": 2,
+   "dose_unit": "mL/kg",
+   "route": "IV",
+   "frequency": "once",
+   "weight_based": true
+  }
+ ],
  "labs": [
   {
-   "test": "total bilirubin",
-   "value": 14.2,
+   "test": "glucose",
+   "value": 38,
    "unit": "mg/dL",
-   "flag": "high"
+   "flag": "low"
   }
  ],
  "procedures": [
   {
-   "name": "phototherapy",
+   "name": "heel-stick glucose check",
    "status": "completed"
   }
  ],
@@ -30,5 +43,21 @@
   "setting": "icu",
   "disposition": "transferred to inpatient unit"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "pregnancy complicated by gestational diabetes",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

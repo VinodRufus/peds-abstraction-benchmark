@@ -3,29 +3,29 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 6
-weight_kg: 25.8
-sex: male
+  value: 11
+weight_kg: 22.7
+sex: female
 encounter: icu
 disposition: transferred to inpatient unit
 diagnoses:
-- name: community-acquired pneumonia
+- name: status asthmaticus
   status: active
 medications:
-- name: amoxicillin
-  dose: 90
-  dose_unit: mg/kg/day
-  route: PO
-  frequency: q12h
+- name: albuterol
+  dose: 0.5
+  dose_unit: mg/kg/hour
+  route: nebulized
+  frequency: continuous
   weight_based: true
-labs:
-- test: WBC
-  value: 16.2
-  unit: 10^3/uL
-  flag: high
+labs: []
 procedures:
-- name: chest radiograph
+- name: continuous pulse oximetry
   status: completed
 distractors:
+- kind: planned
+  text: repeat CBC planned for tomorrow morning
+- kind: negation
+  text: denies fever at home
 - kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+  text: history of RSV bronchiolitis in infancy, resolved

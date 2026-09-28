@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 12,
+  "age_value": 14,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 60.6
+  "weight_kg": 69.0
  },
  "diagnoses": [
   {
@@ -24,8 +24,8 @@
  "labs": [],
  "procedures": [
   {
-   "name": "head CT",
-   "status": "planned"
+   "name": "concussion symptom assessment",
+   "status": "completed"
   }
  ],
  "encounter": {
@@ -34,9 +34,9 @@
  },
  "temporal": [
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
-   "qualifier": "historical"
+   "qualifier": "planned"
   }
  ]
 }

@@ -3,9 +3,9 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 9
-weight_kg: 3.7
-sex: female
+  value: 3
+weight_kg: 3.4
+sex: male
 encounter: emergency
 disposition: admitted to inpatient unit
 diagnoses:
@@ -21,5 +21,11 @@ procedures:
 - name: phototherapy
   status: completed
 distractors:
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: historical
+  text: born at 36 weeks gestation, exclusively breastfed
+- kind: negation
+  text: no history of penicillin allergy
+- kind: negation
+  text: no fever reported at home
+- kind: historical
+  text: born by uncomplicated vaginal delivery

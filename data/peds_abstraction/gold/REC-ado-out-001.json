@@ -1,37 +1,38 @@
 {
  "demographics": {
-  "age_value": 17,
+  "age_value": 14,
   "age_unit": "years",
   "sex": "female",
-  "weight_kg": 61.9
+  "weight_kg": 81.3
  },
  "diagnoses": [
   {
-   "name": "diabetic ketoacidosis",
+   "name": "major depressive disorder",
    "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "insulin",
-   "dose": 0.1,
-   "dose_unit": "units/kg/hour",
-   "route": "IV",
-   "frequency": "continuous",
-   "weight_based": true
+   "name": "fluoxetine",
+   "dose": 10,
+   "dose_unit": "mg",
+   "route": "PO",
+   "frequency": "q24h",
+   "weight_based": false
   }
  ],
- "labs": [
-  {
-   "test": "glucose",
-   "value": 486,
-   "unit": "mg/dL",
-   "flag": "high"
-  }
- ],
+ "labs": [],
  "procedures": [
   {
-   "name": "venous blood gas",
+   "name": "safety screening",
    "status": "completed"
   }
  ],
@@ -39,16 +40,5 @@
   "setting": "outpatient",
   "disposition": "discharged home"
  },
- "temporal": [
-  {
-   "event": "history of RSV bronchiolitis last winter, resolved",
-   "when": null,
-   "qualifier": "historical"
-  },
-  {
-   "event": "follow-up echocardiogram to be scheduled",
-   "when": null,
-   "qualifier": "planned"
-  }
- ]
+ "temporal": []
 }

@@ -2,29 +2,40 @@
  "demographics": {
   "age_value": 5,
   "age_unit": "years",
-  "sex": "female",
-  "weight_kg": 20.8
+  "sex": "male",
+  "weight_kg": 25.6
  },
  "diagnoses": [
   {
-   "name": "asthma exacerbation",
+   "name": "perforated appendicitis",
    "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "prednisolone",
-   "dose": 2,
-   "dose_unit": "mg/kg/day",
-   "route": "PO",
-   "frequency": "q24h",
+   "name": "morphine",
+   "dose": 0.05,
+   "dose_unit": "mg/kg/dose",
+   "route": "IV",
+   "frequency": "prn",
    "weight_based": true
   }
  ],
- "labs": [],
+ "labs": [
+  {
+   "test": "WBC",
+   "value": 14.9,
+   "unit": "10^3/uL",
+   "flag": "high"
+  }
+ ],
  "procedures": [
   {
-   "name": "peak flow measurement",
+   "name": "appendectomy",
    "status": "completed"
   }
  ],
@@ -32,11 +43,5 @@
   "setting": "icu",
   "disposition": "transferred to inpatient unit"
  },
- "temporal": [
-  {
-   "event": "follow-up echocardiogram to be scheduled",
-   "when": null,
-   "qualifier": "planned"
-  }
- ]
+ "temporal": []
 }

@@ -3,17 +3,17 @@ review_required: true
 age_band: infant
 age_value:
   unit: months
-  value: 9
-weight_kg: 7.2
-sex: female
+  value: 10
+weight_kg: 7.4
+sex: male
 encounter: emergency
-disposition: admitted to inpatient unit
+disposition: discharged home from the emergency department
 diagnoses:
 - name: acute otitis media
   status: active
 medications:
 - name: amoxicillin
-  dose: 45
+  dose: 90
   dose_unit: mg/kg/day
   route: PO
   frequency: q12h
@@ -23,7 +23,7 @@ procedures:
 - name: tympanic membrane exam
   status: completed
 distractors:
-- kind: planned
-  text: repeat CBC planned for tomorrow morning
 - kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+  text: history of mild eczema, well controlled
+- kind: planned
+  text: follow-up with the primary care clinic in one week

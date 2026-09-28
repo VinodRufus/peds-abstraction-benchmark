@@ -3,7 +3,7 @@
   "age_value": 11,
   "age_unit": "months",
   "sex": "female",
-  "weight_kg": 8.7
+  "weight_kg": 8.4
  },
  "diagnoses": [
   {
@@ -11,24 +11,8 @@
    "status": "active"
   }
  ],
- "medications": [
-  {
-   "name": "albuterol",
-   "dose": 2.5,
-   "dose_unit": "mg",
-   "route": "nebulized",
-   "frequency": "q6h",
-   "weight_based": false
-  }
- ],
- "labs": [
-  {
-   "test": "WBC",
-   "value": 11.8,
-   "unit": "10^3/uL",
-   "flag": "normal"
-  }
- ],
+ "medications": [],
+ "labs": [],
  "procedures": [
   {
    "name": "nasal suctioning",
@@ -39,5 +23,11 @@
   "setting": "emergency",
   "disposition": "admitted to inpatient unit"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "history of mild eczema, well controlled",
+   "when": null,
+   "qualifier": "historical"
+  }
+ ]
 }

@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 11,
+  "age_value": 7,
   "age_unit": "years",
   "sex": "female",
-  "weight_kg": 34.7
+  "weight_kg": 33.4
  },
  "diagnoses": [
   {
    "name": "appendicitis",
    "status": "suspected"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -39,11 +43,5 @@
   "setting": "inpatient",
   "disposition": "discharged home"
  },
- "temporal": [
-  {
-   "event": "history of RSV bronchiolitis last winter, resolved",
-   "when": null,
-   "qualifier": "historical"
-  }
- ]
+ "temporal": []
 }

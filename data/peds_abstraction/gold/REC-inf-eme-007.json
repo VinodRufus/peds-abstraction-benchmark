@@ -1,34 +1,26 @@
 {
  "demographics": {
-  "age_value": 2,
+  "age_value": 9,
   "age_unit": "months",
-  "sex": "female",
-  "weight_kg": 5.0
+  "sex": "male",
+  "weight_kg": 6.8
  },
  "diagnoses": [
   {
    "name": "bronchiolitis",
    "status": "active"
-  }
- ],
- "medications": [
+  },
   {
-   "name": "albuterol",
-   "dose": 2.5,
-   "dose_unit": "mg",
-   "route": "nebulized",
-   "frequency": "q6h",
-   "weight_based": false
-  }
- ],
- "labs": [
+   "name": "fever",
+   "status": "ruled_out"
+  },
   {
-   "test": "WBC",
-   "value": 11.8,
-   "unit": "10^3/uL",
-   "flag": "normal"
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
+ "medications": [],
+ "labs": [],
  "procedures": [
   {
    "name": "nasal suctioning",
@@ -41,7 +33,7 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
    "qualifier": "planned"
   }

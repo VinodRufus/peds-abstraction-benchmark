@@ -2,13 +2,17 @@
  "demographics": {
   "age_value": 6,
   "age_unit": "months",
-  "sex": "male",
-  "weight_kg": 8.6
+  "sex": "female",
+  "weight_kg": 6.0
  },
  "diagnoses": [
   {
    "name": "febrile urinary tract infection",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -39,5 +43,16 @@
   "setting": "emergency",
   "disposition": "admitted to inpatient unit"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "history of mild eczema, well controlled",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

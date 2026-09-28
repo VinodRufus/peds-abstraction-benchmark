@@ -4,8 +4,8 @@ age_band: infant
 age_value:
   unit: months
   value: 6
-weight_kg: 8.6
-sex: male
+weight_kg: 6.0
+sex: female
 encounter: emergency
 disposition: admitted to inpatient unit
 diagnoses:
@@ -27,5 +27,9 @@ procedures:
 - name: urine culture
   status: completed
 distractors:
+- kind: historical
+  text: history of mild eczema, well controlled
 - kind: negation
   text: no history of penicillin allergy
+- kind: planned
+  text: follow-up with the primary care clinic in one week

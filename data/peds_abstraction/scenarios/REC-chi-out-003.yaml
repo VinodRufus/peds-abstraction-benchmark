@@ -4,30 +4,26 @@ age_band: child
 age_value:
   unit: years
   value: 11
-weight_kg: 18.2
-sex: male
+weight_kg: 27.9
+sex: female
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: appendicitis
-  status: suspected
+- name: asthma exacerbation
+  status: active
 medications:
-- name: morphine
-  dose: 0.05
-  dose_unit: mg/kg/dose
-  route: IV
-  frequency: prn
+- name: prednisolone
+  dose: 2
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q24h
   weight_based: true
-labs:
-- test: WBC
-  value: 14.9
-  unit: 10^3/uL
-  flag: high
+labs: []
 procedures:
-- name: abdominal ultrasound
-  status: planned
+- name: peak flow measurement
+  status: completed
 distractors:
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: planned
+  text: repeat CBC planned for tomorrow morning
 - kind: negation
-  text: no history of penicillin allergy
+  text: denies fever at home

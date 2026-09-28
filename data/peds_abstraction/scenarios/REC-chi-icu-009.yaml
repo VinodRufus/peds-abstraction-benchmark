@@ -3,31 +3,29 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 10
-weight_kg: 26.1
+  value: 8
+weight_kg: 27.3
 sex: female
 encounter: icu
 disposition: transferred to inpatient unit
 diagnoses:
-- name: appendicitis
-  status: suspected
+- name: status asthmaticus
+  status: active
 medications:
-- name: morphine
-  dose: 0.05
-  dose_unit: mg/kg/dose
-  route: IV
-  frequency: prn
+- name: albuterol
+  dose: 0.5
+  dose_unit: mg/kg/hour
+  route: nebulized
+  frequency: continuous
   weight_based: true
-labs:
-- test: WBC
-  value: 14.9
-  unit: 10^3/uL
-  flag: high
+labs: []
 procedures:
-- name: abdominal ultrasound
-  status: planned
+- name: continuous pulse oximetry
+  status: completed
 distractors:
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+- kind: planned
+  text: repeat CBC planned for tomorrow morning
+- kind: planned
+  text: follow-up with the primary care clinic in one week
 - kind: negation
-  text: denies fever at home
+  text: no history of penicillin allergy

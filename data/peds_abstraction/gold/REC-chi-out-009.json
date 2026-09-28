@@ -1,38 +1,35 @@
 {
  "demographics": {
-  "age_value": 11,
+  "age_value": 6,
   "age_unit": "years",
   "sex": "female",
-  "weight_kg": 35.7
+  "weight_kg": 28.5
  },
  "diagnoses": [
   {
-   "name": "appendicitis",
-   "status": "suspected"
+   "name": "asthma exacerbation",
+   "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "morphine",
-   "dose": 0.05,
-   "dose_unit": "mg/kg/dose",
-   "route": "IV",
-   "frequency": "prn",
+   "name": "prednisolone",
+   "dose": 2,
+   "dose_unit": "mg/kg/day",
+   "route": "PO",
+   "frequency": "q24h",
    "weight_based": true
   }
  ],
- "labs": [
-  {
-   "test": "WBC",
-   "value": 14.9,
-   "unit": "10^3/uL",
-   "flag": "high"
-  }
- ],
+ "labs": [],
  "procedures": [
   {
-   "name": "abdominal ultrasound",
-   "status": "planned"
+   "name": "peak flow measurement",
+   "status": "completed"
   }
  ],
  "encounter": {
@@ -41,14 +38,9 @@
  },
  "temporal": [
   {
-   "event": "repeat CBC planned for tomorrow morning",
+   "event": "prior clinic note listed the dose per day rather than per dose",
    "when": null,
-   "qualifier": "planned"
-  },
-  {
-   "event": "follow-up echocardiogram to be scheduled",
-   "when": null,
-   "qualifier": "planned"
+   "qualifier": "historical"
   }
  ]
 }

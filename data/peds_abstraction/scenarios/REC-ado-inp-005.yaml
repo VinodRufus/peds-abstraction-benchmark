@@ -3,17 +3,17 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 14
-weight_kg: 69.4
+  value: 16
+weight_kg: 54.7
 sex: male
 encounter: inpatient
 disposition: discharged home
 diagnoses:
 - name: major depressive disorder
-  status: historical
+  status: active
 medications:
-- name: sertraline
-  dose: 50
+- name: fluoxetine
+  dose: 10
   dose_unit: mg
   route: PO
   frequency: q24h
@@ -23,9 +23,9 @@ procedures:
 - name: safety screening
   status: completed
 distractors:
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: planned
+  text: follow-up with the primary care clinic in one week
 - kind: negation
   text: denies fever at home
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+- kind: planned
+  text: repeat CBC planned for tomorrow morning

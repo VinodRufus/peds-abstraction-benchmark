@@ -3,9 +3,9 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 15
-weight_kg: 42.0
-sex: male
+  value: 14
+weight_kg: 74.9
+sex: female
 encounter: emergency
 disposition: admitted to inpatient unit
 diagnoses:
@@ -27,7 +27,5 @@ procedures:
 - name: venous blood gas
   status: completed
 distractors:
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
 - kind: negation
-  text: denies fever at home
+  text: no history of penicillin allergy

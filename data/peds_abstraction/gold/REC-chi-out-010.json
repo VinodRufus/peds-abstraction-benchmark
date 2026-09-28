@@ -1,30 +1,37 @@
 {
  "demographics": {
-  "age_value": 11,
+  "age_value": 8,
   "age_unit": "years",
-  "sex": "female",
-  "weight_kg": 23.6
+  "sex": "male",
+  "weight_kg": 19.9
  },
  "diagnoses": [
   {
-   "name": "asthma exacerbation",
+   "name": "community-acquired pneumonia",
    "status": "active"
   }
  ],
  "medications": [
   {
-   "name": "prednisolone",
-   "dose": 2,
+   "name": "amoxicillin",
+   "dose": 90,
    "dose_unit": "mg/kg/day",
    "route": "PO",
-   "frequency": "q24h",
+   "frequency": "q12h",
    "weight_based": true
   }
  ],
- "labs": [],
+ "labs": [
+  {
+   "test": "WBC",
+   "value": 16.2,
+   "unit": "10^3/uL",
+   "flag": "high"
+  }
+ ],
  "procedures": [
   {
-   "name": "peak flow measurement",
+   "name": "chest radiograph",
    "status": "completed"
   }
  ],
@@ -34,7 +41,12 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "prior clinic note listed the dose per day rather than per dose",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
    "qualifier": "planned"
   }

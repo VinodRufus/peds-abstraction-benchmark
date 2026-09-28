@@ -3,29 +3,31 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 11
-weight_kg: 23.6
-sex: female
+  value: 8
+weight_kg: 19.9
+sex: male
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: asthma exacerbation
+- name: community-acquired pneumonia
   status: active
 medications:
-- name: prednisolone
-  dose: 2
+- name: amoxicillin
+  dose: 90
   dose_unit: mg/kg/day
   route: PO
-  frequency: q24h
+  frequency: q12h
   weight_based: true
-labs: []
+labs:
+- test: WBC
+  value: 16.2
+  unit: 10^3/uL
+  flag: high
 procedures:
-- name: peak flow measurement
+- name: chest radiograph
   status: completed
 distractors:
-- kind: negation
-  text: no history of penicillin allergy
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
 - kind: planned
-  text: follow-up echocardiogram to be scheduled
-- kind: negation
-  text: denies fever at home
+  text: follow-up with the primary care clinic in one week

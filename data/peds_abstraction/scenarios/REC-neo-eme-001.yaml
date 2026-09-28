@@ -3,9 +3,9 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 10
-weight_kg: 3.3
-sex: male
+  value: 2
+weight_kg: 2.9
+sex: female
 encounter: emergency
 disposition: admitted to inpatient unit
 diagnoses:
@@ -27,9 +27,9 @@ procedures:
 - name: lumbar puncture
   status: completed
 distractors:
-- kind: planned
-  text: repeat CBC planned for tomorrow morning
 - kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+  text: born at term with unknown maternal group B streptococcus status
+- kind: negation
+  text: no fever reported at home
+- kind: historical
+  text: born by uncomplicated vaginal delivery

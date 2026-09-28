@@ -3,31 +3,19 @@ review_required: true
 age_band: infant
 age_value:
   unit: months
-  value: 3
-weight_kg: 6.1
-sex: male
+  value: 10
+weight_kg: 5.7
+sex: female
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: febrile urinary tract infection
+- name: bronchiolitis
   status: active
-medications:
-- name: ceftriaxone
-  dose: 50
-  dose_unit: mg/kg/dose
-  route: IV
-  frequency: q24h
-  weight_based: true
-labs:
-- test: CRP
-  value: 6.4
-  unit: mg/dL
-  flag: high
+medications: []
+labs: []
 procedures:
-- name: urine culture
+- name: nasal suctioning
   status: completed
 distractors:
 - kind: negation
-  text: denies fever at home
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+  text: no history of penicillin allergy

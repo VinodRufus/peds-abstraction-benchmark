@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 20,
+  "age_value": 6,
   "age_unit": "days",
   "sex": "female",
-  "weight_kg": 3.5
+  "weight_kg": 3.4
  },
  "diagnoses": [
   {
@@ -32,17 +32,12 @@
  },
  "temporal": [
   {
-   "event": "repeat CBC planned for tomorrow morning",
-   "when": null,
-   "qualifier": "planned"
-  },
-  {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "born at 36 weeks gestation, exclusively breastfed",
    "when": null,
    "qualifier": "historical"
   },
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
    "qualifier": "planned"
   }

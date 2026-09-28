@@ -3,29 +3,35 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 3
-weight_kg: 3.1
-sex: female
+  value: 1
+weight_kg: 3.0
+sex: male
 encounter: icu
 disposition: transferred to inpatient unit
 diagnoses:
-- name: early-onset sepsis
-  status: suspected
+- name: hypoglycemia of the newborn
+  status: active
 medications:
-- name: ampicillin
-  dose: 100
-  dose_unit: mg/kg/dose
+- name: dextrose 10%
+  dose: 2
+  dose_unit: mL/kg
   route: IV
-  frequency: q8h
+  frequency: once
   weight_based: true
 labs:
-- test: WBC
-  value: 4.1
-  unit: 10^3/uL
+- test: glucose
+  value: 38
+  unit: mg/dL
   flag: low
 procedures:
-- name: lumbar puncture
+- name: heel-stick glucose check
   status: completed
 distractors:
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: historical
+  text: pregnancy complicated by gestational diabetes
+- kind: planned
+  text: follow-up with the primary care clinic in one week
+- kind: negation
+  text: no fever reported at home
+- kind: negation
+  text: no history of penicillin allergy

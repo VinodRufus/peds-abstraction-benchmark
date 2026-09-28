@@ -4,7 +4,7 @@ age_band: child
 age_value:
   unit: years
   value: 8
-weight_kg: 19.5
+weight_kg: 28.5
 sex: male
 encounter: emergency
 disposition: admitted to inpatient unit
@@ -23,5 +23,9 @@ procedures:
 - name: peak flow measurement
   status: completed
 distractors:
+- kind: historical
+  text: history of RSV bronchiolitis in infancy, resolved
 - kind: negation
   text: no history of penicillin allergy
+- kind: planned
+  text: follow-up with the primary care clinic in one week

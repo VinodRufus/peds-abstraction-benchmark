@@ -1,37 +1,32 @@
 {
  "demographics": {
-  "age_value": 7,
+  "age_value": 5,
   "age_unit": "days",
-  "sex": "male",
-  "weight_kg": 2.9
+  "sex": "female",
+  "weight_kg": 3.8
  },
  "diagnoses": [
   {
-   "name": "early-onset sepsis",
-   "status": "suspected"
-  }
- ],
- "medications": [
+   "name": "neonatal jaundice",
+   "status": "active"
+  },
   {
-   "name": "ampicillin",
-   "dose": 100,
-   "dose_unit": "mg/kg/dose",
-   "route": "IV",
-   "frequency": "q8h",
-   "weight_based": true
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
+ "medications": [],
  "labs": [
   {
-   "test": "WBC",
-   "value": 4.1,
-   "unit": "10^3/uL",
-   "flag": "low"
+   "test": "total bilirubin",
+   "value": 14.2,
+   "unit": "mg/dL",
+   "flag": "high"
   }
  ],
  "procedures": [
   {
-   "name": "lumbar puncture",
+   "name": "phototherapy",
    "status": "completed"
   }
  ],
@@ -41,12 +36,17 @@
  },
  "temporal": [
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "born at 36 weeks gestation, exclusively breastfed",
    "when": null,
    "qualifier": "historical"
   },
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "repeat CBC planned for tomorrow morning",
    "when": null,
    "qualifier": "planned"
   }

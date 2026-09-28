@@ -1,36 +1,53 @@
 {
  "demographics": {
-  "age_value": 17,
+  "age_value": 13,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 66.0
+  "weight_kg": 78.8
  },
  "diagnoses": [
   {
-   "name": "sports-related concussion",
+   "name": "diabetic ketoacidosis",
    "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "acetaminophen",
-   "dose": 650,
-   "dose_unit": "mg",
-   "route": "PO",
-   "frequency": "prn",
-   "weight_based": false
+   "name": "insulin",
+   "dose": 0.1,
+   "dose_unit": "units/kg/hour",
+   "route": "IV",
+   "frequency": "continuous",
+   "weight_based": true
   }
  ],
- "labs": [],
+ "labs": [
+  {
+   "test": "glucose",
+   "value": 486,
+   "unit": "mg/dL",
+   "flag": "high"
+  }
+ ],
  "procedures": [
   {
-   "name": "head CT",
-   "status": "planned"
+   "name": "venous blood gas",
+   "status": "completed"
   }
  ],
  "encounter": {
   "setting": "icu",
   "disposition": "transferred to inpatient unit"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

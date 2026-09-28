@@ -3,8 +3,8 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 5
-weight_kg: 29.5
+  value: 6
+weight_kg: 18.2
 sex: female
 encounter: outpatient
 disposition: discharged home
@@ -27,5 +27,7 @@ procedures:
 - name: chest radiograph
   status: completed
 distractors:
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: negation
+  text: no history of penicillin allergy
+- kind: negation
+  text: denies fever at home

@@ -1,28 +1,37 @@
 {
  "demographics": {
-  "age_value": 4,
+  "age_value": 1,
   "age_unit": "days",
   "sex": "female",
-  "weight_kg": 2.7
+  "weight_kg": 3.4
  },
  "diagnoses": [
   {
-   "name": "neonatal jaundice",
-   "status": "active"
+   "name": "early-onset sepsis",
+   "status": "suspected"
   }
  ],
- "medications": [],
+ "medications": [
+  {
+   "name": "ampicillin",
+   "dose": 100,
+   "dose_unit": "mg/kg/dose",
+   "route": "IV",
+   "frequency": "q8h",
+   "weight_based": true
+  }
+ ],
  "labs": [
   {
-   "test": "total bilirubin",
-   "value": 14.2,
-   "unit": "mg/dL",
-   "flag": "high"
+   "test": "WBC",
+   "value": 4.1,
+   "unit": "10^3/uL",
+   "flag": "low"
   }
  ],
  "procedures": [
   {
-   "name": "phototherapy",
+   "name": "lumbar puncture",
    "status": "completed"
   }
  ],
@@ -32,14 +41,14 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "born at term with unknown maternal group B streptococcus status",
    "when": null,
-   "qualifier": "planned"
+   "qualifier": "historical"
   },
   {
-   "event": "repeat CBC planned for tomorrow morning",
+   "event": "born by uncomplicated vaginal delivery",
    "when": null,
-   "qualifier": "planned"
+   "qualifier": "historical"
   }
  ]
 }

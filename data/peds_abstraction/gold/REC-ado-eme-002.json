@@ -1,20 +1,24 @@
 {
  "demographics": {
-  "age_value": 15,
+  "age_value": 13,
   "age_unit": "years",
-  "sex": "male",
-  "weight_kg": 66.4
+  "sex": "female",
+  "weight_kg": 71.7
  },
  "diagnoses": [
   {
    "name": "major depressive disorder",
-   "status": "historical"
+   "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "sertraline",
-   "dose": 50,
+   "name": "fluoxetine",
+   "dose": 10,
    "dose_unit": "mg",
    "route": "PO",
    "frequency": "q24h",
@@ -37,6 +41,11 @@
    "event": "repeat CBC planned for tomorrow morning",
    "when": null,
    "qualifier": "planned"
+  },
+  {
+   "event": "history of RSV bronchiolitis in infancy, resolved",
+   "when": null,
+   "qualifier": "historical"
   }
  ]
 }

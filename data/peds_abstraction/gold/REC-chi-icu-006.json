@@ -1,14 +1,14 @@
 {
  "demographics": {
-  "age_value": 5,
+  "age_value": 11,
   "age_unit": "years",
-  "sex": "female",
-  "weight_kg": 31.5
+  "sex": "male",
+  "weight_kg": 21.1
  },
  "diagnoses": [
   {
-   "name": "appendicitis",
-   "status": "suspected"
+   "name": "perforated appendicitis",
+   "status": "active"
   }
  ],
  "medications": [
@@ -31,8 +31,8 @@
  ],
  "procedures": [
   {
-   "name": "abdominal ultrasound",
-   "status": "planned"
+   "name": "appendectomy",
+   "status": "completed"
   }
  ],
  "encounter": {
@@ -42,6 +42,11 @@
  "temporal": [
   {
    "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
    "qualifier": "planned"
   }

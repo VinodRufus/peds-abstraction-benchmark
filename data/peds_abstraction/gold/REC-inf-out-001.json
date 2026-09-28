@@ -1,34 +1,22 @@
 {
  "demographics": {
-  "age_value": 6,
+  "age_value": 10,
   "age_unit": "months",
   "sex": "female",
-  "weight_kg": 4.8
+  "weight_kg": 4.7
  },
  "diagnoses": [
   {
    "name": "bronchiolitis",
    "status": "active"
-  }
- ],
- "medications": [
+  },
   {
-   "name": "albuterol",
-   "dose": 2.5,
-   "dose_unit": "mg",
-   "route": "nebulized",
-   "frequency": "q6h",
-   "weight_based": false
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
- "labs": [
-  {
-   "test": "WBC",
-   "value": 11.8,
-   "unit": "10^3/uL",
-   "flag": "normal"
-  }
- ],
+ "medications": [],
+ "labs": [],
  "procedures": [
   {
    "name": "nasal suctioning",

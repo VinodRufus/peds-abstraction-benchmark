@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 15,
+  "age_value": 17,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 54.0
+  "weight_kg": 52.1
  },
  "diagnoses": [
   {
@@ -41,7 +41,12 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "history of RSV bronchiolitis in infancy, resolved",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "repeat CBC planned for tomorrow morning",
    "when": null,
    "qualifier": "planned"
   }

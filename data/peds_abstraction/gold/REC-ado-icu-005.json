@@ -1,30 +1,41 @@
 {
  "demographics": {
-  "age_value": 15,
+  "age_value": 16,
   "age_unit": "years",
-  "sex": "female",
-  "weight_kg": 76.6
+  "sex": "male",
+  "weight_kg": 77.5
  },
  "diagnoses": [
   {
-   "name": "major depressive disorder",
-   "status": "historical"
+   "name": "diabetic ketoacidosis",
+   "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "sertraline",
-   "dose": 50,
-   "dose_unit": "mg",
-   "route": "PO",
-   "frequency": "q24h",
-   "weight_based": false
+   "name": "insulin",
+   "dose": 0.1,
+   "dose_unit": "units/kg/hour",
+   "route": "IV",
+   "frequency": "continuous",
+   "weight_based": true
   }
  ],
- "labs": [],
+ "labs": [
+  {
+   "test": "glucose",
+   "value": 486,
+   "unit": "mg/dL",
+   "flag": "high"
+  }
+ ],
  "procedures": [
   {
-   "name": "safety screening",
+   "name": "venous blood gas",
    "status": "completed"
   }
  ],
@@ -34,9 +45,14 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "repeat CBC planned for tomorrow morning",
    "when": null,
    "qualifier": "planned"
+  },
+  {
+   "event": "history of RSV bronchiolitis in infancy, resolved",
+   "when": null,
+   "qualifier": "historical"
   }
  ]
 }

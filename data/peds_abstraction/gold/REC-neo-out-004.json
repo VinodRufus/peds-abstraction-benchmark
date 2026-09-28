@@ -1,37 +1,32 @@
 {
  "demographics": {
-  "age_value": 9,
+  "age_value": 5,
   "age_unit": "days",
-  "sex": "female",
-  "weight_kg": 2.8
+  "sex": "male",
+  "weight_kg": 3.1
  },
  "diagnoses": [
   {
-   "name": "early-onset sepsis",
-   "status": "suspected"
-  }
- ],
- "medications": [
+   "name": "neonatal jaundice",
+   "status": "active"
+  },
   {
-   "name": "ampicillin",
-   "dose": 100,
-   "dose_unit": "mg/kg/dose",
-   "route": "IV",
-   "frequency": "q8h",
-   "weight_based": true
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
+ "medications": [],
  "labs": [
   {
-   "test": "WBC",
-   "value": 4.1,
-   "unit": "10^3/uL",
-   "flag": "low"
+   "test": "total bilirubin",
+   "value": 14.2,
+   "unit": "mg/dL",
+   "flag": "high"
   }
  ],
  "procedures": [
   {
-   "name": "lumbar puncture",
+   "name": "phototherapy",
    "status": "completed"
   }
  ],
@@ -39,5 +34,21 @@
   "setting": "outpatient",
   "disposition": "discharged home"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "born at 36 weeks gestation, exclusively breastfed",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "born by uncomplicated vaginal delivery",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

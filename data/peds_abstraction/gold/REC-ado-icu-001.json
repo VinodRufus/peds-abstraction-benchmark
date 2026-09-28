@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 12,
+  "age_value": 14,
   "age_unit": "years",
-  "sex": "female",
-  "weight_kg": 43.3
+  "sex": "male",
+  "weight_kg": 75.2
  },
  "diagnoses": [
   {
@@ -41,12 +41,7 @@
  },
  "temporal": [
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
-   "when": null,
-   "qualifier": "historical"
-  },
-  {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "repeat CBC planned for tomorrow morning",
    "when": null,
    "qualifier": "planned"
   }

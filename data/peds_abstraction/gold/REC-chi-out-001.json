@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 9,
+  "age_value": 10,
   "age_unit": "years",
   "sex": "female",
-  "weight_kg": 26.5
+  "weight_kg": 16.4
  },
  "diagnoses": [
   {
    "name": "asthma exacerbation",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -39,7 +43,7 @@
    "qualifier": "planned"
   },
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "prior clinic note listed the dose per day rather than per dose",
    "when": null,
    "qualifier": "historical"
   }

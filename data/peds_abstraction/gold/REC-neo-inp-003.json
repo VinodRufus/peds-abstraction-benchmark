@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 5,
+  "age_value": 2,
   "age_unit": "days",
-  "sex": "male",
+  "sex": "female",
   "weight_kg": 3.2
  },
  "diagnoses": [
   {
    "name": "hypoglycemia of the newborn",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -17,7 +21,7 @@
    "dose": 2,
    "dose_unit": "mL/kg",
    "route": "IV",
-   "frequency": "prn",
+   "frequency": "once",
    "weight_based": true
   }
  ],
@@ -41,9 +45,14 @@
  },
  "temporal": [
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "pregnancy complicated by gestational diabetes",
    "when": null,
    "qualifier": "historical"
+  },
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
   }
  ]
 }

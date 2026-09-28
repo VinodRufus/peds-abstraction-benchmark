@@ -1,37 +1,32 @@
 {
  "demographics": {
-  "age_value": 10,
+  "age_value": 5,
   "age_unit": "days",
-  "sex": "female",
-  "weight_kg": 2.7
+  "sex": "male",
+  "weight_kg": 3.7
  },
  "diagnoses": [
   {
-   "name": "hypoglycemia of the newborn",
+   "name": "neonatal jaundice",
    "status": "active"
-  }
- ],
- "medications": [
+  },
   {
-   "name": "dextrose 10%",
-   "dose": 2,
-   "dose_unit": "mL/kg",
-   "route": "IV",
-   "frequency": "prn",
-   "weight_based": true
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
+ "medications": [],
  "labs": [
   {
-   "test": "glucose",
-   "value": 38,
+   "test": "total bilirubin",
+   "value": 14.2,
    "unit": "mg/dL",
-   "flag": "low"
+   "flag": "high"
   }
  ],
  "procedures": [
   {
-   "name": "heel-stick glucose check",
+   "name": "phototherapy",
    "status": "completed"
   }
  ],
@@ -40,6 +35,11 @@
   "disposition": "discharged home"
  },
  "temporal": [
+  {
+   "event": "born at 36 weeks gestation, exclusively breastfed",
+   "when": null,
+   "qualifier": "historical"
+  },
   {
    "event": "repeat CBC planned for tomorrow morning",
    "when": null,

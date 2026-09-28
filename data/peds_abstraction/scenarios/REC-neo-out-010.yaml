@@ -3,33 +3,29 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 7
-weight_kg: 2.9
-sex: male
+  value: 5
+weight_kg: 3.8
+sex: female
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: early-onset sepsis
-  status: suspected
-medications:
-- name: ampicillin
-  dose: 100
-  dose_unit: mg/kg/dose
-  route: IV
-  frequency: q8h
-  weight_based: true
+- name: neonatal jaundice
+  status: active
+medications: []
 labs:
-- test: WBC
-  value: 4.1
-  unit: 10^3/uL
-  flag: low
+- test: total bilirubin
+  value: 14.2
+  unit: mg/dL
+  flag: high
 procedures:
-- name: lumbar puncture
+- name: phototherapy
   status: completed
 distractors:
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
 - kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+  text: born at 36 weeks gestation, exclusively breastfed
 - kind: planned
-  text: follow-up echocardiogram to be scheduled
+  text: follow-up with the primary care clinic in one week
+- kind: planned
+  text: repeat CBC planned for tomorrow morning
+- kind: negation
+  text: no history of penicillin allergy

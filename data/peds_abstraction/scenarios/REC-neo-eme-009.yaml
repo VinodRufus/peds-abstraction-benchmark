@@ -3,9 +3,9 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 3
-weight_kg: 3.7
-sex: male
+  value: 2
+weight_kg: 3.2
+sex: female
 encounter: emergency
 disposition: admitted to inpatient unit
 diagnoses:
@@ -16,7 +16,7 @@ medications:
   dose: 2
   dose_unit: mL/kg
   route: IV
-  frequency: prn
+  frequency: once
   weight_based: true
 labs:
 - test: glucose
@@ -28,8 +28,6 @@ procedures:
   status: completed
 distractors:
 - kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
-- kind: negation
-  text: no history of penicillin allergy
+  text: pregnancy complicated by gestational diabetes
 - kind: planned
   text: repeat CBC planned for tomorrow morning

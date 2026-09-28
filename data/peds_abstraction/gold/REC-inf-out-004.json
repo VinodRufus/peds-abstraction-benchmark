@@ -1,37 +1,38 @@
 {
  "demographics": {
-  "age_value": 6,
+  "age_value": 10,
   "age_unit": "months",
-  "sex": "male",
-  "weight_kg": 6.1
+  "sex": "female",
+  "weight_kg": 9.0
  },
  "diagnoses": [
   {
-   "name": "bronchiolitis",
+   "name": "acute otitis media",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "albuterol",
-   "dose": 2.5,
-   "dose_unit": "mg",
-   "route": "nebulized",
-   "frequency": "q6h",
-   "weight_based": false
+   "name": "amoxicillin",
+   "dose": 90,
+   "dose_unit": "mg/kg/day",
+   "route": "PO",
+   "frequency": "q12h",
+   "weight_based": true
   }
  ],
- "labs": [
-  {
-   "test": "WBC",
-   "value": 11.8,
-   "unit": "10^3/uL",
-   "flag": "normal"
-  }
- ],
+ "labs": [],
  "procedures": [
   {
-   "name": "nasal suctioning",
+   "name": "tympanic membrane exam",
    "status": "completed"
   }
  ],
@@ -41,7 +42,7 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "repeat CBC planned for tomorrow morning",
    "when": null,
    "qualifier": "planned"
   }

@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 4,
+  "age_value": 8,
   "age_unit": "months",
   "sex": "male",
-  "weight_kg": 7.1
+  "weight_kg": 5.5
  },
  "diagnoses": [
   {

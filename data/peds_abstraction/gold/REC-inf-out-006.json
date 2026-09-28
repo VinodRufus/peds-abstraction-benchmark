@@ -1,37 +1,30 @@
 {
  "demographics": {
-  "age_value": 4,
+  "age_value": 7,
   "age_unit": "months",
-  "sex": "male",
-  "weight_kg": 7.0
+  "sex": "female",
+  "weight_kg": 8.2
  },
  "diagnoses": [
   {
-   "name": "febrile urinary tract infection",
+   "name": "acute otitis media",
    "status": "active"
   }
  ],
  "medications": [
   {
-   "name": "ceftriaxone",
-   "dose": 50,
-   "dose_unit": "mg/kg/dose",
-   "route": "IV",
-   "frequency": "q24h",
+   "name": "amoxicillin",
+   "dose": 90,
+   "dose_unit": "mg/kg/day",
+   "route": "PO",
+   "frequency": "q12h",
    "weight_based": true
   }
  ],
- "labs": [
-  {
-   "test": "CRP",
-   "value": 6.4,
-   "unit": "mg/dL",
-   "flag": "high"
-  }
- ],
+ "labs": [],
  "procedures": [
   {
-   "name": "urine culture",
+   "name": "tympanic membrane exam",
    "status": "completed"
   }
  ],
@@ -39,5 +32,11 @@
   "setting": "outpatient",
   "disposition": "discharged home"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

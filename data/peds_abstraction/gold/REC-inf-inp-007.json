@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 4,
+  "age_value": 6,
   "age_unit": "months",
   "sex": "male",
-  "weight_kg": 6.1
+  "weight_kg": 8.1
  },
  "diagnoses": [
   {
@@ -11,24 +11,8 @@
    "status": "active"
   }
  ],
- "medications": [
-  {
-   "name": "albuterol",
-   "dose": 2.5,
-   "dose_unit": "mg",
-   "route": "nebulized",
-   "frequency": "q6h",
-   "weight_based": false
-  }
- ],
- "labs": [
-  {
-   "test": "WBC",
-   "value": 11.8,
-   "unit": "10^3/uL",
-   "flag": "normal"
-  }
- ],
+ "medications": [],
+ "labs": [],
  "procedures": [
   {
    "name": "nasal suctioning",
@@ -41,14 +25,9 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "repeat CBC planned for tomorrow morning",
    "when": null,
    "qualifier": "planned"
-  },
-  {
-   "event": "history of RSV bronchiolitis last winter, resolved",
-   "when": null,
-   "qualifier": "historical"
   }
  ]
 }

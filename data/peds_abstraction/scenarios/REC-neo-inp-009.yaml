@@ -3,9 +3,9 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 13
-weight_kg: 3.3
-sex: female
+  value: 2
+weight_kg: 3.9
+sex: male
 encounter: inpatient
 disposition: discharged home
 diagnoses:
@@ -16,7 +16,7 @@ medications:
   dose: 2
   dose_unit: mL/kg
   route: IV
-  frequency: prn
+  frequency: once
   weight_based: true
 labs:
 - test: glucose
@@ -28,4 +28,6 @@ procedures:
   status: completed
 distractors:
 - kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+  text: pregnancy complicated by gestational diabetes
+- kind: planned
+  text: follow-up with the primary care clinic in one week

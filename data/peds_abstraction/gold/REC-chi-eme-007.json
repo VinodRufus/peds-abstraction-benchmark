@@ -3,12 +3,16 @@
   "age_value": 8,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 19.5
+  "weight_kg": 28.5
  },
  "diagnoses": [
   {
    "name": "asthma exacerbation",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -32,5 +36,16 @@
   "setting": "emergency",
   "disposition": "admitted to inpatient unit"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "history of RSV bronchiolitis in infancy, resolved",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

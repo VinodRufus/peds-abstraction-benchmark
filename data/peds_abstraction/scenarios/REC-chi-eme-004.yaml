@@ -3,9 +3,9 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 3
-weight_kg: 28.5
-sex: female
+  value: 6
+weight_kg: 18.2
+sex: male
 encounter: emergency
 disposition: admitted to inpatient unit
 diagnoses:
@@ -23,7 +23,9 @@ procedures:
 - name: peak flow measurement
   status: completed
 distractors:
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
 - kind: dose_trap
   text: prior clinic note listed the dose per day rather than per dose
+- kind: negation
+  text: denies fever at home
+- kind: historical
+  text: history of RSV bronchiolitis in infancy, resolved

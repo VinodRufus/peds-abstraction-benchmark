@@ -3,8 +3,8 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 2
-weight_kg: 3.4
+  value: 1
+weight_kg: 3.3
 sex: female
 encounter: inpatient
 disposition: discharged home
@@ -16,7 +16,7 @@ medications:
   dose: 2
   dose_unit: mL/kg
   route: IV
-  frequency: prn
+  frequency: once
   weight_based: true
 labs:
 - test: glucose
@@ -27,9 +27,7 @@ procedures:
 - name: heel-stick glucose check
   status: completed
 distractors:
+- kind: historical
+  text: pregnancy complicated by gestational diabetes
 - kind: planned
-  text: repeat CBC planned for tomorrow morning
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
-- kind: negation
-  text: no history of penicillin allergy
+  text: follow-up with the primary care clinic in one week

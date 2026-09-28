@@ -1,38 +1,35 @@
 {
  "demographics": {
-  "age_value": 8,
+  "age_value": 11,
   "age_unit": "years",
-  "sex": "male",
-  "weight_kg": 35.9
+  "sex": "female",
+  "weight_kg": 19.9
  },
  "diagnoses": [
   {
-   "name": "appendicitis",
-   "status": "suspected"
+   "name": "status asthmaticus",
+   "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "morphine",
-   "dose": 0.05,
-   "dose_unit": "mg/kg/dose",
-   "route": "IV",
-   "frequency": "prn",
+   "name": "albuterol",
+   "dose": 0.5,
+   "dose_unit": "mg/kg/hour",
+   "route": "nebulized",
+   "frequency": "continuous",
    "weight_based": true
   }
  ],
- "labs": [
-  {
-   "test": "WBC",
-   "value": 14.9,
-   "unit": "10^3/uL",
-   "flag": "high"
-  }
- ],
+ "labs": [],
  "procedures": [
   {
-   "name": "abdominal ultrasound",
-   "status": "planned"
+   "name": "continuous pulse oximetry",
+   "status": "completed"
   }
  ],
  "encounter": {

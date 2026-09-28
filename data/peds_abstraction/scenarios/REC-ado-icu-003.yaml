@@ -3,29 +3,33 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 14
-weight_kg: 46.7
-sex: female
+  value: 16
+weight_kg: 77.6
+sex: male
 encounter: icu
 disposition: transferred to inpatient unit
 diagnoses:
-- name: sports-related concussion
+- name: diabetic ketoacidosis
   status: active
 medications:
-- name: acetaminophen
-  dose: 650
-  dose_unit: mg
-  route: PO
-  frequency: prn
-  weight_based: false
-labs: []
+- name: insulin
+  dose: 0.1
+  dose_unit: units/kg/hour
+  route: IV
+  frequency: continuous
+  weight_based: true
+labs:
+- test: glucose
+  value: 486
+  unit: mg/dL
+  flag: high
 procedures:
-- name: head CT
-  status: planned
+- name: venous blood gas
+  status: completed
 distractors:
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: historical
+  text: history of RSV bronchiolitis in infancy, resolved
 - kind: planned
-  text: follow-up echocardiogram to be scheduled
+  text: repeat CBC planned for tomorrow morning
 - kind: negation
-  text: denies fever at home
+  text: no history of penicillin allergy

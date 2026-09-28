@@ -3,8 +3,8 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 18
-weight_kg: 3.8
+  value: 1
+weight_kg: 2.9
 sex: female
 encounter: icu
 disposition: transferred to inpatient unit
@@ -28,4 +28,10 @@ procedures:
   status: completed
 distractors:
 - kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+  text: born at term with unknown maternal group B streptococcus status
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
+- kind: historical
+  text: born by uncomplicated vaginal delivery
+- kind: planned
+  text: follow-up with the primary care clinic in one week

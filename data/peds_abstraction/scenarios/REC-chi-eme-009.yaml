@@ -4,7 +4,7 @@ age_band: child
 age_value:
   unit: years
   value: 5
-weight_kg: 23.8
+weight_kg: 27.1
 sex: male
 encounter: emergency
 disposition: admitted to inpatient unit
@@ -27,9 +27,9 @@ procedures:
 - name: abdominal ultrasound
   status: planned
 distractors:
+- kind: negation
+  text: denies fever at home
 - kind: dose_trap
   text: prior clinic note listed the dose per day rather than per dose
 - kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
-- kind: planned
-  text: follow-up echocardiogram to be scheduled
+  text: history of RSV bronchiolitis in infancy, resolved

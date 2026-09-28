@@ -1,37 +1,37 @@
 {
  "demographics": {
-  "age_value": 11,
+  "age_value": 6,
   "age_unit": "years",
   "sex": "female",
-  "weight_kg": 22.1
+  "weight_kg": 18.8
  },
  "diagnoses": [
   {
-   "name": "community-acquired pneumonia",
+   "name": "perforated appendicitis",
    "status": "active"
   }
  ],
  "medications": [
   {
-   "name": "amoxicillin",
-   "dose": 90,
-   "dose_unit": "mg/kg/day",
-   "route": "PO",
-   "frequency": "q12h",
+   "name": "morphine",
+   "dose": 0.05,
+   "dose_unit": "mg/kg/dose",
+   "route": "IV",
+   "frequency": "prn",
    "weight_based": true
   }
  ],
  "labs": [
   {
    "test": "WBC",
-   "value": 16.2,
+   "value": 14.9,
    "unit": "10^3/uL",
    "flag": "high"
   }
  ],
  "procedures": [
   {
-   "name": "chest radiograph",
+   "name": "appendectomy",
    "status": "completed"
   }
  ],
@@ -41,12 +41,12 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "history of RSV bronchiolitis in infancy, resolved",
    "when": null,
-   "qualifier": "planned"
+   "qualifier": "historical"
   },
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "prior clinic note listed the dose per day rather than per dose",
    "when": null,
    "qualifier": "historical"
   }

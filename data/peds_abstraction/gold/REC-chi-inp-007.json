@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 11,
+  "age_value": 10,
   "age_unit": "years",
-  "sex": "female",
-  "weight_kg": 19.4
+  "sex": "male",
+  "weight_kg": 14.3
  },
  "diagnoses": [
   {
@@ -34,7 +34,7 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
    "qualifier": "planned"
   }

@@ -3,9 +3,9 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 4
-weight_kg: 4.0
-sex: male
+  value: 1
+weight_kg: 3.6
+sex: female
 encounter: inpatient
 disposition: discharged home
 diagnoses:
@@ -27,9 +27,11 @@ procedures:
 - name: lumbar puncture
   status: completed
 distractors:
+- kind: historical
+  text: born at term with unknown maternal group B streptococcus status
+- kind: planned
+  text: follow-up with the primary care clinic in one week
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
 - kind: negation
   text: no history of penicillin allergy
-- kind: planned
-  text: repeat CBC planned for tomorrow morning
-- kind: negation
-  text: denies fever at home

@@ -4,7 +4,7 @@ age_band: adolescent
 age_value:
   unit: years
   value: 14
-weight_kg: 49.7
+weight_kg: 73.3
 sex: female
 encounter: inpatient
 disposition: discharged home
@@ -20,8 +20,8 @@ medications:
   weight_based: false
 labs: []
 procedures:
-- name: head CT
-  status: planned
+- name: concussion symptom assessment
+  status: completed
 distractors:
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+- kind: negation
+  text: denies fever at home

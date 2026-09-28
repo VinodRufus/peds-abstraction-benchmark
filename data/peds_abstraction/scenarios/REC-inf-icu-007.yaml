@@ -3,31 +3,23 @@ review_required: true
 age_band: infant
 age_value:
   unit: months
-  value: 3
-weight_kg: 7.2
-sex: male
+  value: 8
+weight_kg: 8.8
+sex: female
 encounter: icu
 disposition: transferred to inpatient unit
 diagnoses:
 - name: bronchiolitis
   status: active
-medications:
-- name: albuterol
-  dose: 2.5
-  dose_unit: mg
-  route: nebulized
-  frequency: q6h
-  weight_based: false
-labs:
-- test: WBC
-  value: 11.8
-  unit: 10^3/uL
-  flag: normal
+medications: []
+labs: []
 procedures:
 - name: nasal suctioning
   status: completed
 distractors:
 - kind: planned
+  text: follow-up with the primary care clinic in one week
+- kind: negation
+  text: no fever reported at home
+- kind: planned
   text: repeat CBC planned for tomorrow morning
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved

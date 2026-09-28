@@ -3,8 +3,8 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 11
-weight_kg: 2.9
+  value: 2
+weight_kg: 3.0
 sex: female
 encounter: emergency
 disposition: admitted to inpatient unit
@@ -16,7 +16,7 @@ medications:
   dose: 2
   dose_unit: mL/kg
   route: IV
-  frequency: prn
+  frequency: once
   weight_based: true
 labs:
 - test: glucose
@@ -27,9 +27,9 @@ procedures:
 - name: heel-stick glucose check
   status: completed
 distractors:
-- kind: planned
-  text: follow-up echocardiogram to be scheduled
-- kind: negation
-  text: no history of penicillin allergy
 - kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+  text: pregnancy complicated by gestational diabetes
+- kind: planned
+  text: follow-up with the primary care clinic in one week
+- kind: historical
+  text: born by uncomplicated vaginal delivery

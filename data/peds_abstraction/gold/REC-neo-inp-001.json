@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 20,
+  "age_value": 2,
   "age_unit": "days",
-  "sex": "female",
-  "weight_kg": 3.3
+  "sex": "male",
+  "weight_kg": 3.4
  },
  "diagnoses": [
   {
    "name": "early-onset sepsis",
    "status": "suspected"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -39,5 +43,16 @@
   "setting": "inpatient",
   "disposition": "discharged home"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "born at term with unknown maternal group B streptococcus status",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

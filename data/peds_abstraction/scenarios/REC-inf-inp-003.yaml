@@ -3,33 +3,21 @@ review_required: true
 age_band: infant
 age_value:
   unit: months
-  value: 9
-weight_kg: 5.5
-sex: female
+  value: 4
+weight_kg: 5.3
+sex: male
 encounter: inpatient
 disposition: discharged home
 diagnoses:
-- name: febrile urinary tract infection
+- name: bronchiolitis
   status: active
-medications:
-- name: ceftriaxone
-  dose: 50
-  dose_unit: mg/kg/dose
-  route: IV
-  frequency: q24h
-  weight_based: true
-labs:
-- test: CRP
-  value: 6.4
-  unit: mg/dL
-  flag: high
+medications: []
+labs: []
 procedures:
-- name: urine culture
+- name: nasal suctioning
   status: completed
 distractors:
-- kind: planned
-  text: follow-up echocardiogram to be scheduled
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: negation
+  text: no fever reported at home
 - kind: negation
   text: no history of penicillin allergy

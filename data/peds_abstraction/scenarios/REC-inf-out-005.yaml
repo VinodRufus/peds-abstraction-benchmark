@@ -3,25 +3,19 @@ review_required: true
 age_band: infant
 age_value:
   unit: months
-  value: 7
-weight_kg: 8.3
+  value: 5
+weight_kg: 6.1
 sex: female
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: acute otitis media
+- name: bronchiolitis
   status: active
-medications:
-- name: amoxicillin
-  dose: 45
-  dose_unit: mg/kg/day
-  route: PO
-  frequency: q12h
-  weight_based: true
+medications: []
 labs: []
 procedures:
-- name: tympanic membrane exam
+- name: nasal suctioning
   status: completed
 distractors:
-- kind: planned
-  text: repeat CBC planned for tomorrow morning
+- kind: negation
+  text: no history of penicillin allergy

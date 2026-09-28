@@ -3,8 +3,8 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 14
-weight_kg: 2.7
+  value: 3
+weight_kg: 3.8
 sex: male
 encounter: inpatient
 disposition: discharged home
@@ -21,7 +21,11 @@ procedures:
 - name: phototherapy
   status: completed
 distractors:
+- kind: historical
+  text: born at 36 weeks gestation, exclusively breastfed
 - kind: negation
-  text: denies fever at home
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+  text: no history of penicillin allergy
+- kind: planned
+  text: follow-up with the primary care clinic in one week
+- kind: negation
+  text: no fever reported at home

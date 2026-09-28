@@ -4,8 +4,8 @@ age_band: adolescent
 age_value:
   unit: years
   value: 12
-weight_kg: 61.2
-sex: male
+weight_kg: 65.0
+sex: female
 encounter: inpatient
 disposition: discharged home
 diagnoses:
@@ -28,8 +28,8 @@ procedures:
   status: completed
 distractors:
 - kind: negation
+  text: denies fever at home
+- kind: historical
+  text: history of RSV bronchiolitis in infancy, resolved
+- kind: negation
   text: no history of penicillin allergy
-- kind: planned
-  text: repeat CBC planned for tomorrow morning
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose

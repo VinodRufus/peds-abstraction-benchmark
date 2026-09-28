@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 10,
+  "age_value": 2,
   "age_unit": "days",
   "sex": "female",
-  "weight_kg": 4.1
+  "weight_kg": 4.2
  },
  "diagnoses": [
   {
@@ -41,9 +41,14 @@
  },
  "temporal": [
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "born at term with unknown maternal group B streptococcus status",
    "when": null,
    "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
   }
  ]
 }

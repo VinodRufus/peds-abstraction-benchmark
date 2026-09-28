@@ -1,37 +1,25 @@
 {
  "demographics": {
-  "age_value": 3,
+  "age_value": 10,
   "age_unit": "months",
-  "sex": "male",
-  "weight_kg": 6.1
+  "sex": "female",
+  "weight_kg": 5.7
  },
  "diagnoses": [
   {
-   "name": "febrile urinary tract infection",
+   "name": "bronchiolitis",
    "status": "active"
-  }
- ],
- "medications": [
+  },
   {
-   "name": "ceftriaxone",
-   "dose": 50,
-   "dose_unit": "mg/kg/dose",
-   "route": "IV",
-   "frequency": "q24h",
-   "weight_based": true
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
- "labs": [
-  {
-   "test": "CRP",
-   "value": 6.4,
-   "unit": "mg/dL",
-   "flag": "high"
-  }
- ],
+ "medications": [],
+ "labs": [],
  "procedures": [
   {
-   "name": "urine culture",
+   "name": "nasal suctioning",
    "status": "completed"
   }
  ],
@@ -39,11 +27,5 @@
   "setting": "outpatient",
   "disposition": "discharged home"
  },
- "temporal": [
-  {
-   "event": "history of RSV bronchiolitis last winter, resolved",
-   "when": null,
-   "qualifier": "historical"
-  }
- ]
+ "temporal": []
 }

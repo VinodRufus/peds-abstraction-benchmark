@@ -3,8 +3,8 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 11
-weight_kg: 16.5
+  value: 9
+weight_kg: 34.8
 sex: female
 encounter: emergency
 disposition: admitted to inpatient unit
@@ -27,5 +27,5 @@ procedures:
 - name: chest radiograph
   status: completed
 distractors:
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: negation
+  text: no history of penicillin allergy

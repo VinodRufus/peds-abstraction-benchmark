@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 11,
+  "age_value": 9,
   "age_unit": "years",
-  "sex": "female",
-  "weight_kg": 23.9
+  "sex": "male",
+  "weight_kg": 21.4
  },
  "diagnoses": [
   {
@@ -41,9 +41,9 @@
  },
  "temporal": [
   {
-   "event": "repeat CBC planned for tomorrow morning",
+   "event": "history of RSV bronchiolitis in infancy, resolved",
    "when": null,
-   "qualifier": "planned"
+   "qualifier": "historical"
   }
  ]
 }

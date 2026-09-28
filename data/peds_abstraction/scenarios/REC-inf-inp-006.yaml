@@ -3,8 +3,8 @@ review_required: true
 age_band: infant
 age_value:
   unit: months
-  value: 4
-weight_kg: 7.1
+  value: 8
+weight_kg: 5.5
 sex: male
 encounter: inpatient
 disposition: discharged home

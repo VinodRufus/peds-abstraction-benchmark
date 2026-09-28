@@ -3,8 +3,8 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 5
-weight_kg: 31.0
+  value: 10
+weight_kg: 19.0
 sex: male
 encounter: inpatient
 disposition: discharged home
@@ -29,3 +29,5 @@ procedures:
 distractors:
 - kind: dose_trap
   text: prior clinic note listed the dose per day rather than per dose
+- kind: negation
+  text: denies fever at home

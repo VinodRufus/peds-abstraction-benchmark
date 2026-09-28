@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 8,
+  "age_value": 7,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 23.0
+  "weight_kg": 29.4
  },
  "diagnoses": [
   {
    "name": "asthma exacerbation",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -34,14 +38,14 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
-   "when": null,
-   "qualifier": "planned"
-  },
-  {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "history of RSV bronchiolitis in infancy, resolved",
    "when": null,
    "qualifier": "historical"
+  },
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
   }
  ]
 }

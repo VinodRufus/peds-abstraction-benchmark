@@ -3,23 +3,35 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 18
-weight_kg: 3.0
+  value: 2
+weight_kg: 3.5
 sex: female
 encounter: icu
 disposition: transferred to inpatient unit
 diagnoses:
-- name: neonatal jaundice
+- name: hypoglycemia of the newborn
   status: active
-medications: []
+medications:
+- name: dextrose 10%
+  dose: 2
+  dose_unit: mL/kg
+  route: IV
+  frequency: once
+  weight_based: true
 labs:
-- test: total bilirubin
-  value: 14.2
+- test: glucose
+  value: 38
   unit: mg/dL
-  flag: high
+  flag: low
 procedures:
-- name: phototherapy
+- name: heel-stick glucose check
   status: completed
 distractors:
 - kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+  text: pregnancy complicated by gestational diabetes
+- kind: negation
+  text: no fever reported at home
+- kind: negation
+  text: no history of penicillin allergy
+- kind: planned
+  text: follow-up with the primary care clinic in one week

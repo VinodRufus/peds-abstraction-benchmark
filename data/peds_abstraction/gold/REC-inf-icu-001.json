@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 4,
+  "age_value": 7,
   "age_unit": "months",
-  "sex": "female",
-  "weight_kg": 9.5
+  "sex": "male",
+  "weight_kg": 8.2
  },
  "diagnoses": [
   {
@@ -11,24 +11,8 @@
    "status": "active"
   }
  ],
- "medications": [
-  {
-   "name": "albuterol",
-   "dose": 2.5,
-   "dose_unit": "mg",
-   "route": "nebulized",
-   "frequency": "q6h",
-   "weight_based": false
-  }
- ],
- "labs": [
-  {
-   "test": "WBC",
-   "value": 11.8,
-   "unit": "10^3/uL",
-   "flag": "normal"
-  }
- ],
+ "medications": [],
+ "labs": [],
  "procedures": [
   {
    "name": "nasal suctioning",
@@ -39,5 +23,11 @@
   "setting": "icu",
   "disposition": "transferred to inpatient unit"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

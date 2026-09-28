@@ -3,9 +3,9 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 12
-weight_kg: 43.3
-sex: female
+  value: 14
+weight_kg: 75.2
+sex: male
 encounter: icu
 disposition: transferred to inpatient unit
 diagnoses:
@@ -27,9 +27,5 @@ procedures:
 - name: venous blood gas
   status: completed
 distractors:
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
 - kind: planned
-  text: follow-up echocardiogram to be scheduled
-- kind: negation
-  text: no history of penicillin allergy
+  text: repeat CBC planned for tomorrow morning

@@ -3,8 +3,8 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 15
-weight_kg: 54.0
+  value: 17
+weight_kg: 52.1
 sex: male
 encounter: icu
 disposition: transferred to inpatient unit
@@ -27,5 +27,7 @@ procedures:
 - name: venous blood gas
   status: completed
 distractors:
+- kind: historical
+  text: history of RSV bronchiolitis in infancy, resolved
 - kind: planned
-  text: follow-up echocardiogram to be scheduled
+  text: repeat CBC planned for tomorrow morning

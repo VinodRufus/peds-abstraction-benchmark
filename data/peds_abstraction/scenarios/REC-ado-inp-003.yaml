@@ -3,8 +3,8 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 16
-weight_kg: 50.9
+  value: 12
+weight_kg: 75.4
 sex: male
 encounter: inpatient
 disposition: discharged home
@@ -20,12 +20,12 @@ medications:
   weight_based: false
 labs: []
 procedures:
-- name: head CT
-  status: planned
+- name: concussion symptom assessment
+  status: completed
 distractors:
-- kind: negation
-  text: no history of penicillin allergy
+- kind: historical
+  text: history of RSV bronchiolitis in infancy, resolved
 - kind: planned
   text: repeat CBC planned for tomorrow morning
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: negation
+  text: no history of penicillin allergy

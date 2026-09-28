@@ -3,12 +3,16 @@
   "age_value": 5,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 23.8
+  "weight_kg": 27.1
  },
  "diagnoses": [
   {
    "name": "appendicitis",
    "status": "suspected"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -41,14 +45,14 @@
  },
  "temporal": [
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "prior clinic note listed the dose per day rather than per dose",
    "when": null,
    "qualifier": "historical"
   },
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "history of RSV bronchiolitis in infancy, resolved",
    "when": null,
-   "qualifier": "planned"
+   "qualifier": "historical"
   }
  ]
 }
