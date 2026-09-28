@@ -3,35 +3,35 @@
   "age_value": 7,
   "age_unit": "years",
   "sex": "female",
-  "weight_kg": 15.8
+  "weight_kg": 28.0
  },
  "diagnoses": [
   {
-   "name": "community-acquired pneumonia",
+   "name": "perforated appendicitis",
    "status": "active"
   }
  ],
  "medications": [
   {
-   "name": "amoxicillin",
-   "dose": 90,
-   "dose_unit": "mg/kg/day",
-   "route": "PO",
-   "frequency": "q12h",
+   "name": "morphine",
+   "dose": 0.05,
+   "dose_unit": "mg/kg/dose",
+   "route": "IV",
+   "frequency": "prn",
    "weight_based": true
   }
  ],
  "labs": [
   {
    "test": "WBC",
-   "value": 16.2,
+   "value": 14.9,
    "unit": "10^3/uL",
    "flag": "high"
   }
  ],
  "procedures": [
   {
-   "name": "chest radiograph",
+   "name": "appendectomy",
    "status": "completed"
   }
  ],
@@ -41,7 +41,7 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
    "qualifier": "planned"
   }

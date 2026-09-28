@@ -4,7 +4,7 @@ age_band: adolescent
 age_value:
   unit: years
   value: 16
-weight_kg: 47.9
+weight_kg: 50.9
 sex: male
 encounter: emergency
 disposition: admitted to inpatient unit
@@ -20,10 +20,12 @@ medications:
   weight_based: false
 labs: []
 procedures:
-- name: head CT
-  status: planned
+- name: concussion symptom assessment
+  status: completed
 distractors:
+- kind: negation
+  text: no history of penicillin allergy
+- kind: planned
+  text: follow-up with the primary care clinic in one week
 - kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+  text: history of RSV bronchiolitis in infancy, resolved

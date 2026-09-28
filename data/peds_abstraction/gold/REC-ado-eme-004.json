@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 12,
+  "age_value": 13,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 40.1
+  "weight_kg": 46.9
  },
  "diagnoses": [
   {
    "name": "diabetic ketoacidosis",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -40,6 +44,11 @@
   "disposition": "admitted to inpatient unit"
  },
  "temporal": [
+  {
+   "event": "history of RSV bronchiolitis in infancy, resolved",
+   "when": null,
+   "qualifier": "historical"
+  },
   {
    "event": "repeat CBC planned for tomorrow morning",
    "when": null,

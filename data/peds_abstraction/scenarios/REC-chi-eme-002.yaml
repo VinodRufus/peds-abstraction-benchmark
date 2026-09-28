@@ -3,8 +3,8 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 6
-weight_kg: 34.3
+  value: 9
+weight_kg: 21.9
 sex: male
 encounter: emergency
 disposition: admitted to inpatient unit
@@ -27,9 +27,5 @@ procedures:
 - name: chest radiograph
   status: completed
 distractors:
-- kind: planned
-  text: follow-up echocardiogram to be scheduled
-- kind: negation
-  text: denies fever at home
 - kind: negation
   text: no history of penicillin allergy

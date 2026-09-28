@@ -1,14 +1,22 @@
 {
  "demographics": {
-  "age_value": 22,
+  "age_value": 1,
   "age_unit": "days",
   "sex": "male",
-  "weight_kg": 3.3
+  "weight_kg": 3.9
  },
  "diagnoses": [
   {
    "name": "early-onset sepsis",
    "status": "suspected"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -39,5 +47,16 @@
   "setting": "emergency",
   "disposition": "admitted to inpatient unit"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "born at term with unknown maternal group B streptococcus status",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

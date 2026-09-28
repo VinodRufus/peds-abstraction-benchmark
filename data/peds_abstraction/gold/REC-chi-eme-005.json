@@ -3,12 +3,16 @@
   "age_value": 8,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 19.9
+  "weight_kg": 29.5
  },
  "diagnoses": [
   {
    "name": "community-acquired pneumonia",
    "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -39,11 +43,5 @@
   "setting": "emergency",
   "disposition": "admitted to inpatient unit"
  },
- "temporal": [
-  {
-   "event": "repeat CBC planned for tomorrow morning",
-   "when": null,
-   "qualifier": "planned"
-  }
- ]
+ "temporal": []
 }

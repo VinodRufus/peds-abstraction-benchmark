@@ -1,31 +1,35 @@
 {
  "demographics": {
-  "age_value": 15,
+  "age_value": 14,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 85.5
+  "weight_kg": 46.2
  },
  "diagnoses": [
   {
-   "name": "sports-related concussion",
+   "name": "major depressive disorder",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "acetaminophen",
-   "dose": 650,
+   "name": "fluoxetine",
+   "dose": 10,
    "dose_unit": "mg",
    "route": "PO",
-   "frequency": "prn",
+   "frequency": "q24h",
    "weight_based": false
   }
  ],
  "labs": [],
  "procedures": [
   {
-   "name": "head CT",
-   "status": "planned"
+   "name": "safety screening",
+   "status": "completed"
   }
  ],
  "encounter": {
@@ -34,7 +38,7 @@
  },
  "temporal": [
   {
-   "event": "repeat CBC planned for tomorrow morning",
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
    "qualifier": "planned"
   }

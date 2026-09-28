@@ -3,8 +3,8 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 12
-weight_kg: 2.6
+  value: 4
+weight_kg: 3.3
 sex: female
 encounter: emergency
 disposition: admitted to inpatient unit
@@ -21,7 +21,11 @@ procedures:
 - name: phototherapy
   status: completed
 distractors:
-- kind: planned
-  text: follow-up echocardiogram to be scheduled
+- kind: historical
+  text: born at 36 weeks gestation, exclusively breastfed
 - kind: negation
   text: no history of penicillin allergy
+- kind: planned
+  text: follow-up with the primary care clinic in one week
+- kind: negation
+  text: no fever reported at home

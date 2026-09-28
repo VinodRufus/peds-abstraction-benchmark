@@ -2,42 +2,45 @@
  "demographics": {
   "age_value": 11,
   "age_unit": "years",
-  "sex": "male",
-  "weight_kg": 18.2
+  "sex": "female",
+  "weight_kg": 27.9
  },
  "diagnoses": [
   {
-   "name": "appendicitis",
-   "status": "suspected"
+   "name": "asthma exacerbation",
+   "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "morphine",
-   "dose": 0.05,
-   "dose_unit": "mg/kg/dose",
-   "route": "IV",
-   "frequency": "prn",
+   "name": "prednisolone",
+   "dose": 2,
+   "dose_unit": "mg/kg/day",
+   "route": "PO",
+   "frequency": "q24h",
    "weight_based": true
   }
  ],
- "labs": [
-  {
-   "test": "WBC",
-   "value": 14.9,
-   "unit": "10^3/uL",
-   "flag": "high"
-  }
- ],
+ "labs": [],
  "procedures": [
   {
-   "name": "abdominal ultrasound",
-   "status": "planned"
+   "name": "peak flow measurement",
+   "status": "completed"
   }
  ],
  "encounter": {
   "setting": "outpatient",
   "disposition": "discharged home"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

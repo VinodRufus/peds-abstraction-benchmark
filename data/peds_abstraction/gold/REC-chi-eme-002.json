@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 6,
+  "age_value": 9,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 34.3
+  "weight_kg": 21.9
  },
  "diagnoses": [
   {
    "name": "community-acquired pneumonia",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -39,11 +43,5 @@
   "setting": "emergency",
   "disposition": "admitted to inpatient unit"
  },
- "temporal": [
-  {
-   "event": "follow-up echocardiogram to be scheduled",
-   "when": null,
-   "qualifier": "planned"
-  }
- ]
+ "temporal": []
 }

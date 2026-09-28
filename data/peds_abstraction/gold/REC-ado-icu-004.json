@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 12,
+  "age_value": 14,
   "age_unit": "years",
-  "sex": "male",
-  "weight_kg": 44.4
+  "sex": "female",
+  "weight_kg": 76.5
  },
  "diagnoses": [
   {
    "name": "diabetic ketoacidosis",
    "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -40,6 +44,11 @@
   "disposition": "transferred to inpatient unit"
  },
  "temporal": [
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  },
   {
    "event": "repeat CBC planned for tomorrow morning",
    "when": null,

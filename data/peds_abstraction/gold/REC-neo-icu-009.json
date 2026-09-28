@@ -1,37 +1,37 @@
 {
  "demographics": {
-  "age_value": 8,
+  "age_value": 1,
   "age_unit": "days",
   "sex": "male",
-  "weight_kg": 3.6
+  "weight_kg": 3.2
  },
  "diagnoses": [
   {
-   "name": "hypoglycemia of the newborn",
-   "status": "active"
+   "name": "early-onset sepsis",
+   "status": "suspected"
   }
  ],
  "medications": [
   {
-   "name": "dextrose 10%",
-   "dose": 2,
-   "dose_unit": "mL/kg",
+   "name": "ampicillin",
+   "dose": 100,
+   "dose_unit": "mg/kg/dose",
    "route": "IV",
-   "frequency": "prn",
+   "frequency": "q8h",
    "weight_based": true
   }
  ],
  "labs": [
   {
-   "test": "glucose",
-   "value": 38,
-   "unit": "mg/dL",
+   "test": "WBC",
+   "value": 4.1,
+   "unit": "10^3/uL",
    "flag": "low"
   }
  ],
  "procedures": [
   {
-   "name": "heel-stick glucose check",
+   "name": "lumbar puncture",
    "status": "completed"
   }
  ],
@@ -41,7 +41,12 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "born at term with unknown maternal group B streptococcus status",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
    "qualifier": "planned"
   }

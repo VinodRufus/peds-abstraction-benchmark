@@ -2,36 +2,29 @@
  "demographics": {
   "age_value": 14,
   "age_unit": "years",
-  "sex": "female",
-  "weight_kg": 58.2
+  "sex": "male",
+  "weight_kg": 49.3
  },
  "diagnoses": [
   {
-   "name": "diabetic ketoacidosis",
+   "name": "sports-related concussion",
    "status": "active"
   }
  ],
  "medications": [
   {
-   "name": "insulin",
-   "dose": 0.1,
-   "dose_unit": "units/kg/hour",
-   "route": "IV",
-   "frequency": "continuous",
-   "weight_based": true
+   "name": "acetaminophen",
+   "dose": 650,
+   "dose_unit": "mg",
+   "route": "PO",
+   "frequency": "prn",
+   "weight_based": false
   }
  ],
- "labs": [
-  {
-   "test": "glucose",
-   "value": 486,
-   "unit": "mg/dL",
-   "flag": "high"
-  }
- ],
+ "labs": [],
  "procedures": [
   {
-   "name": "venous blood gas",
+   "name": "concussion symptom assessment",
    "status": "completed"
   }
  ],

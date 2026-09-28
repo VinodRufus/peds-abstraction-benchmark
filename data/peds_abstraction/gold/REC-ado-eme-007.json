@@ -1,14 +1,22 @@
 {
  "demographics": {
-  "age_value": 14,
+  "age_value": 17,
   "age_unit": "years",
-  "sex": "female",
-  "weight_kg": 50.4
+  "sex": "male",
+  "weight_kg": 44.3
  },
  "diagnoses": [
   {
    "name": "diabetic ketoacidosis",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -39,5 +47,11 @@
   "setting": "emergency",
   "disposition": "admitted to inpatient unit"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

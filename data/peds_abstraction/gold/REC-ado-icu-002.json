@@ -1,30 +1,41 @@
 {
  "demographics": {
-  "age_value": 16,
+  "age_value": 17,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 54.7
+  "weight_kg": 58.7
  },
  "diagnoses": [
   {
-   "name": "major depressive disorder",
-   "status": "historical"
+   "name": "diabetic ketoacidosis",
+   "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "sertraline",
-   "dose": 50,
-   "dose_unit": "mg",
-   "route": "PO",
-   "frequency": "q24h",
-   "weight_based": false
+   "name": "insulin",
+   "dose": 0.1,
+   "dose_unit": "units/kg/hour",
+   "route": "IV",
+   "frequency": "continuous",
+   "weight_based": true
   }
  ],
- "labs": [],
+ "labs": [
+  {
+   "test": "glucose",
+   "value": 486,
+   "unit": "mg/dL",
+   "flag": "high"
+  }
+ ],
  "procedures": [
   {
-   "name": "safety screening",
+   "name": "venous blood gas",
    "status": "completed"
   }
  ],
@@ -37,11 +48,6 @@
    "event": "repeat CBC planned for tomorrow morning",
    "when": null,
    "qualifier": "planned"
-  },
-  {
-   "event": "history of RSV bronchiolitis last winter, resolved",
-   "when": null,
-   "qualifier": "historical"
   }
  ]
 }

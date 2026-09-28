@@ -3,8 +3,8 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 11
-weight_kg: 19.9
+  value: 9
+weight_kg: 28.8
 sex: male
 encounter: inpatient
 disposition: discharged home
@@ -27,5 +27,7 @@ procedures:
 - name: abdominal ultrasound
   status: planned
 distractors:
-- kind: planned
-  text: repeat CBC planned for tomorrow morning
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
+- kind: historical
+  text: history of RSV bronchiolitis in infancy, resolved

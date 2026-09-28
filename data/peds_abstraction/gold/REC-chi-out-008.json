@@ -1,14 +1,22 @@
 {
  "demographics": {
-  "age_value": 5,
+  "age_value": 6,
   "age_unit": "years",
   "sex": "female",
-  "weight_kg": 29.5
+  "weight_kg": 18.2
  },
  "diagnoses": [
   {
    "name": "community-acquired pneumonia",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [

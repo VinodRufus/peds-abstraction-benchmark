@@ -1,14 +1,22 @@
 {
  "demographics": {
-  "age_value": 12,
+  "age_value": 4,
   "age_unit": "days",
   "sex": "female",
-  "weight_kg": 2.6
+  "weight_kg": 3.3
  },
  "diagnoses": [
   {
    "name": "neonatal jaundice",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [],
@@ -32,7 +40,12 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "born at 36 weeks gestation, exclusively breastfed",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
    "qualifier": "planned"
   }

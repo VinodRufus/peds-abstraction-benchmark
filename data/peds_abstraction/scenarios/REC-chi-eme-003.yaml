@@ -3,8 +3,8 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 6
-weight_kg: 21.6
+  value: 8
+weight_kg: 19.6
 sex: female
 encounter: emergency
 disposition: admitted to inpatient unit
@@ -27,7 +27,5 @@ procedures:
 - name: abdominal ultrasound
   status: planned
 distractors:
-- kind: negation
-  text: no history of penicillin allergy
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose

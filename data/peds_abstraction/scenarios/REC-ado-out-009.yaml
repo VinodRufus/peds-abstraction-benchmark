@@ -3,27 +3,29 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 12
-weight_kg: 85.5
+  value: 16
+weight_kg: 69.5
 sex: male
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: sports-related concussion
+- name: major depressive disorder
   status: active
 medications:
-- name: acetaminophen
-  dose: 650
+- name: fluoxetine
+  dose: 10
   dose_unit: mg
   route: PO
-  frequency: prn
+  frequency: q24h
   weight_based: false
 labs: []
 procedures:
-- name: head CT
-  status: planned
+- name: safety screening
+  status: completed
 distractors:
+- kind: negation
+  text: denies fever at home
+- kind: historical
+  text: history of RSV bronchiolitis in infancy, resolved
 - kind: planned
   text: repeat CBC planned for tomorrow morning
-- kind: negation
-  text: no history of penicillin allergy

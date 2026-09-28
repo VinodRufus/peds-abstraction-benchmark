@@ -3,27 +3,31 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 17
-weight_kg: 66.0
+  value: 13
+weight_kg: 78.8
 sex: male
 encounter: icu
 disposition: transferred to inpatient unit
 diagnoses:
-- name: sports-related concussion
+- name: diabetic ketoacidosis
   status: active
 medications:
-- name: acetaminophen
-  dose: 650
-  dose_unit: mg
-  route: PO
-  frequency: prn
-  weight_based: false
-labs: []
+- name: insulin
+  dose: 0.1
+  dose_unit: units/kg/hour
+  route: IV
+  frequency: continuous
+  weight_based: true
+labs:
+- test: glucose
+  value: 486
+  unit: mg/dL
+  flag: high
 procedures:
-- name: head CT
-  status: planned
+- name: venous blood gas
+  status: completed
 distractors:
+- kind: planned
+  text: follow-up with the primary care clinic in one week
 - kind: negation
   text: denies fever at home
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose

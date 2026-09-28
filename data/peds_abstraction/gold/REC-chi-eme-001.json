@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 10,
+  "age_value": 9,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 16.1
+  "weight_kg": 23.9
  },
  "diagnoses": [
   {
    "name": "asthma exacerbation",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -33,6 +37,11 @@
   "disposition": "admitted to inpatient unit"
  },
  "temporal": [
+  {
+   "event": "prior clinic note listed the dose per day rather than per dose",
+   "when": null,
+   "qualifier": "historical"
+  },
   {
    "event": "repeat CBC planned for tomorrow morning",
    "when": null,

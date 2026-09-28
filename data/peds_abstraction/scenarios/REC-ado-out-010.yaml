@@ -3,29 +3,27 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 14
-weight_kg: 43.9
+  value: 16
+weight_kg: 47.9
 sex: male
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: diabetic ketoacidosis
+- name: sports-related concussion
   status: active
 medications:
-- name: insulin
-  dose: 0.1
-  dose_unit: units/kg/hour
-  route: IV
-  frequency: continuous
-  weight_based: true
-labs:
-- test: glucose
-  value: 486
-  unit: mg/dL
-  flag: high
+- name: acetaminophen
+  dose: 650
+  dose_unit: mg
+  route: PO
+  frequency: prn
+  weight_based: false
+labs: []
 procedures:
-- name: venous blood gas
+- name: concussion symptom assessment
   status: completed
 distractors:
 - kind: negation
   text: denies fever at home
+- kind: planned
+  text: follow-up with the primary care clinic in one week

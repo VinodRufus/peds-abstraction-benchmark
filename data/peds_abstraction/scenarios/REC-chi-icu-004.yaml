@@ -3,25 +3,31 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 11
-weight_kg: 20.8
+  value: 6
+weight_kg: 27.4
 sex: female
 encounter: icu
 disposition: transferred to inpatient unit
 diagnoses:
-- name: asthma exacerbation
+- name: perforated appendicitis
   status: active
 medications:
-- name: prednisolone
-  dose: 2
-  dose_unit: mg/kg/day
-  route: PO
-  frequency: q24h
+- name: morphine
+  dose: 0.05
+  dose_unit: mg/kg/dose
+  route: IV
+  frequency: prn
   weight_based: true
-labs: []
+labs:
+- test: WBC
+  value: 14.9
+  unit: 10^3/uL
+  flag: high
 procedures:
-- name: peak flow measurement
+- name: appendectomy
   status: completed
 distractors:
-- kind: planned
-  text: repeat CBC planned for tomorrow morning
+- kind: negation
+  text: no history of penicillin allergy
+- kind: historical
+  text: history of RSV bronchiolitis in infancy, resolved

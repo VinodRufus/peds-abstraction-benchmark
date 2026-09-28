@@ -1,30 +1,37 @@
 {
  "demographics": {
-  "age_value": 8,
+  "age_value": 5,
   "age_unit": "months",
   "sex": "male",
-  "weight_kg": 7.5
+  "weight_kg": 7.7
  },
  "diagnoses": [
   {
-   "name": "acute otitis media",
+   "name": "febrile urinary tract infection",
    "status": "active"
   }
  ],
  "medications": [
   {
-   "name": "amoxicillin",
-   "dose": 45,
-   "dose_unit": "mg/kg/day",
-   "route": "PO",
-   "frequency": "q12h",
+   "name": "ceftriaxone",
+   "dose": 50,
+   "dose_unit": "mg/kg/dose",
+   "route": "IV",
+   "frequency": "q24h",
    "weight_based": true
   }
  ],
- "labs": [],
+ "labs": [
+  {
+   "test": "CRP",
+   "value": 6.4,
+   "unit": "mg/dL",
+   "flag": "high"
+  }
+ ],
  "procedures": [
   {
-   "name": "tympanic membrane exam",
+   "name": "urine culture",
    "status": "completed"
   }
  ],
@@ -34,9 +41,19 @@
  },
  "temporal": [
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "history of mild eczema, well controlled",
    "when": null,
    "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
   }
  ]
 }

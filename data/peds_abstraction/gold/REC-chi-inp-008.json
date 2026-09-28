@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 5,
+  "age_value": 10,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 31.0
+  "weight_kg": 19.0
  },
  "diagnoses": [
   {
    "name": "community-acquired pneumonia",
    "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -39,5 +43,11 @@
   "setting": "inpatient",
   "disposition": "discharged home"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "prior clinic note listed the dose per day rather than per dose",
+   "when": null,
+   "qualifier": "historical"
+  }
+ ]
 }

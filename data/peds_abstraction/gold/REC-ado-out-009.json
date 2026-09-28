@@ -1,31 +1,35 @@
 {
  "demographics": {
-  "age_value": 12,
+  "age_value": 16,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 85.5
+  "weight_kg": 69.5
  },
  "diagnoses": [
   {
-   "name": "sports-related concussion",
+   "name": "major depressive disorder",
    "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "acetaminophen",
-   "dose": 650,
+   "name": "fluoxetine",
+   "dose": 10,
    "dose_unit": "mg",
    "route": "PO",
-   "frequency": "prn",
+   "frequency": "q24h",
    "weight_based": false
   }
  ],
  "labs": [],
  "procedures": [
   {
-   "name": "head CT",
-   "status": "planned"
+   "name": "safety screening",
+   "status": "completed"
   }
  ],
  "encounter": {
@@ -33,6 +37,11 @@
   "disposition": "discharged home"
  },
  "temporal": [
+  {
+   "event": "history of RSV bronchiolitis in infancy, resolved",
+   "when": null,
+   "qualifier": "historical"
+  },
   {
    "event": "repeat CBC planned for tomorrow morning",
    "when": null,

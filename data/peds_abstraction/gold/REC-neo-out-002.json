@@ -1,6 +1,6 @@
 {
  "demographics": {
-  "age_value": 18,
+  "age_value": 6,
   "age_unit": "days",
   "sex": "male",
   "weight_kg": 2.9
@@ -9,6 +9,14 @@
   {
    "name": "neonatal jaundice",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [],
@@ -32,9 +40,14 @@
  },
  "temporal": [
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "born at 36 weeks gestation, exclusively breastfed",
    "when": null,
    "qualifier": "historical"
+  },
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
   }
  ]
 }

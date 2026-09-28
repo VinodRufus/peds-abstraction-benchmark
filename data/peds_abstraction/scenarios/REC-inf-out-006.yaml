@@ -3,31 +3,25 @@ review_required: true
 age_band: infant
 age_value:
   unit: months
-  value: 4
-weight_kg: 7.0
-sex: male
+  value: 7
+weight_kg: 8.2
+sex: female
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: febrile urinary tract infection
+- name: acute otitis media
   status: active
 medications:
-- name: ceftriaxone
-  dose: 50
-  dose_unit: mg/kg/dose
-  route: IV
-  frequency: q24h
+- name: amoxicillin
+  dose: 90
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q12h
   weight_based: true
-labs:
-- test: CRP
-  value: 6.4
-  unit: mg/dL
-  flag: high
+labs: []
 procedures:
-- name: urine culture
+- name: tympanic membrane exam
   status: completed
 distractors:
-- kind: negation
-  text: no history of penicillin allergy
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: planned
+  text: follow-up with the primary care clinic in one week

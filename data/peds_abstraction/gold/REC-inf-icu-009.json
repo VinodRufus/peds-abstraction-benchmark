@@ -1,37 +1,29 @@
 {
  "demographics": {
-  "age_value": 4,
+  "age_value": 2,
   "age_unit": "months",
-  "sex": "female",
-  "weight_kg": 5.1
+  "sex": "male",
+  "weight_kg": 5.7
  },
  "diagnoses": [
   {
-   "name": "febrile urinary tract infection",
+   "name": "bronchiolitis",
    "status": "active"
-  }
- ],
- "medications": [
+  },
   {
-   "name": "ceftriaxone",
-   "dose": 50,
-   "dose_unit": "mg/kg/dose",
-   "route": "IV",
-   "frequency": "q24h",
-   "weight_based": true
-  }
- ],
- "labs": [
+   "name": "penicillin allergy",
+   "status": "ruled_out"
+  },
   {
-   "test": "CRP",
-   "value": 6.4,
-   "unit": "mg/dL",
-   "flag": "high"
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
+ "medications": [],
+ "labs": [],
  "procedures": [
   {
-   "name": "urine culture",
+   "name": "nasal suctioning",
    "status": "completed"
   }
  ],
@@ -39,11 +31,5 @@
   "setting": "icu",
   "disposition": "transferred to inpatient unit"
  },
- "temporal": [
-  {
-   "event": "repeat CBC planned for tomorrow morning",
-   "when": null,
-   "qualifier": "planned"
-  }
- ]
+ "temporal": []
 }

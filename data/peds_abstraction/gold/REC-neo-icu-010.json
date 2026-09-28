@@ -1,37 +1,45 @@
 {
  "demographics": {
-  "age_value": 3,
+  "age_value": 1,
   "age_unit": "days",
-  "sex": "female",
-  "weight_kg": 3.1
+  "sex": "male",
+  "weight_kg": 3.0
  },
  "diagnoses": [
   {
-   "name": "early-onset sepsis",
-   "status": "suspected"
+   "name": "hypoglycemia of the newborn",
+   "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "ampicillin",
-   "dose": 100,
-   "dose_unit": "mg/kg/dose",
+   "name": "dextrose 10%",
+   "dose": 2,
+   "dose_unit": "mL/kg",
    "route": "IV",
-   "frequency": "q8h",
+   "frequency": "once",
    "weight_based": true
   }
  ],
  "labs": [
   {
-   "test": "WBC",
-   "value": 4.1,
-   "unit": "10^3/uL",
+   "test": "glucose",
+   "value": 38,
+   "unit": "mg/dL",
    "flag": "low"
   }
  ],
  "procedures": [
   {
-   "name": "lumbar puncture",
+   "name": "heel-stick glucose check",
    "status": "completed"
   }
  ],
@@ -39,5 +47,16 @@
   "setting": "icu",
   "disposition": "transferred to inpatient unit"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "pregnancy complicated by gestational diabetes",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

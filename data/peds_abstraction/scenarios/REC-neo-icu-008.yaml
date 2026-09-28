@@ -3,23 +3,35 @@ review_required: true
 age_band: neonate
 age_value:
   unit: days
-  value: 17
-weight_kg: 3.2
+  value: 2
+weight_kg: 2.6
 sex: male
 encounter: icu
 disposition: transferred to inpatient unit
 diagnoses:
-- name: neonatal jaundice
+- name: hypoglycemia of the newborn
   status: active
-medications: []
+medications:
+- name: dextrose 10%
+  dose: 2
+  dose_unit: mL/kg
+  route: IV
+  frequency: once
+  weight_based: true
 labs:
-- test: total bilirubin
-  value: 14.2
+- test: glucose
+  value: 38
   unit: mg/dL
-  flag: high
+  flag: low
 procedures:
-- name: phototherapy
+- name: heel-stick glucose check
   status: completed
 distractors:
+- kind: historical
+  text: pregnancy complicated by gestational diabetes
+- kind: planned
+  text: repeat CBC planned for tomorrow morning
 - kind: negation
-  text: denies fever at home
+  text: no fever reported at home
+- kind: planned
+  text: follow-up with the primary care clinic in one week

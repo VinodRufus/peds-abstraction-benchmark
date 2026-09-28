@@ -3,33 +3,27 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 17
-weight_kg: 61.9
+  value: 14
+weight_kg: 81.3
 sex: female
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: diabetic ketoacidosis
+- name: major depressive disorder
   status: active
 medications:
-- name: insulin
-  dose: 0.1
-  dose_unit: units/kg/hour
-  route: IV
-  frequency: continuous
-  weight_based: true
-labs:
-- test: glucose
-  value: 486
-  unit: mg/dL
-  flag: high
+- name: fluoxetine
+  dose: 10
+  dose_unit: mg
+  route: PO
+  frequency: q24h
+  weight_based: false
+labs: []
 procedures:
-- name: venous blood gas
+- name: safety screening
   status: completed
 distractors:
 - kind: negation
   text: denies fever at home
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
-- kind: planned
-  text: follow-up echocardiogram to be scheduled
+- kind: negation
+  text: no history of penicillin allergy

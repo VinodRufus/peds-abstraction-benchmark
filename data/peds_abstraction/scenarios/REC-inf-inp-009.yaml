@@ -3,29 +3,23 @@ review_required: true
 age_band: infant
 age_value:
   unit: months
-  value: 4
-weight_kg: 8.6
+  value: 9
+weight_kg: 8.7
 sex: male
 encounter: inpatient
 disposition: discharged home
 diagnoses:
-- name: febrile urinary tract infection
+- name: bronchiolitis
   status: active
-medications:
-- name: ceftriaxone
-  dose: 50
-  dose_unit: mg/kg/dose
-  route: IV
-  frequency: q24h
-  weight_based: true
-labs:
-- test: CRP
-  value: 6.4
-  unit: mg/dL
-  flag: high
+medications: []
+labs: []
 procedures:
-- name: urine culture
+- name: nasal suctioning
   status: completed
 distractors:
+- kind: planned
+  text: repeat CBC planned for tomorrow morning
+- kind: planned
+  text: follow-up with the primary care clinic in one week
 - kind: negation
-  text: denies fever at home
+  text: no fever reported at home

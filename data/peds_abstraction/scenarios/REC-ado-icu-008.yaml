@@ -3,25 +3,31 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 15
-weight_kg: 80.2
+  value: 16
+weight_kg: 52.0
 sex: male
 encounter: icu
 disposition: transferred to inpatient unit
 diagnoses:
-- name: major depressive disorder
-  status: historical
+- name: diabetic ketoacidosis
+  status: active
 medications:
-- name: sertraline
-  dose: 50
-  dose_unit: mg
-  route: PO
-  frequency: q24h
-  weight_based: false
-labs: []
+- name: insulin
+  dose: 0.1
+  dose_unit: units/kg/hour
+  route: IV
+  frequency: continuous
+  weight_based: true
+labs:
+- test: glucose
+  value: 486
+  unit: mg/dL
+  flag: high
 procedures:
-- name: safety screening
+- name: venous blood gas
   status: completed
 distractors:
-- kind: negation
-  text: denies fever at home
+- kind: planned
+  text: follow-up with the primary care clinic in one week
+- kind: historical
+  text: history of RSV bronchiolitis in infancy, resolved

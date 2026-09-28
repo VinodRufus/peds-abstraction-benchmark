@@ -3,8 +3,8 @@ review_required: true
 age_band: infant
 age_value:
   unit: months
-  value: 10
-weight_kg: 6.5
+  value: 3
+weight_kg: 9.6
 sex: male
 encounter: emergency
 disposition: admitted to inpatient unit
@@ -27,9 +27,9 @@ procedures:
 - name: urine culture
   status: completed
 distractors:
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
 - kind: planned
-  text: follow-up echocardiogram to be scheduled
-- kind: negation
-  text: no history of penicillin allergy
+  text: repeat CBC planned for tomorrow morning
+- kind: planned
+  text: follow-up with the primary care clinic in one week

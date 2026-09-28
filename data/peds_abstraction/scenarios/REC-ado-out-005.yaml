@@ -3,17 +3,17 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 15
-weight_kg: 78.3
-sex: female
+  value: 16
+weight_kg: 47.0
+sex: male
 encounter: outpatient
 disposition: discharged home
 diagnoses:
 - name: major depressive disorder
-  status: historical
+  status: active
 medications:
-- name: sertraline
-  dose: 50
+- name: fluoxetine
+  dose: 10
   dose_unit: mg
   route: PO
   frequency: q24h
@@ -27,5 +27,3 @@ distractors:
   text: denies fever at home
 - kind: planned
   text: repeat CBC planned for tomorrow morning
-- kind: negation
-  text: no history of penicillin allergy

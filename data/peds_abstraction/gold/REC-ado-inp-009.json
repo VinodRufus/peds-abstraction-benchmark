@@ -3,12 +3,16 @@
   "age_value": 14,
   "age_unit": "years",
   "sex": "female",
-  "weight_kg": 49.7
+  "weight_kg": 73.3
  },
  "diagnoses": [
   {
    "name": "sports-related concussion",
    "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -24,19 +28,13 @@
  "labs": [],
  "procedures": [
   {
-   "name": "head CT",
-   "status": "planned"
+   "name": "concussion symptom assessment",
+   "status": "completed"
   }
  ],
  "encounter": {
   "setting": "inpatient",
   "disposition": "discharged home"
  },
- "temporal": [
-  {
-   "event": "history of RSV bronchiolitis last winter, resolved",
-   "when": null,
-   "qualifier": "historical"
-  }
- ]
+ "temporal": []
 }

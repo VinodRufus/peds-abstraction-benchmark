@@ -64,9 +64,12 @@ def render_narrative(sc: dict) -> str:
 
 
 def derive_gold(sc: dict) -> dict:
-    """Gold comes from the spec, deterministically. Planned procedures stay
-    planned; distractor content is intentionally NOT abstractable truth
-    except where it states history/negation the schema captures."""
+    """Gold comes from the spec, deterministically. Every distractor kind is
+    keyed (2026-09-28, pre-gold, zero model runs; see DEVIATIONS.md): a
+    schema-following model that preserves negation and temporality must
+    never be penalized for doing so. Negations key as ruled_out diagnoses,
+    planned/historical lines as temporal events, and the dose_trap line as
+    a historical documentation event."""
     gold = {
         "demographics": {"age_value": sc["age_value"]["value"],
                          "age_unit": sc["age_value"]["unit"],
@@ -81,8 +84,14 @@ def derive_gold(sc: dict) -> dict:
     for dis in sc.get("distractors", []):
         if dis["kind"] == "planned":
             gold["temporal"].append({"event": dis["text"], "when": None, "qualifier": "planned"})
-        elif dis["kind"] == "historical":
+        elif dis["kind"] in ("historical", "dose_trap"):
             gold["temporal"].append({"event": dis["text"], "when": None, "qualifier": "historical"})
+        elif dis["kind"] == "negation":
+            txt = dis["text"].lower()
+            if "allergy" in txt:
+                gold["diagnoses"].append({"name": "penicillin allergy", "status": "ruled_out"})
+            elif "fever" in txt:
+                gold["diagnoses"].append({"name": "fever", "status": "ruled_out"})
     return gold
 
 

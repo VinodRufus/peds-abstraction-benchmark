@@ -18,6 +18,10 @@ SYNONYMS = {
     "ampicillin": [],
     "ceftriaxone": ["rocephin"],
     "ibuprofen": ["motrin", "advil"],
+    "fluoxetine": ["prozac"],
+    # pertinent-negative diagnosis names (keyed gold uses the short form)
+    "fever": ["fever at home"],
+    "penicillin allergy": ["allergy to penicillin", "penicillin drug allergy"],
     # lab tests
     "wbc": ["white blood cell count", "white blood cells", "leukocytes"],
     "hgb": ["hemoglobin", "hb"],
@@ -47,6 +51,13 @@ UNIT_EQUIV = {
     "mg/dl": "mg/dl",
     "mmol/l": "mmol/l",
     "g/dl": "g/dl",
+    "units/kg/hour": "units/kg/hour",
+    "units/kg/hr": "units/kg/hour",
+    "u/kg/hour": "units/kg/hour",
+    "u/kg/hr": "units/kg/hour",
+    "mg/kg/hour": "mg/kg/hour",
+    "mg/kg/hr": "mg/kg/hour",
+    "ml/kg": "ml/kg",
 }
 
 AGE_TO_DAYS = {"days": 1.0, "weeks": 7.0, "months": 30.44, "years": 365.25}

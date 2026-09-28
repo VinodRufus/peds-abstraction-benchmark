@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 8,
+  "age_value": 9,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 31.6
+  "weight_kg": 28.0
  },
  "diagnoses": [
   {
    "name": "appendicitis",
    "status": "suspected"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [

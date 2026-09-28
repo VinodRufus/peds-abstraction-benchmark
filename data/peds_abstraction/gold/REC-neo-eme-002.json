@@ -1,14 +1,22 @@
 {
  "demographics": {
-  "age_value": 9,
+  "age_value": 3,
   "age_unit": "days",
-  "sex": "female",
-  "weight_kg": 3.7
+  "sex": "male",
+  "weight_kg": 3.4
  },
  "diagnoses": [
   {
    "name": "neonatal jaundice",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [],
@@ -30,5 +38,16 @@
   "setting": "emergency",
   "disposition": "admitted to inpatient unit"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "born at 36 weeks gestation, exclusively breastfed",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "born by uncomplicated vaginal delivery",
+   "when": null,
+   "qualifier": "historical"
+  }
+ ]
 }

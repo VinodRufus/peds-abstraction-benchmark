@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 22,
+  "age_value": 1,
   "age_unit": "days",
-  "sex": "male",
-  "weight_kg": 4.2
+  "sex": "female",
+  "weight_kg": 3.7
  },
  "diagnoses": [
   {
@@ -39,5 +39,26 @@
   "setting": "inpatient",
   "disposition": "discharged home"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "born at term with unknown maternal group B streptococcus status",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "prior clinic note listed the dose per day rather than per dose",
+   "when": null,
+   "qualifier": "historical"
+  }
+ ]
 }

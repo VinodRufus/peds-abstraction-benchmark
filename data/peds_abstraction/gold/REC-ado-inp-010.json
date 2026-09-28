@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 12,
+  "age_value": 15,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 67.0
+  "weight_kg": 54.0
  },
  "diagnoses": [
   {
@@ -41,9 +41,9 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "history of RSV bronchiolitis in infancy, resolved",
    "when": null,
-   "qualifier": "planned"
+   "qualifier": "historical"
   }
  ]
 }

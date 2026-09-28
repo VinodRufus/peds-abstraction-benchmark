@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 11,
+  "age_value": 2,
   "age_unit": "days",
   "sex": "female",
-  "weight_kg": 2.9
+  "weight_kg": 3.0
  },
  "diagnoses": [
   {
@@ -17,7 +17,7 @@
    "dose": 2,
    "dose_unit": "mL/kg",
    "route": "IV",
-   "frequency": "prn",
+   "frequency": "once",
    "weight_based": true
   }
  ],
@@ -41,12 +41,17 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "pregnancy complicated by gestational diabetes",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
    "qualifier": "planned"
   },
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "born by uncomplicated vaginal delivery",
    "when": null,
    "qualifier": "historical"
   }

@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 7,
+  "age_value": 8,
   "age_unit": "months",
-  "sex": "female",
-  "weight_kg": 7.3
+  "sex": "male",
+  "weight_kg": 6.7
  },
  "diagnoses": [
   {
@@ -14,7 +14,7 @@
  "medications": [
   {
    "name": "amoxicillin",
-   "dose": 45,
+   "dose": 90,
    "dose_unit": "mg/kg/day",
    "route": "PO",
    "frequency": "q12h",
@@ -32,5 +32,21 @@
   "setting": "outpatient",
   "disposition": "discharged home"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "history of mild eczema, well controlled",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "prior clinic note listed the dose per day rather than per dose",
+   "when": null,
+   "qualifier": "historical"
+  }
+ ]
 }

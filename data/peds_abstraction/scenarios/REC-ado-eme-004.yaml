@@ -3,8 +3,8 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 12
-weight_kg: 40.1
+  value: 13
+weight_kg: 46.9
 sex: male
 encounter: emergency
 disposition: admitted to inpatient unit
@@ -27,5 +27,9 @@ procedures:
 - name: venous blood gas
   status: completed
 distractors:
+- kind: historical
+  text: history of RSV bronchiolitis in infancy, resolved
+- kind: negation
+  text: no history of penicillin allergy
 - kind: planned
   text: repeat CBC planned for tomorrow morning

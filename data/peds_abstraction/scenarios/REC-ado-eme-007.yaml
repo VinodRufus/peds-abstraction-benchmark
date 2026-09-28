@@ -3,9 +3,9 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 14
-weight_kg: 50.4
-sex: female
+  value: 17
+weight_kg: 44.3
+sex: male
 encounter: emergency
 disposition: admitted to inpatient unit
 diagnoses:
@@ -29,5 +29,7 @@ procedures:
 distractors:
 - kind: negation
   text: no history of penicillin allergy
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: planned
+  text: follow-up with the primary care clinic in one week
+- kind: negation
+  text: denies fever at home

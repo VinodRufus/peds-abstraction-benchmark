@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 6,
+  "age_value": 7,
   "age_unit": "months",
   "sex": "female",
-  "weight_kg": 6.0
+  "weight_kg": 5.8
  },
  "diagnoses": [
   {
@@ -41,12 +41,7 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
-   "when": null,
-   "qualifier": "planned"
-  },
-  {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "prior clinic note listed the dose per day rather than per dose",
    "when": null,
    "qualifier": "historical"
   }

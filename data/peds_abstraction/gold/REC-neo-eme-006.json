@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 5,
+  "age_value": 1,
   "age_unit": "days",
   "sex": "female",
-  "weight_kg": 3.9
+  "weight_kg": 3.5
  },
  "diagnoses": [
   {
    "name": "hypoglycemia of the newborn",
    "status": "active"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -17,7 +21,7 @@
    "dose": 2,
    "dose_unit": "mL/kg",
    "route": "IV",
-   "frequency": "prn",
+   "frequency": "once",
    "weight_based": true
   }
  ],
@@ -41,12 +45,12 @@
  },
  "temporal": [
   {
-   "event": "repeat CBC planned for tomorrow morning",
+   "event": "pregnancy complicated by gestational diabetes",
    "when": null,
-   "qualifier": "planned"
+   "qualifier": "historical"
   },
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "repeat CBC planned for tomorrow morning",
    "when": null,
    "qualifier": "planned"
   }

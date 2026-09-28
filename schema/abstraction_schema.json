@@ -3,67 +3,270 @@
   "title": "PediatricAbstraction",
   "type": "object",
   "additionalProperties": false,
-  "required": ["demographics", "diagnoses", "medications", "labs", "procedures", "encounter", "temporal"],
+  "required": [
+    "demographics",
+    "diagnoses",
+    "medications",
+    "labs",
+    "procedures",
+    "encounter",
+    "temporal"
+  ],
   "properties": {
     "demographics": {
-      "type": "object", "additionalProperties": false,
-      "required": ["age_value", "age_unit", "sex", "weight_kg"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "age_value",
+        "age_unit",
+        "sex",
+        "weight_kg"
+      ],
       "properties": {
-        "age_value": {"type": ["number", "null"]},
-        "age_unit": {"type": ["string", "null"], "enum": ["days", "weeks", "months", "years", null]},
-        "sex": {"type": ["string", "null"], "enum": ["male", "female", null]},
-        "weight_kg": {"type": ["number", "null"]}
+        "age_value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "age_unit": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "days",
+            "weeks",
+            "months",
+            "years",
+            null
+          ]
+        },
+        "sex": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "male",
+            "female",
+            null
+          ]
+        },
+        "weight_kg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
       }
     },
-    "diagnoses": {"type": "array", "items": {
-      "type": "object", "additionalProperties": false,
-      "required": ["name", "status"],
-      "properties": {
-        "name": {"type": "string"},
-        "status": {"type": "string", "enum": ["active", "historical", "suspected", "ruled_out"]}
-      }}},
-    "medications": {"type": "array", "items": {
-      "type": "object", "additionalProperties": false,
-      "required": ["name", "dose", "dose_unit", "route", "frequency", "weight_based"],
-      "properties": {
-        "name": {"type": "string"},
-        "dose": {"type": ["number", "null"]},
-        "dose_unit": {"type": ["string", "null"]},
-        "route": {"type": ["string", "null"]},
-        "frequency": {"type": ["string", "null"]},
-        "weight_based": {"type": ["boolean", "null"]}
-      }}},
-    "labs": {"type": "array", "items": {
-      "type": "object", "additionalProperties": false,
-      "required": ["test", "value", "unit", "flag"],
-      "properties": {
-        "test": {"type": "string"},
-        "value": {"type": ["number", "string", "null"]},
-        "unit": {"type": ["string", "null"]},
-        "flag": {"type": ["string", "null"], "enum": ["low", "high", "normal", null]}
-      }}},
-    "procedures": {"type": "array", "items": {
-      "type": "object", "additionalProperties": false,
-      "required": ["name", "status"],
-      "properties": {
-        "name": {"type": "string"},
-        "status": {"type": "string", "enum": ["completed", "planned"]}
-      }}},
+    "diagnoses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "status"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "historical",
+              "suspected",
+              "ruled_out"
+            ]
+          }
+        }
+      },
+      "description": "Clinical concept assertions: conditions, symptoms, and allergies documented in the note, each with an assertion status. A documented pertinent negative (a denied symptom, an absent allergy) is an entry with status ruled_out."
+    },
+    "medications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "dose",
+          "dose_unit",
+          "route",
+          "frequency",
+          "weight_based"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "dose": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "dose_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "route": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "frequency": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "weight_based": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "labs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "test",
+          "value",
+          "unit",
+          "flag"
+        ],
+        "properties": {
+          "test": {
+            "type": "string"
+          },
+          "value": {
+            "type": [
+              "number",
+              "string",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "flag": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "low",
+              "high",
+              "normal",
+              null
+            ]
+          }
+        }
+      }
+    },
+    "procedures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "status"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "completed",
+              "planned"
+            ]
+          }
+        }
+      }
+    },
     "encounter": {
-      "type": "object", "additionalProperties": false,
-      "required": ["setting", "disposition"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "setting",
+        "disposition"
+      ],
       "properties": {
-        "setting": {"type": ["string", "null"], "enum": ["outpatient", "emergency", "inpatient", "icu", null]},
-        "disposition": {"type": ["string", "null"]}
+        "setting": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "outpatient",
+            "emergency",
+            "inpatient",
+            "icu",
+            null
+          ]
+        },
+        "disposition": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
-    "temporal": {"type": "array", "items": {
-      "type": "object", "additionalProperties": false,
-      "required": ["event", "when", "qualifier"],
-      "properties": {
-        "event": {"type": "string"},
-        "when": {"type": ["string", "null"]},
-        "qualifier": {"type": ["string", "null"], "enum": ["completed", "planned", "historical", "current", null]}
-      }}}
+    "temporal": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "event",
+          "when",
+          "qualifier"
+        ],
+        "properties": {
+          "event": {
+            "type": "string"
+          },
+          "when": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "qualifier": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "completed",
+              "planned",
+              "historical",
+              "current",
+              null
+            ]
+          }
+        }
+      }
+    }
   }
 }

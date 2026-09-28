@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 3,
+  "age_value": 2,
   "age_unit": "days",
-  "sex": "male",
-  "weight_kg": 3.7
+  "sex": "female",
+  "weight_kg": 3.2
  },
  "diagnoses": [
   {
@@ -17,7 +17,7 @@
    "dose": 2,
    "dose_unit": "mL/kg",
    "route": "IV",
-   "frequency": "prn",
+   "frequency": "once",
    "weight_based": true
   }
  ],
@@ -41,7 +41,7 @@
  },
  "temporal": [
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "pregnancy complicated by gestational diabetes",
    "when": null,
    "qualifier": "historical"
   },

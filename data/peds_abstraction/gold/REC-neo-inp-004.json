@@ -1,14 +1,18 @@
 {
  "demographics": {
-  "age_value": 4,
+  "age_value": 1,
   "age_unit": "days",
-  "sex": "male",
-  "weight_kg": 4.0
+  "sex": "female",
+  "weight_kg": 3.6
  },
  "diagnoses": [
   {
    "name": "early-onset sepsis",
    "status": "suspected"
+  },
+  {
+   "name": "penicillin allergy",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -41,9 +45,19 @@
  },
  "temporal": [
   {
-   "event": "repeat CBC planned for tomorrow morning",
+   "event": "born at term with unknown maternal group B streptococcus status",
+   "when": null,
+   "qualifier": "historical"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
    "qualifier": "planned"
+  },
+  {
+   "event": "prior clinic note listed the dose per day rather than per dose",
+   "when": null,
+   "qualifier": "historical"
   }
  ]
 }

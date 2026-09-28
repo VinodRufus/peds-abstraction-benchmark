@@ -3,25 +3,27 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 3
-weight_kg: 17.5
-sex: female
+  value: 9
+weight_kg: 28.4
+sex: male
 encounter: icu
 disposition: transferred to inpatient unit
 diagnoses:
-- name: asthma exacerbation
+- name: status asthmaticus
   status: active
 medications:
-- name: prednisolone
-  dose: 2
-  dose_unit: mg/kg/day
-  route: PO
-  frequency: q24h
+- name: albuterol
+  dose: 0.5
+  dose_unit: mg/kg/hour
+  route: nebulized
+  frequency: continuous
   weight_based: true
 labs: []
 procedures:
-- name: peak flow measurement
+- name: continuous pulse oximetry
   status: completed
 distractors:
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
 - kind: planned
-  text: repeat CBC planned for tomorrow morning
+  text: follow-up with the primary care clinic in one week

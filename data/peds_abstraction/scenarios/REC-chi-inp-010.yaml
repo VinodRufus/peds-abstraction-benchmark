@@ -3,9 +3,9 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 5
-weight_kg: 17.5
-sex: male
+  value: 10
+weight_kg: 28.4
+sex: female
 encounter: inpatient
 disposition: discharged home
 diagnoses:
@@ -23,7 +23,9 @@ procedures:
 - name: peak flow measurement
   status: completed
 distractors:
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
 - kind: planned
-  text: follow-up echocardiogram to be scheduled
+  text: follow-up with the primary care clinic in one week
+- kind: dose_trap
+  text: prior clinic note listed the dose per day rather than per dose
+- kind: negation
+  text: denies fever at home

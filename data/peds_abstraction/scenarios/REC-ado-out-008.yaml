@@ -3,29 +3,25 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 13
-weight_kg: 67.8
+  value: 12
+weight_kg: 45.1
 sex: male
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: major depressive disorder
-  status: historical
+- name: sports-related concussion
+  status: active
 medications:
-- name: sertraline
-  dose: 50
+- name: acetaminophen
+  dose: 650
   dose_unit: mg
   route: PO
-  frequency: q24h
+  frequency: prn
   weight_based: false
 labs: []
 procedures:
-- name: safety screening
+- name: concussion symptom assessment
   status: completed
 distractors:
-- kind: negation
-  text: denies fever at home
-- kind: negation
-  text: no history of penicillin allergy
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: planned
+  text: follow-up with the primary care clinic in one week

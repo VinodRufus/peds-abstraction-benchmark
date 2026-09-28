@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 7,
+  "age_value": 10,
   "age_unit": "years",
-  "sex": "female",
-  "weight_kg": 33.4
+  "sex": "male",
+  "weight_kg": 22.0
  },
  "diagnoses": [
   {
@@ -39,5 +39,11 @@
   "setting": "inpatient",
   "disposition": "discharged home"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

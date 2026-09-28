@@ -1,20 +1,24 @@
 {
  "demographics": {
-  "age_value": 15,
+  "age_value": 16,
   "age_unit": "years",
-  "sex": "female",
-  "weight_kg": 78.3
+  "sex": "male",
+  "weight_kg": 47.0
  },
  "diagnoses": [
   {
    "name": "major depressive disorder",
-   "status": "historical"
+   "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "sertraline",
-   "dose": 50,
+   "name": "fluoxetine",
+   "dose": 10,
    "dose_unit": "mg",
    "route": "PO",
    "frequency": "q24h",

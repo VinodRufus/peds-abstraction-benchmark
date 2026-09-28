@@ -3,9 +3,9 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 14
-weight_kg: 69.3
-sex: male
+  value: 12
+weight_kg: 68.3
+sex: female
 encounter: emergency
 disposition: admitted to inpatient unit
 diagnoses:
@@ -20,12 +20,10 @@ medications:
   weight_based: false
 labs: []
 procedures:
-- name: head CT
-  status: planned
+- name: concussion symptom assessment
+  status: completed
 distractors:
 - kind: planned
   text: repeat CBC planned for tomorrow morning
-- kind: negation
-  text: denies fever at home
 - kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+  text: history of RSV bronchiolitis in infancy, resolved

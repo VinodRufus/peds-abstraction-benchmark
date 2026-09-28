@@ -3,27 +3,27 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 15
-weight_kg: 85.5
+  value: 14
+weight_kg: 46.2
 sex: male
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: sports-related concussion
+- name: major depressive disorder
   status: active
 medications:
-- name: acetaminophen
-  dose: 650
+- name: fluoxetine
+  dose: 10
   dose_unit: mg
   route: PO
-  frequency: prn
+  frequency: q24h
   weight_based: false
 labs: []
 procedures:
-- name: head CT
-  status: planned
+- name: safety screening
+  status: completed
 distractors:
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
 - kind: planned
-  text: repeat CBC planned for tomorrow morning
+  text: follow-up with the primary care clinic in one week
+- kind: negation
+  text: no history of penicillin allergy

@@ -1,37 +1,34 @@
 {
  "demographics": {
-  "age_value": 6,
+  "age_value": 11,
   "age_unit": "years",
-  "sex": "male",
-  "weight_kg": 25.8
+  "sex": "female",
+  "weight_kg": 22.7
  },
  "diagnoses": [
   {
-   "name": "community-acquired pneumonia",
+   "name": "status asthmaticus",
    "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
   {
-   "name": "amoxicillin",
-   "dose": 90,
-   "dose_unit": "mg/kg/day",
-   "route": "PO",
-   "frequency": "q12h",
+   "name": "albuterol",
+   "dose": 0.5,
+   "dose_unit": "mg/kg/hour",
+   "route": "nebulized",
+   "frequency": "continuous",
    "weight_based": true
   }
  ],
- "labs": [
-  {
-   "test": "WBC",
-   "value": 16.2,
-   "unit": "10^3/uL",
-   "flag": "high"
-  }
- ],
+ "labs": [],
  "procedures": [
   {
-   "name": "chest radiograph",
+   "name": "continuous pulse oximetry",
    "status": "completed"
   }
  ],
@@ -41,7 +38,12 @@
  },
  "temporal": [
   {
-   "event": "history of RSV bronchiolitis last winter, resolved",
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "history of RSV bronchiolitis in infancy, resolved",
    "when": null,
    "qualifier": "historical"
   }

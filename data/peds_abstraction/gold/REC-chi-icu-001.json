@@ -1,30 +1,30 @@
 {
  "demographics": {
-  "age_value": 8,
+  "age_value": 7,
   "age_unit": "years",
-  "sex": "male",
-  "weight_kg": 19.1
+  "sex": "female",
+  "weight_kg": 14.2
  },
  "diagnoses": [
   {
-   "name": "asthma exacerbation",
+   "name": "status asthmaticus",
    "status": "active"
   }
  ],
  "medications": [
   {
-   "name": "prednisolone",
-   "dose": 2,
-   "dose_unit": "mg/kg/day",
-   "route": "PO",
-   "frequency": "q24h",
+   "name": "albuterol",
+   "dose": 0.5,
+   "dose_unit": "mg/kg/hour",
+   "route": "nebulized",
+   "frequency": "continuous",
    "weight_based": true
   }
  ],
  "labs": [],
  "procedures": [
   {
-   "name": "peak flow measurement",
+   "name": "continuous pulse oximetry",
    "status": "completed"
   }
  ],
@@ -34,7 +34,7 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "follow-up with the primary care clinic in one week",
    "when": null,
    "qualifier": "planned"
   }

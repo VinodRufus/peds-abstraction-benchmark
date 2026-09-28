@@ -1,30 +1,25 @@
 {
  "demographics": {
-  "age_value": 7,
+  "age_value": 11,
   "age_unit": "months",
   "sex": "male",
-  "weight_kg": 7.7
+  "weight_kg": 9.6
  },
  "diagnoses": [
   {
-   "name": "acute otitis media",
+   "name": "bronchiolitis",
    "status": "active"
-  }
- ],
- "medications": [
+  },
   {
-   "name": "amoxicillin",
-   "dose": 45,
-   "dose_unit": "mg/kg/day",
-   "route": "PO",
-   "frequency": "q12h",
-   "weight_based": true
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
+ "medications": [],
  "labs": [],
  "procedures": [
   {
-   "name": "tympanic membrane exam",
+   "name": "nasal suctioning",
    "status": "completed"
   }
  ],
@@ -32,5 +27,16 @@
   "setting": "inpatient",
   "disposition": "discharged home"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "repeat CBC planned for tomorrow morning",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  }
+ ]
 }

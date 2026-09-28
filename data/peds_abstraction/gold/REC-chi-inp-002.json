@@ -1,9 +1,9 @@
 {
  "demographics": {
-  "age_value": 9,
+  "age_value": 4,
   "age_unit": "years",
   "sex": "male",
-  "weight_kg": 33.2
+  "weight_kg": 23.3
  },
  "diagnoses": [
   {
@@ -41,14 +41,9 @@
  },
  "temporal": [
   {
-   "event": "follow-up echocardiogram to be scheduled",
+   "event": "prior clinic note listed the dose per day rather than per dose",
    "when": null,
-   "qualifier": "planned"
-  },
-  {
-   "event": "repeat CBC planned for tomorrow morning",
-   "when": null,
-   "qualifier": "planned"
+   "qualifier": "historical"
   }
  ]
 }

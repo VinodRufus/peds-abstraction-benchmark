@@ -3,8 +3,8 @@ review_required: true
 age_band: child
 age_value:
   unit: years
-  value: 9
-weight_kg: 26.5
+  value: 10
+weight_kg: 16.4
 sex: female
 encounter: outpatient
 disposition: discharged home
@@ -27,5 +27,5 @@ distractors:
   text: repeat CBC planned for tomorrow morning
 - kind: dose_trap
   text: prior clinic note listed the dose per day rather than per dose
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
+- kind: negation
+  text: no history of penicillin allergy

@@ -3,9 +3,9 @@ review_required: true
 age_band: adolescent
 age_value:
   unit: years
-  value: 15
-weight_kg: 66.9
-sex: female
+  value: 12
+weight_kg: 50.8
+sex: male
 encounter: inpatient
 disposition: discharged home
 diagnoses:
@@ -27,9 +27,5 @@ procedures:
 - name: venous blood gas
   status: completed
 distractors:
-- kind: negation
-  text: denies fever at home
-- kind: historical
-  text: history of RSV bronchiolitis last winter, resolved
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: planned
+  text: follow-up with the primary care clinic in one week

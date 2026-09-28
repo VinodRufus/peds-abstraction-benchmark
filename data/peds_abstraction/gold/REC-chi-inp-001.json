@@ -2,13 +2,17 @@
  "demographics": {
   "age_value": 11,
   "age_unit": "years",
-  "sex": "male",
-  "weight_kg": 21.2
+  "sex": "female",
+  "weight_kg": 14.8
  },
  "diagnoses": [
   {
    "name": "asthma exacerbation",
    "status": "active"
+  },
+  {
+   "name": "fever",
+   "status": "ruled_out"
   }
  ],
  "medications": [
@@ -32,5 +36,16 @@
   "setting": "inpatient",
   "disposition": "discharged home"
  },
- "temporal": []
+ "temporal": [
+  {
+   "event": "follow-up with the primary care clinic in one week",
+   "when": null,
+   "qualifier": "planned"
+  },
+  {
+   "event": "history of RSV bronchiolitis in infancy, resolved",
+   "when": null,
+   "qualifier": "historical"
+  }
+ ]
 }

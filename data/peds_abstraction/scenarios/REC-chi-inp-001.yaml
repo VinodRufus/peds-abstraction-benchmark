@@ -4,8 +4,8 @@ age_band: child
 age_value:
   unit: years
   value: 11
-weight_kg: 21.2
-sex: male
+weight_kg: 14.8
+sex: female
 encounter: inpatient
 disposition: discharged home
 diagnoses:
@@ -24,4 +24,8 @@ procedures:
   status: completed
 distractors:
 - kind: negation
-  text: no history of penicillin allergy
+  text: denies fever at home
+- kind: planned
+  text: follow-up with the primary care clinic in one week
+- kind: historical
+  text: history of RSV bronchiolitis in infancy, resolved

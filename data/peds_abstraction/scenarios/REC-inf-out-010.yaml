@@ -3,29 +3,25 @@ review_required: true
 age_band: infant
 age_value:
   unit: months
-  value: 3
-weight_kg: 9.7
-sex: female
+  value: 12
+weight_kg: 9.6
+sex: male
 encounter: outpatient
 disposition: discharged home
 diagnoses:
-- name: bronchiolitis
+- name: acute otitis media
   status: active
 medications:
-- name: albuterol
-  dose: 2.5
-  dose_unit: mg
-  route: nebulized
-  frequency: q6h
-  weight_based: false
-labs:
-- test: WBC
-  value: 11.8
-  unit: 10^3/uL
-  flag: normal
+- name: amoxicillin
+  dose: 90
+  dose_unit: mg/kg/day
+  route: PO
+  frequency: q12h
+  weight_based: true
+labs: []
 procedures:
-- name: nasal suctioning
+- name: tympanic membrane exam
   status: completed
 distractors:
-- kind: dose_trap
-  text: prior clinic note listed the dose per day rather than per dose
+- kind: negation
+  text: no history of penicillin allergy
