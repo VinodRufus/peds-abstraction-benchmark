@@ -47,3 +47,16 @@ notes and are recorded as the benchmark's stated scope limitation, not as errors
 Narrative paraphrase stays OFF; template dependence will be reported as a
 limitation. State at time of change: zero model runs, zero clinical review, gold
 not tagged. Corpus regenerated from seed 20260923; digest recorded by PASTE 2.
+
+## 2026-09-28 Gold policy amendment (peds_abstraction): construction validity + post-hoc clinical validation
+The pre-specified gold policy (two clinicians reviewing before the freeze) could not be
+executed on the study timeline. BEFORE any model run, the policy is amended to:
+(1) gold derives deterministically from scenario specifications whose clinical content
+was aligned with published pediatric guidance during the documented 2026-09-28
+screening and correction rounds; (2) the automated repository audit and the screen
+findings are committed as corpus-construction evidence; (3) an independent registered
+nurse review of all 160 records (25 percent double-reviewed for Cohen's kappa)
+proceeds AFTER the freeze as validation, and the paper will report its agreement
+statistics and any disputed records, with a sensitivity analysis excluding disputed
+records if any arise; (4) the paper states plainly that no clinician approved the
+corpus before freezing, as a limitation. Gold is frozen at this commit.
