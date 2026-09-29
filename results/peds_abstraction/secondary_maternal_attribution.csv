@@ -1,0 +1,5 @@
+model,neonatal_records_parsed,records_with_maternal_line,records_with_unqualified_maternal_dx,maternal condition attributed to infant (unqualified),"maternal condition, qualified as maternal",maternal GBS status listed as infant diagnosis,prematurity inferred from gestational age,birth history listed as diagnosis,other
+anthropic_claude-sonnet-5,40,11,2,2,9,0,6,1,0
+deepseek_deepseek-v4-pro,39,11,4,4,5,0,1,0,0
+google_gemini-3-1-pro-preview,40,11,11,11,0,0,0,0,0
+openai_gpt-5-5-2026-04-23,40,11,9,9,1,1,0,8,0

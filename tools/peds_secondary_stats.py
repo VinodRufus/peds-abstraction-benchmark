@@ -313,7 +313,57 @@ def main():
                             diff_ado_minus_neo=md, ci_low=lo, ci_high=hi, n_pairs=n))
     pd.DataFrame(hyp).to_csv(f"{OUT}/secondary_hypothesis_lenient.csv", index=False)
 
+    # ---- per-band breakdown under strict / lenient / hard-fact (sub-analysis of (c) and (f)) ----
+    band_rows = []
+    for m in models:
+        r1 = runs[m].get(1, {})
+        for band in ["neonate", "infant", "child", "adolescent"]:
+            vals = {"strict": [], "lenient": [], "hard": []}
+            for rid in sorted(gold):
+                if band_of(rid) != band:
+                    continue
+                parsed = (r1.get(rid) or {}).get("parsed")
+                s = score_lists(parsed or {}, gold[rid])
+                vals["strict"].append(prf(sum(v["tp"] for v in s.values()), sum(v["fp"] for v in s.values()),
+                                          sum(v["fn"] for v in s.values()))[2])
+                scal = score_scalars(parsed or {}, gold[rid])
+                htp = sum(s[d]["tp"] for d in HARD_DOMS) + sum(1 for ok in scal.values() if ok)
+                hfp = sum(s[d]["fp"] for d in HARD_DOMS) + sum(1 for ok in scal.values() if not ok)
+                hfn = sum(s[d]["fn"] for d in HARD_DOMS) + sum(1 for ok in scal.values() if not ok)
+                vals["hard"].append(prf(htp, hfp, hfn)[2])
+                ls, _ = lenient_score(parsed or {}, gold[rid])
+                vals["lenient"].append(prf(sum(v["tp"] for v in ls.values()), sum(v["fp"] for v in ls.values()),
+                                           sum(v["fn"] for v in ls.values()))[2])
+            row = dict(model=m, band=band, n=len(vals["strict"]))
+            for k, v in vals.items():
+                mean, (lo, hi) = bootstrap_metric(np.array(v))
+                row[f"{k}_f1"] = mean; row[f"{k}_ci_low"] = lo; row[f"{k}_ci_high"] = hi
+            band_rows.append(row)
+    pd.DataFrame(band_rows).to_csv(f"{OUT}/secondary_band_breakdown.csv", index=False)
+
+    # ---- list-domain stability by domain (sub-analysis of (d)) ----
+    dstab_rows = []
+    for m in models:
+        ks = sorted(runs[m])
+        common = set.intersection(*(set(runs[m][k]) for k in ks)) if ks else set()
+        for d in LIST_DOMS:
+            keyf = (N.dx_key if d == "diagnoses" else N.med_key if d == "medications" else
+                    N.lab_key if d == "labs" else N.proc_key if d == "procedures" else N.temporal_key)
+            same = tot = 0
+            for rid in common:
+                outs = [runs[m][k][rid].get("parsed") for k in ks]
+                sets = {json.dumps(sorted(str(keyf(x)) for x in ((o or {}).get(d) or []) if isinstance(x, dict)))
+                        for o in outs}
+                tot += 1; same += int(len(sets) == 1)
+            dstab_rows.append(dict(model=m, domain=d, runs_available=len(ks), records=len(common),
+                                   keyset_stability=same / tot if tot else None))
+    pd.DataFrame(dstab_rows).to_csv(f"{OUT}/secondary_domain_stability.csv", index=False)
+
     pd.set_option("display.width", 230); pd.set_option("display.max_columns", 40)
+    print("\n=== SECONDARY: per-band F1 under strict / lenient / hard-fact ===")
+    print(pd.DataFrame(band_rows).round(3).to_string(index=False))
+    print("\n=== SECONDARY: list-domain key-set stability by domain ===")
+    print(pd.DataFrame(dstab_rows).pivot(index="domain", columns="model", values="keyset_stability").round(3).to_string())
     print("\n=== SECONDARY: strict vs lenient vs hard-fact F1 (run 1) ===")
     print(pd.DataFrame(len_rows).round(3).to_string(index=False))
     print("\n=== SECONDARY: lenient P/R/F1 by domain ===")

@@ -1,0 +1,5 @@
+model,model_id,n_calls,n_api_errors,n_parse_failures,versions_seen,mean_latency_s,mean_tokens_in,mean_tokens_out,first_call,last_call,calendar_days
+anthropic_claude-sonnet-5,anthropic:claude-sonnet-5,520,0,40,claude-sonnet-5,6.257348076923077,2106.8096153846154,708.8346153846154,2026-09-28T11:11:52,2026-09-28T15:55:49,1
+deepseek_deepseek-v4-pro,deepseek:deepseek-v4-pro,520,0,66,deepseek-v4-pro,15.485738461538462,1545.4557692307692,1945.4884615384615,2026-09-28T13:42:19,2026-09-28T16:08:34,1
+google_gemini-3-1-pro-preview,google:gemini-3.1-pro-preview,516,0,36,gemini-3.1-pro-preview,15.09431007751938,1723.5988372093022,336.6608527131783,2026-09-28T12:03:13,2026-09-29T11:00:01,2
+openai_gpt-5-5-2026-04-23,openai:gpt-5.5-2026-04-23,520,0,40,gpt-5.5-2026-04-23 [temperature rejected by model; provider default used],6.512471153846154,1458.3365384615386,514.223076923077,2026-09-28T10:18:20,2026-09-28T15:52:41,1

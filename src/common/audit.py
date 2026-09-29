@@ -20,6 +20,8 @@ PATTERNS = [
     (re.compile(r"\b\(\d{3}\)\s?\d{3}-\d{4}\b"), "phone number"),
 ]
 
+HEX_DIGEST = re.compile(r"\b[0-9a-fA-F]{32,}\b")
+
 # Employer / internal-system perimeter. NEVER present in study data.
 # Stored as SHA-256 digests of the lower-cased term (one word or two adjacent words)
 # so that the perimeter itself is not published. A file is flagged when any word or
@@ -50,14 +52,12 @@ def _blocklist_hits(low: str):
                 hits.append(pair)
     return sorted(set(hits))
 
-# The PHI-leakage study corpus (data/phi_leakage, runs/phi_leakage) intentionally contains
-# SYNTHETIC identifier patterns; identifier PATTERNS are skipped there by
-# design, documented in the PHI paper. The employer/vendor BLOCKLIST is
-# enforced everywhere with no exemptions.
-# The RQAF study likewise injects fabricated identifier-shaped strings on
-# purpose (the pre-registered privacy_leak error type), so its corpus and
-# outputs get the same pattern exemption. The employer/vendor blocklist
-# still runs over every path with no exemptions.
+# Two study corpora intentionally contain SYNTHETIC identifier patterns, so the
+# identifier PATTERNS are skipped there by design: the PHI-leakage study
+# (data/phi_leakage, runs/phi_leakage) and the RQAF study, whose injected corpus and
+# gold carry the deliberately inserted privacy_leak string
+# "Patient record MRN 84921736 ..." (src/rqaf/inject_errors.py) that RQAF's detectors
+# must find. The employer/vendor BLOCKLIST is enforced everywhere with no exemptions.
 PATTERN_EXEMPT_PREFIXES = ("data/phi_leakage", "runs/phi_leakage", "results/phi_leakage",
                            "data/rqaf", "runs/rqaf", "results/rqaf")
 
@@ -78,8 +78,11 @@ def scan_file(path: str):
         return findings
     low = text.lower()
     if not _pattern_exempt(path):
+        # SHA-256 / hex digests (prompt hashes in run logs) are not identifiers:
+        # blank them before pattern scanning so digit runs inside them do not fire.
+        scan_text = HEX_DIGEST.sub(" ", text)
         for rx, label in PATTERNS:
-            for m in rx.finditer(text):
+            for m in rx.finditer(scan_text):
                 findings.append((path, label, m.group(0)[:40]))
     for term in _blocklist_hits(low):
         findings.append((path, "blocklist term", term))

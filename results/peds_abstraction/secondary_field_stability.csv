@@ -1,0 +1,5 @@
+model,runs_available,records_with_all_runs,scalar_field_stability,list_domain_keyset_stability
+anthropic_claude-sonnet-5,3,160,0.9989583333333333,0.74875
+deepseek_deepseek-v4-pro,3,160,0.865625,0.65625
+google_gemini-3-1-pro-preview,3,160,1.0,0.9025
+openai_gpt-5-5-2026-04-23,3,160,1.0,0.70125
