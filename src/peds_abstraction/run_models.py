@@ -72,10 +72,12 @@ def main():
     suffix = "_ablation" if a.ablation else ""
     for m in cfg["models"]:
         runner = make_runner(m["id"])
+        quota_stop = False
         for k in range(1, runs + 1):
             out = f"runs/peds_abstraction/{model_tag(m['id'])}/run{k}{suffix}.jsonl"
             done = load_done(out)
             todo = [p for p in records if os.path.basename(p)[:-4] not in done]
+            consecutive_quota = 0
             for p in tqdm(todo, desc=f"{m['id']} run{k}{suffix}"):
                 rid = os.path.basename(p)[:-4]
                 note = open(p).read()
@@ -86,6 +88,23 @@ def main():
                 append_jsonl(out, completion_record(
                     c, record_id=rid, run=k, prompt_name=prompt_name,
                     parsed=parsed, parse_error=perr))
+                # Operational guard (2026-09-29): a provider daily-quota wall
+                # rejects every further call; stop this model's loop after 5
+                # consecutive quota errors instead of issuing hundreds of
+                # rejected requests. Errored lines are stripped and retried
+                # later; recorded successful outputs are unaffected.
+                if c.error and ("ResourceExhausted" in c.error or "quota" in c.error.lower()
+                                or "RateLimit" in c.error or "429" in c.error):
+                    consecutive_quota += 1
+                    if consecutive_quota >= 5:
+                        print(f"\n{m['id']}: quota wall ({consecutive_quota} consecutive); "
+                              f"stopping this model, will resume on next launch")
+                        quota_stop = True
+                        break
+                else:
+                    consecutive_quota = 0
+            if quota_stop:
+                break
     print("done. Score with: python src/peds_abstraction/score.py")
 
 
