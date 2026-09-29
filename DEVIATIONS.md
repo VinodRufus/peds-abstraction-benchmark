@@ -156,3 +156,13 @@ cases."), which that study's detectors are required to find; the number is ficti
 identical in every injected record. The RQAF data, run, and result paths are added to the
 identifier-pattern exemption that already covered the PHI-leakage study. The employer and
 vendor blocklist remains enforced on every path. No data, run log, or result was changed.
+
+## 2026-09-29 Post-tag additions (peds_abstraction): derived review table and construction check
+Two tools added after results-peds_abstraction-v1; neither changes any recorded output,
+gold file, or result. tools/peds_clinician_review_table.py derives
+results/peds_abstraction/secondary_unsupported_adjudication_for_clinician_review.csv from the
+frozen adjudication table by adding the raw model item, best-matching source sentence, full
+source note, and empty clinician-decision columns (requested by the external methods review).
+tools/peds_gold_narrative_check.py verifies that every frozen gold list item (910) and every
+scalar value (age, sex, weight, setting, disposition for all 160 records) appears in its
+record's narrative; it exits non-zero on any miss and reports zero misses on the frozen corpus.
