@@ -1,0 +1,59 @@
+model,record,name,status,category
+anthropic_claude-sonnet-5,REC-neo-eme-001,term birth,historical,birth history listed as diagnosis
+anthropic_claude-sonnet-5,REC-neo-eme-003,gestational diabetes (maternal),historical,"maternal condition, qualified as maternal"
+anthropic_claude-sonnet-5,REC-neo-eme-006,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+anthropic_claude-sonnet-5,REC-neo-eme-008,prematurity (36 weeks gestation),historical,prematurity inferred from gestational age
+anthropic_claude-sonnet-5,REC-neo-eme-009,gestational diabetes (maternal history),historical,"maternal condition, qualified as maternal"
+anthropic_claude-sonnet-5,REC-neo-icu-002,gestational diabetes (maternal),historical,"maternal condition, qualified as maternal"
+anthropic_claude-sonnet-5,REC-neo-icu-004,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+anthropic_claude-sonnet-5,REC-neo-icu-006,gestational diabetes (maternal),historical,"maternal condition, qualified as maternal"
+anthropic_claude-sonnet-5,REC-neo-icu-008,gestational diabetes (maternal history),historical,"maternal condition, qualified as maternal"
+anthropic_claude-sonnet-5,REC-neo-icu-010,gestational diabetes (maternal),historical,"maternal condition, qualified as maternal"
+anthropic_claude-sonnet-5,REC-neo-inp-003,gestational diabetes (maternal history),historical,"maternal condition, qualified as maternal"
+anthropic_claude-sonnet-5,REC-neo-inp-005,prematurity (36 weeks gestation),historical,prematurity inferred from gestational age
+anthropic_claude-sonnet-5,REC-neo-inp-006,gestational diabetes (maternal),historical,"maternal condition, qualified as maternal"
+anthropic_claude-sonnet-5,REC-neo-inp-008,prematurity (born at 36 weeks gestation),historical,prematurity inferred from gestational age
+anthropic_claude-sonnet-5,REC-neo-inp-009,gestational diabetes (maternal),historical,"maternal condition, qualified as maternal"
+anthropic_claude-sonnet-5,REC-neo-out-001,prematurity (36 weeks gestation),historical,prematurity inferred from gestational age
+anthropic_claude-sonnet-5,REC-neo-out-006,prematurity (36 weeks gestation),historical,prematurity inferred from gestational age
+anthropic_claude-sonnet-5,REC-neo-out-009,prematurity (36 weeks gestation),historical,prematurity inferred from gestational age
+deepseek_deepseek-v4-pro,REC-neo-eme-003,pregnancy complicated by gestational diabetes,historical,"maternal condition, qualified as maternal"
+deepseek_deepseek-v4-pro,REC-neo-eme-006,Pregnancy complicated by gestational diabetes,historical,"maternal condition, qualified as maternal"
+deepseek_deepseek-v4-pro,REC-neo-eme-009,pregnancy complicated by gestational diabetes,historical,"maternal condition, qualified as maternal"
+deepseek_deepseek-v4-pro,REC-neo-icu-002,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+deepseek_deepseek-v4-pro,REC-neo-icu-008,pregnancy complicated by gestational diabetes,historical,"maternal condition, qualified as maternal"
+deepseek_deepseek-v4-pro,REC-neo-icu-010,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+deepseek_deepseek-v4-pro,REC-neo-inp-003,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+deepseek_deepseek-v4-pro,REC-neo-inp-006,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+deepseek_deepseek-v4-pro,REC-neo-inp-009,Pregnancy complicated by gestational diabetes,historical,"maternal condition, qualified as maternal"
+deepseek_deepseek-v4-pro,REC-neo-out-004,preterm birth at 36 weeks gestation,historical,prematurity inferred from gestational age
+google_gemini-3-1-pro-preview,REC-neo-eme-003,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+google_gemini-3-1-pro-preview,REC-neo-eme-006,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+google_gemini-3-1-pro-preview,REC-neo-eme-009,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+google_gemini-3-1-pro-preview,REC-neo-icu-002,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+google_gemini-3-1-pro-preview,REC-neo-icu-004,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+google_gemini-3-1-pro-preview,REC-neo-icu-006,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+google_gemini-3-1-pro-preview,REC-neo-icu-008,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+google_gemini-3-1-pro-preview,REC-neo-icu-010,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+google_gemini-3-1-pro-preview,REC-neo-inp-003,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+google_gemini-3-1-pro-preview,REC-neo-inp-006,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+google_gemini-3-1-pro-preview,REC-neo-inp-009,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+openai_gpt-5-5-2026-04-23,REC-neo-eme-003,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+openai_gpt-5-5-2026-04-23,REC-neo-eme-006,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+openai_gpt-5-5-2026-04-23,REC-neo-eme-007,term birth,historical,birth history listed as diagnosis
+openai_gpt-5-5-2026-04-23,REC-neo-eme-009,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+openai_gpt-5-5-2026-04-23,REC-neo-eme-010,term birth,historical,birth history listed as diagnosis
+openai_gpt-5-5-2026-04-23,REC-neo-icu-002,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+openai_gpt-5-5-2026-04-23,REC-neo-icu-003,born at term,historical,birth history listed as diagnosis
+openai_gpt-5-5-2026-04-23,REC-neo-icu-003,unknown maternal group b streptococcus status,active,maternal GBS status listed as infant diagnosis
+openai_gpt-5-5-2026-04-23,REC-neo-icu-004,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+openai_gpt-5-5-2026-04-23,REC-neo-icu-008,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+openai_gpt-5-5-2026-04-23,REC-neo-icu-010,maternal gestational diabetes,historical,"maternal condition, qualified as maternal"
+openai_gpt-5-5-2026-04-23,REC-neo-inp-001,term birth,historical,birth history listed as diagnosis
+openai_gpt-5-5-2026-04-23,REC-neo-inp-003,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+openai_gpt-5-5-2026-04-23,REC-neo-inp-004,term birth,historical,birth history listed as diagnosis
+openai_gpt-5-5-2026-04-23,REC-neo-inp-005,born at 36 weeks gestation,historical,birth history listed as diagnosis
+openai_gpt-5-5-2026-04-23,REC-neo-inp-006,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+openai_gpt-5-5-2026-04-23,REC-neo-inp-009,gestational diabetes,historical,maternal condition attributed to infant (unqualified)
+openai_gpt-5-5-2026-04-23,REC-neo-out-001,delivery complications,ruled_out,birth history listed as diagnosis
+openai_gpt-5-5-2026-04-23,REC-neo-out-009,delivery complications,ruled_out,birth history listed as diagnosis

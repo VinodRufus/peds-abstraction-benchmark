@@ -1,0 +1,156 @@
+model,record,domain,item,assertion
+anthropic_claude-sonnet-5,REC-ado-eme-001,temporal,insulin infusion started,current
+anthropic_claude-sonnet-5,REC-ado-eme-004,temporal,insulin infusion started,completed
+anthropic_claude-sonnet-5,REC-ado-eme-007,temporal,insulin infusion started,completed
+anthropic_claude-sonnet-5,REC-ado-eme-010,temporal,insulin infusion started,completed
+anthropic_claude-sonnet-5,REC-ado-icu-001,temporal,insulin infusion started,current
+anthropic_claude-sonnet-5,REC-ado-icu-002,temporal,ICU admission,completed
+anthropic_claude-sonnet-5,REC-ado-icu-002,temporal,insulin infusion started,completed
+anthropic_claude-sonnet-5,REC-ado-icu-003,temporal,insulin infusion started,completed
+anthropic_claude-sonnet-5,REC-ado-icu-004,temporal,insulin infusion started,current
+anthropic_claude-sonnet-5,REC-ado-icu-005,temporal,ICU admission,completed
+anthropic_claude-sonnet-5,REC-ado-icu-005,temporal,insulin infusion started,current
+anthropic_claude-sonnet-5,REC-ado-icu-006,temporal,diabetic ketoacidosis diagnosis,current
+anthropic_claude-sonnet-5,REC-ado-icu-006,temporal,insulin infusion started,current
+anthropic_claude-sonnet-5,REC-ado-icu-007,temporal,insulin infusion started,current
+anthropic_claude-sonnet-5,REC-ado-icu-008,temporal,Insulin infusion started,current
+anthropic_claude-sonnet-5,REC-ado-icu-009,temporal,insulin infusion started,completed
+anthropic_claude-sonnet-5,REC-ado-icu-010,temporal,insulin infusion started,completed
+anthropic_claude-sonnet-5,REC-ado-inp-001,temporal,insulin infusion started,completed
+anthropic_claude-sonnet-5,REC-ado-inp-007,temporal,insulin infusion,current
+anthropic_claude-sonnet-5,REC-ado-inp-010,temporal,insulin infusion started,current
+anthropic_claude-sonnet-5,REC-ado-out-007,temporal,fluoxetine initiation,current
+anthropic_claude-sonnet-5,REC-chi-eme-001,procedures,complete blood count (CBC),planned
+anthropic_claude-sonnet-5,REC-chi-eme-001,temporal,prednisolone therapy started,current
+anthropic_claude-sonnet-5,REC-chi-eme-001,temporal,prior clinic note dosing documentation (per day rather than per dose) prior clin,historical
+anthropic_claude-sonnet-5,REC-chi-eme-002,temporal,amoxicillin therapy started,current
+anthropic_claude-sonnet-5,REC-chi-eme-003,temporal,Prior clinic note documented morphine dose per day prior clinic visit,historical
+anthropic_claude-sonnet-5,REC-chi-eme-009,temporal,Prior clinic note dosing (per day) prior visit,historical
+anthropic_claude-sonnet-5,REC-chi-icu-002,temporal,admission to ICU,current
+anthropic_claude-sonnet-5,REC-chi-icu-002,temporal,morphine dose documented as per day in prior clinic note prior clinic note,historical
+anthropic_claude-sonnet-5,REC-chi-icu-007,temporal,albuterol nebulized continuous therapy,current
+anthropic_claude-sonnet-5,REC-chi-inp-002,temporal,amoxicillin started current admission,completed
+anthropic_claude-sonnet-5,REC-chi-inp-002,temporal,prior clinic note listed dose per day instead of per dose prior clinic visit,historical
+anthropic_claude-sonnet-5,REC-chi-inp-006,temporal,morphine dose documented as per day prior clinic note,historical
+anthropic_claude-sonnet-5,REC-chi-inp-008,temporal,prior clinic note documented different dosing prior clinic visit,historical
+anthropic_claude-sonnet-5,REC-chi-inp-010,temporal,prior clinic dosing documentation,historical
+anthropic_claude-sonnet-5,REC-chi-out-004,temporal,amoxicillin dose documented as per day prior clinic visit,historical
+anthropic_claude-sonnet-5,REC-chi-out-009,temporal,prior clinic note dose documentation prior clinic visit,historical
+anthropic_claude-sonnet-5,REC-inf-eme-006,temporal,ceftriaxone dosing documented as per day prior clinic note,historical
+anthropic_claude-sonnet-5,REC-inf-eme-009,temporal,prior clinic note dosing documentation,historical
+anthropic_claude-sonnet-5,REC-inf-icu-002,temporal,prior clinic note dose documentation (per day rather than per dose),historical
+anthropic_claude-sonnet-5,REC-inf-icu-008,temporal,admission to ICU,current
+anthropic_claude-sonnet-5,REC-inf-icu-008,temporal,ceftriaxone initiation,current
+anthropic_claude-sonnet-5,REC-inf-icu-010,temporal,ceftriaxone dosing documented as per day in prior clinic note prior clinic visit,historical
+anthropic_claude-sonnet-5,REC-inf-out-002,temporal,amoxicillin therapy,completed
+anthropic_claude-sonnet-5,REC-neo-eme-001,diagnoses,term birth,historical
+anthropic_claude-sonnet-5,REC-neo-eme-002,temporal,birth at 36 weeks gestation,historical
+anthropic_claude-sonnet-5,REC-neo-eme-003,diagnoses,gestational diabetes (maternal),historical
+anthropic_claude-sonnet-5,REC-neo-eme-004,temporal,Birth at term,historical
+anthropic_claude-sonnet-5,REC-neo-eme-005,temporal,birth at 36 weeks gestation,historical
+anthropic_claude-sonnet-5,REC-neo-eme-008,diagnoses,prematurity (36 weeks gestation),historical
+anthropic_claude-sonnet-5,REC-neo-eme-008,temporal,birth at 36 weeks gestation,historical
+anthropic_claude-sonnet-5,REC-neo-eme-009,diagnoses,gestational diabetes (maternal history),historical
+anthropic_claude-sonnet-5,REC-neo-eme-010,temporal,prior clinic dose documentation (per day rather than per dose),historical
+anthropic_claude-sonnet-5,REC-neo-icu-001,temporal,birth at term,historical
+anthropic_claude-sonnet-5,REC-neo-icu-001,temporal,ampicillin therapy started,current
+anthropic_claude-sonnet-5,REC-neo-icu-002,diagnoses,gestational diabetes (maternal),historical
+anthropic_claude-sonnet-5,REC-neo-icu-002,temporal,admission to ICU,completed
+anthropic_claude-sonnet-5,REC-neo-icu-004,temporal,gestational diabetes during pregnancy,historical
+anthropic_claude-sonnet-5,REC-neo-icu-005,temporal,birth at term,historical
+anthropic_claude-sonnet-5,REC-neo-icu-006,diagnoses,gestational diabetes (maternal),historical
+anthropic_claude-sonnet-5,REC-neo-icu-006,temporal,admission to ICU,completed
+anthropic_claude-sonnet-5,REC-neo-icu-007,temporal,birth at term,historical
+anthropic_claude-sonnet-5,REC-neo-icu-008,diagnoses,gestational diabetes (maternal history),historical
+anthropic_claude-sonnet-5,REC-neo-icu-009,temporal,Ampicillin therapy started,current
+anthropic_claude-sonnet-5,REC-neo-icu-010,diagnoses,gestational diabetes (maternal),historical
+anthropic_claude-sonnet-5,REC-neo-inp-003,diagnoses,gestational diabetes (maternal history),historical
+anthropic_claude-sonnet-5,REC-neo-inp-004,temporal,Ampicillin therapy started,completed
+anthropic_claude-sonnet-5,REC-neo-inp-005,diagnoses,prematurity (36 weeks gestation),historical
+anthropic_claude-sonnet-5,REC-neo-inp-006,diagnoses,gestational diabetes (maternal),historical
+anthropic_claude-sonnet-5,REC-neo-inp-007,temporal,birth term,historical
+anthropic_claude-sonnet-5,REC-neo-inp-008,diagnoses,prematurity (born at 36 weeks gestation),historical
+anthropic_claude-sonnet-5,REC-neo-inp-008,temporal,birth at 36 weeks gestation,historical
+anthropic_claude-sonnet-5,REC-neo-inp-009,diagnoses,gestational diabetes (maternal),historical
+anthropic_claude-sonnet-5,REC-neo-inp-010,temporal,birth at term,historical
+anthropic_claude-sonnet-5,REC-neo-out-001,diagnoses,prematurity (36 weeks gestation),historical
+anthropic_claude-sonnet-5,REC-neo-out-001,temporal,birth at 36 weeks gestation,historical
+anthropic_claude-sonnet-5,REC-neo-out-003,temporal,birth at 36 weeks gestation 36 weeks gestation,historical
+anthropic_claude-sonnet-5,REC-neo-out-005,temporal,birth at 36 weeks gestation,historical
+anthropic_claude-sonnet-5,REC-neo-out-006,diagnoses,prematurity (36 weeks gestation),historical
+anthropic_claude-sonnet-5,REC-neo-out-006,temporal,birth at 36 weeks gestation,historical
+anthropic_claude-sonnet-5,REC-neo-out-007,temporal,birth at 36 weeks gestation 36 weeks gestation,historical
+anthropic_claude-sonnet-5,REC-neo-out-009,diagnoses,prematurity (36 weeks gestation),historical
+anthropic_claude-sonnet-5,REC-neo-out-009,procedures,complete blood count (CBC),planned
+anthropic_claude-sonnet-5,REC-neo-out-009,temporal,birth at 36 weeks gestation prior to admission,historical
+deepseek_deepseek-v4-pro,REC-ado-eme-002,temporal,fluoxetine initiation,completed
+deepseek_deepseek-v4-pro,REC-ado-eme-005,temporal,fluoxetine initiation,completed
+deepseek_deepseek-v4-pro,REC-ado-eme-010,temporal,insulin continuous infusion started,current
+deepseek_deepseek-v4-pro,REC-ado-icu-007,temporal,insulin continuous IV infusion,current
+deepseek_deepseek-v4-pro,REC-ado-inp-004,temporal,Insulin infusion,current
+deepseek_deepseek-v4-pro,REC-ado-inp-008,temporal,initiation of fluoxetine,completed
+deepseek_deepseek-v4-pro,REC-chi-eme-008,temporal,amoxicillin initiation,completed
+deepseek_deepseek-v4-pro,REC-chi-inp-003,temporal,diagnostic workup,current
+deepseek_deepseek-v4-pro,REC-chi-out-008,temporal,community-acquired pneumonia encounter,current
+deepseek_deepseek-v4-pro,REC-chi-out-008,temporal,amoxicillin encounter,current
+deepseek_deepseek-v4-pro,REC-chi-out-008,temporal,chest radiograph encounter,completed
+deepseek_deepseek-v4-pro,REC-neo-eme-002,temporal,uncomplicated vaginal delivery birth,historical
+deepseek_deepseek-v4-pro,REC-neo-eme-003,temporal,uncomplicated vaginal delivery 2 days ago,completed
+deepseek_deepseek-v4-pro,REC-neo-eme-005,temporal,birth 36 weeks gestation,historical
+deepseek_deepseek-v4-pro,REC-neo-icu-001,temporal,birth,historical
+deepseek_deepseek-v4-pro,REC-neo-icu-003,temporal,Birth term,historical
+deepseek_deepseek-v4-pro,REC-neo-icu-005,temporal,ampicillin initiation,completed
+deepseek_deepseek-v4-pro,REC-neo-inp-005,temporal,Birth 36 weeks gestation,historical
+deepseek_deepseek-v4-pro,REC-neo-inp-007,temporal,birth at term,historical
+deepseek_deepseek-v4-pro,REC-neo-inp-008,temporal,birth 36 weeks gestation,historical
+deepseek_deepseek-v4-pro,REC-neo-out-001,temporal,Birth at 36 weeks gestation 5 days ago,historical
+deepseek_deepseek-v4-pro,REC-neo-out-002,temporal,birth,historical
+deepseek_deepseek-v4-pro,REC-neo-out-003,temporal,Birth 36 weeks gestation,historical
+deepseek_deepseek-v4-pro,REC-neo-out-004,diagnoses,preterm birth at 36 weeks gestation,historical
+deepseek_deepseek-v4-pro,REC-neo-out-004,temporal,birth 36 weeks gestation,historical
+deepseek_deepseek-v4-pro,REC-neo-out-005,temporal,birth 36 weeks gestation,historical
+deepseek_deepseek-v4-pro,REC-neo-out-007,temporal,birth 36 weeks gestation,historical
+deepseek_deepseek-v4-pro,REC-neo-out-010,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-chi-eme-008,temporal,amoxicillin initiation,completed
+google_gemini-3-1-pro-preview,REC-chi-inp-008,temporal,clinic visit prior,historical
+google_gemini-3-1-pro-preview,REC-neo-eme-001,temporal,birth at term,historical
+google_gemini-3-1-pro-preview,REC-neo-eme-002,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-eme-008,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-icu-005,temporal,birth at term,historical
+google_gemini-3-1-pro-preview,REC-neo-icu-007,temporal,birth at term,historical
+google_gemini-3-1-pro-preview,REC-neo-inp-002,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-inp-005,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-inp-008,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-out-001,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-out-002,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-out-003,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-out-004,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-out-005,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-out-006,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-out-007,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-out-008,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-out-009,temporal,birth 36 weeks gestation,historical
+google_gemini-3-1-pro-preview,REC-neo-out-010,temporal,birth 36 weeks gestation,historical
+openai_gpt-5-5-2026-04-23,REC-neo-eme-003,temporal,vaginal delivery birth,historical
+openai_gpt-5-5-2026-04-23,REC-neo-eme-004,temporal,birth at term,historical
+openai_gpt-5-5-2026-04-23,REC-neo-eme-005,temporal,birth 36 weeks gestation,historical
+openai_gpt-5-5-2026-04-23,REC-neo-eme-007,diagnoses,term birth,historical
+openai_gpt-5-5-2026-04-23,REC-neo-eme-007,temporal,birth at term,historical
+openai_gpt-5-5-2026-04-23,REC-neo-eme-008,temporal,born at 36 weeks gestation birth,historical
+openai_gpt-5-5-2026-04-23,REC-neo-eme-008,temporal,vaginal delivery birth,historical
+openai_gpt-5-5-2026-04-23,REC-neo-eme-010,diagnoses,term birth,historical
+openai_gpt-5-5-2026-04-23,REC-neo-eme-010,temporal,birth at term,historical
+openai_gpt-5-5-2026-04-23,REC-neo-icu-010,diagnoses,maternal gestational diabetes,historical
+openai_gpt-5-5-2026-04-23,REC-neo-icu-010,temporal,ICU admission,current
+openai_gpt-5-5-2026-04-23,REC-neo-inp-001,diagnoses,term birth,historical
+openai_gpt-5-5-2026-04-23,REC-neo-inp-004,diagnoses,term birth,historical
+openai_gpt-5-5-2026-04-23,REC-neo-inp-005,temporal,birth at 36 weeks gestation 36 weeks gestation,historical
+openai_gpt-5-5-2026-04-23,REC-neo-inp-010,temporal,birth at term,historical
+openai_gpt-5-5-2026-04-23,REC-neo-out-001,diagnoses,delivery complications,ruled_out
+openai_gpt-5-5-2026-04-23,REC-neo-out-001,temporal,clinic visit,current
+openai_gpt-5-5-2026-04-23,REC-neo-out-001,temporal,birth 36 weeks gestation,historical
+openai_gpt-5-5-2026-04-23,REC-neo-out-003,temporal,birth at 36 weeks gestation 36 weeks gestation,historical
+openai_gpt-5-5-2026-04-23,REC-neo-out-004,temporal,birth 36 weeks gestation,historical
+openai_gpt-5-5-2026-04-23,REC-neo-out-008,temporal,birth at 36 weeks gestation 36 weeks gestation,historical
+openai_gpt-5-5-2026-04-23,REC-neo-out-009,diagnoses,delivery complications,ruled_out
+openai_gpt-5-5-2026-04-23,REC-neo-out-010,temporal,Birth at 36 weeks gestation 36 weeks gestation,historical

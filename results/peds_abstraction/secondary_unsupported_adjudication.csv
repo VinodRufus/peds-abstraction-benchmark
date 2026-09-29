@@ -1,0 +1,156 @@
+model,record,domain,item,assertion,category,rationale
+anthropic_claude-sonnet-5,REC-ado-eme-001,temporal,insulin infusion started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-eme-004,temporal,insulin infusion started,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-eme-007,temporal,insulin infusion started,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-eme-010,temporal,insulin infusion started,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-icu-001,temporal,insulin infusion started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-icu-002,temporal,ICU admission,completed,abbreviation,ICU / CBC for 'intensive care unit' / 'complete blood count' or the reverse
+anthropic_claude-sonnet-5,REC-ado-icu-002,temporal,insulin infusion started,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-icu-003,temporal,insulin infusion started,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-icu-004,temporal,insulin infusion started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-icu-005,temporal,ICU admission,completed,abbreviation,ICU / CBC for 'intensive care unit' / 'complete blood count' or the reverse
+anthropic_claude-sonnet-5,REC-ado-icu-005,temporal,insulin infusion started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-icu-006,temporal,diabetic ketoacidosis diagnosis,current,paraphrase,encounter/assessment wording restated as an event
+anthropic_claude-sonnet-5,REC-ado-icu-006,temporal,insulin infusion started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-icu-007,temporal,insulin infusion started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-icu-008,temporal,Insulin infusion started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-icu-009,temporal,insulin infusion started,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-icu-010,temporal,insulin infusion started,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-inp-001,temporal,insulin infusion started,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-inp-007,temporal,insulin infusion,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-inp-010,temporal,insulin infusion started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-ado-out-007,temporal,fluoxetine initiation,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-chi-eme-001,procedures,complete blood count (CBC),planned,abbreviation,ICU / CBC for 'intensive care unit' / 'complete blood count' or the reverse
+anthropic_claude-sonnet-5,REC-chi-eme-001,temporal,prednisolone therapy started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-chi-eme-001,temporal,prior clinic note dosing documentation (per day rather than per dose) prior clin,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-chi-eme-002,temporal,amoxicillin therapy started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-chi-eme-003,temporal,Prior clinic note documented morphine dose per day prior clinic visit,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-chi-eme-009,temporal,Prior clinic note dosing (per day) prior visit,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-chi-icu-002,temporal,admission to ICU,current,abbreviation,ICU / CBC for 'intensive care unit' / 'complete blood count' or the reverse
+anthropic_claude-sonnet-5,REC-chi-icu-002,temporal,morphine dose documented as per day in prior clinic note prior clinic note,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-chi-icu-007,temporal,albuterol nebulized continuous therapy,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-chi-inp-002,temporal,amoxicillin started current admission,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-chi-inp-002,temporal,prior clinic note listed dose per day instead of per dose prior clinic visit,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-chi-inp-006,temporal,morphine dose documented as per day prior clinic note,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-chi-inp-008,temporal,prior clinic note documented different dosing prior clinic visit,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-chi-inp-010,temporal,prior clinic dosing documentation,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-chi-out-004,temporal,amoxicillin dose documented as per day prior clinic visit,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-chi-out-009,temporal,prior clinic note dose documentation prior clinic visit,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-inf-eme-006,temporal,ceftriaxone dosing documented as per day prior clinic note,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-inf-eme-009,temporal,prior clinic note dosing documentation,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-inf-icu-002,temporal,prior clinic note dose documentation (per day rather than per dose),historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-inf-icu-008,temporal,admission to ICU,current,abbreviation,ICU / CBC for 'intensive care unit' / 'complete blood count' or the reverse
+anthropic_claude-sonnet-5,REC-inf-icu-008,temporal,ceftriaxone initiation,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-inf-icu-010,temporal,ceftriaxone dosing documented as per day in prior clinic note prior clinic visit,historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-inf-out-002,temporal,amoxicillin therapy,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-neo-eme-001,diagnoses,term birth,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-eme-002,temporal,birth at 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-eme-003,diagnoses,gestational diabetes (maternal),historical,paraphrase,'pregnancy complicated by gestational diabetes' rendered as maternal gestational diabetes
+anthropic_claude-sonnet-5,REC-neo-eme-004,temporal,Birth at term,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-eme-005,temporal,birth at 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-eme-008,diagnoses,prematurity (36 weeks gestation),historical,inference_correct,36 weeks gestation classified as late preterm / prematurity
+anthropic_claude-sonnet-5,REC-neo-eme-008,temporal,birth at 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-eme-009,diagnoses,gestational diabetes (maternal history),historical,paraphrase,'pregnancy complicated by gestational diabetes' rendered as maternal gestational diabetes
+anthropic_claude-sonnet-5,REC-neo-eme-010,temporal,prior clinic dose documentation (per day rather than per dose),historical,paraphrase,dose-basis distractor sentence reworded
+anthropic_claude-sonnet-5,REC-neo-icu-001,temporal,birth at term,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-icu-001,temporal,ampicillin therapy started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-neo-icu-002,diagnoses,gestational diabetes (maternal),historical,paraphrase,'pregnancy complicated by gestational diabetes' rendered as maternal gestational diabetes
+anthropic_claude-sonnet-5,REC-neo-icu-002,temporal,admission to ICU,completed,abbreviation,ICU / CBC for 'intensive care unit' / 'complete blood count' or the reverse
+anthropic_claude-sonnet-5,REC-neo-icu-004,temporal,gestational diabetes during pregnancy,historical,paraphrase,'pregnancy complicated by gestational diabetes' rendered as maternal gestational diabetes
+anthropic_claude-sonnet-5,REC-neo-icu-005,temporal,birth at term,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-icu-006,diagnoses,gestational diabetes (maternal),historical,paraphrase,'pregnancy complicated by gestational diabetes' rendered as maternal gestational diabetes
+anthropic_claude-sonnet-5,REC-neo-icu-006,temporal,admission to ICU,completed,abbreviation,ICU / CBC for 'intensive care unit' / 'complete blood count' or the reverse
+anthropic_claude-sonnet-5,REC-neo-icu-007,temporal,birth at term,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-icu-008,diagnoses,gestational diabetes (maternal history),historical,paraphrase,'pregnancy complicated by gestational diabetes' rendered as maternal gestational diabetes
+anthropic_claude-sonnet-5,REC-neo-icu-009,temporal,Ampicillin therapy started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-neo-icu-010,diagnoses,gestational diabetes (maternal),historical,paraphrase,'pregnancy complicated by gestational diabetes' rendered as maternal gestational diabetes
+anthropic_claude-sonnet-5,REC-neo-inp-003,diagnoses,gestational diabetes (maternal history),historical,paraphrase,'pregnancy complicated by gestational diabetes' rendered as maternal gestational diabetes
+anthropic_claude-sonnet-5,REC-neo-inp-004,temporal,Ampicillin therapy started,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+anthropic_claude-sonnet-5,REC-neo-inp-005,diagnoses,prematurity (36 weeks gestation),historical,inference_correct,36 weeks gestation classified as late preterm / prematurity
+anthropic_claude-sonnet-5,REC-neo-inp-006,diagnoses,gestational diabetes (maternal),historical,paraphrase,'pregnancy complicated by gestational diabetes' rendered as maternal gestational diabetes
+anthropic_claude-sonnet-5,REC-neo-inp-007,temporal,birth term,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-inp-008,diagnoses,prematurity (born at 36 weeks gestation),historical,inference_correct,36 weeks gestation classified as late preterm / prematurity
+anthropic_claude-sonnet-5,REC-neo-inp-008,temporal,birth at 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-inp-009,diagnoses,gestational diabetes (maternal),historical,paraphrase,'pregnancy complicated by gestational diabetes' rendered as maternal gestational diabetes
+anthropic_claude-sonnet-5,REC-neo-inp-010,temporal,birth at term,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-out-001,diagnoses,prematurity (36 weeks gestation),historical,inference_correct,36 weeks gestation classified as late preterm / prematurity
+anthropic_claude-sonnet-5,REC-neo-out-001,temporal,birth at 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-out-003,temporal,birth at 36 weeks gestation 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-out-005,temporal,birth at 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-out-006,diagnoses,prematurity (36 weeks gestation),historical,inference_correct,36 weeks gestation classified as late preterm / prematurity
+anthropic_claude-sonnet-5,REC-neo-out-006,temporal,birth at 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-out-007,temporal,birth at 36 weeks gestation 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+anthropic_claude-sonnet-5,REC-neo-out-009,diagnoses,prematurity (36 weeks gestation),historical,inference_correct,36 weeks gestation classified as late preterm / prematurity
+anthropic_claude-sonnet-5,REC-neo-out-009,procedures,complete blood count (CBC),planned,abbreviation,ICU / CBC for 'intensive care unit' / 'complete blood count' or the reverse
+anthropic_claude-sonnet-5,REC-neo-out-009,temporal,birth at 36 weeks gestation prior to admission,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-ado-eme-002,temporal,fluoxetine initiation,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+deepseek_deepseek-v4-pro,REC-ado-eme-005,temporal,fluoxetine initiation,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+deepseek_deepseek-v4-pro,REC-ado-eme-010,temporal,insulin continuous infusion started,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+deepseek_deepseek-v4-pro,REC-ado-icu-007,temporal,insulin continuous IV infusion,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+deepseek_deepseek-v4-pro,REC-ado-inp-004,temporal,Insulin infusion,current,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+deepseek_deepseek-v4-pro,REC-ado-inp-008,temporal,initiation of fluoxetine,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+deepseek_deepseek-v4-pro,REC-chi-eme-008,temporal,amoxicillin initiation,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+deepseek_deepseek-v4-pro,REC-chi-inp-003,temporal,diagnostic workup,current,paraphrase,encounter/assessment wording restated as an event
+deepseek_deepseek-v4-pro,REC-chi-out-008,temporal,community-acquired pneumonia encounter,current,paraphrase,encounter/assessment wording restated as an event
+deepseek_deepseek-v4-pro,REC-chi-out-008,temporal,amoxicillin encounter,current,paraphrase,encounter/assessment wording restated as an event
+deepseek_deepseek-v4-pro,REC-chi-out-008,temporal,chest radiograph encounter,completed,paraphrase,encounter/assessment wording restated as an event
+deepseek_deepseek-v4-pro,REC-neo-eme-002,temporal,uncomplicated vaginal delivery birth,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-eme-003,temporal,uncomplicated vaginal delivery 2 days ago,completed,inference_correct,delivery dated from the documented age in days
+deepseek_deepseek-v4-pro,REC-neo-eme-005,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-icu-001,temporal,birth,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-icu-003,temporal,Birth term,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-icu-005,temporal,ampicillin initiation,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+deepseek_deepseek-v4-pro,REC-neo-inp-005,temporal,Birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-inp-007,temporal,birth at term,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-inp-008,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-out-001,temporal,Birth at 36 weeks gestation 5 days ago,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-out-002,temporal,birth,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-out-003,temporal,Birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-out-004,diagnoses,preterm birth at 36 weeks gestation,historical,inference_correct,36 weeks gestation classified as late preterm / prematurity
+deepseek_deepseek-v4-pro,REC-neo-out-004,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-out-005,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-out-007,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+deepseek_deepseek-v4-pro,REC-neo-out-010,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-chi-eme-008,temporal,amoxicillin initiation,completed,paraphrase,'Started <drug> ... IV continuous' rendered as initiation / therapy / infusion
+google_gemini-3-1-pro-preview,REC-chi-inp-008,temporal,clinic visit prior,historical,paraphrase,dose-basis distractor sentence reworded
+google_gemini-3-1-pro-preview,REC-neo-eme-001,temporal,birth at term,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-eme-002,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-eme-008,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-icu-005,temporal,birth at term,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-icu-007,temporal,birth at term,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-inp-002,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-inp-005,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-inp-008,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-out-001,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-out-002,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-out-003,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-out-004,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-out-005,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-out-006,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-out-007,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-out-008,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-out-009,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+google_gemini-3-1-pro-preview,REC-neo-out-010,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-eme-003,temporal,vaginal delivery birth,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-eme-004,temporal,birth at term,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-eme-005,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-eme-007,diagnoses,term birth,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-eme-007,temporal,birth at term,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-eme-008,temporal,born at 36 weeks gestation birth,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-eme-008,temporal,vaginal delivery birth,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-eme-010,diagnoses,term birth,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-eme-010,temporal,birth at term,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-icu-010,diagnoses,maternal gestational diabetes,historical,paraphrase,'pregnancy complicated by gestational diabetes' rendered as maternal gestational diabetes
+openai_gpt-5-5-2026-04-23,REC-neo-icu-010,temporal,ICU admission,current,abbreviation,ICU / CBC for 'intensive care unit' / 'complete blood count' or the reverse
+openai_gpt-5-5-2026-04-23,REC-neo-inp-001,diagnoses,term birth,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-inp-004,diagnoses,term birth,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-inp-005,temporal,birth at 36 weeks gestation 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-inp-010,temporal,birth at term,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-out-001,diagnoses,delivery complications,ruled_out,inference_correct,'uncomplicated vaginal delivery' rendered as complications ruled out
+openai_gpt-5-5-2026-04-23,REC-neo-out-001,temporal,clinic visit,current,paraphrase,dose-basis distractor sentence reworded
+openai_gpt-5-5-2026-04-23,REC-neo-out-001,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-out-003,temporal,birth at 36 weeks gestation 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-out-004,temporal,birth 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-out-008,temporal,birth at 36 weeks gestation 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'
+openai_gpt-5-5-2026-04-23,REC-neo-out-009,diagnoses,delivery complications,ruled_out,inference_correct,'uncomplicated vaginal delivery' rendered as complications ruled out
+openai_gpt-5-5-2026-04-23,REC-neo-out-010,temporal,Birth at 36 weeks gestation 36 weeks gestation,historical,lexical_variant,'birth' for note text 'born'

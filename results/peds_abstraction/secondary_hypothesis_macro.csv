@@ -1,0 +1,17 @@
+model,estimand,resampling,n,diff_ado_minus_neo,ci_low,ci_high
+anthropic_claude-sonnet-5,macro_f1 (pre-registered wording),paired by setting and position,40,-0.006250015288387867,-0.025378307253636826,0.0125843864620252
+anthropic_claude-sonnet-5,macro_f1 (pre-registered wording),independent,40,-0.006250015288387867,-0.02583368892909595,0.012967601806613176
+anthropic_claude-sonnet-5,per_record_f1 (implemented test),paired by setting and position,40,0.03706959921743204,0.0008163248913539175,0.07465514231855175
+anthropic_claude-sonnet-5,per_record_f1 (implemented test),independent,40,0.037069599217431914,-0.001317354069434154,0.07699748819829128
+deepseek_deepseek-v4-pro,macro_f1 (pre-registered wording),paired by setting and position,40,-0.023949107911361622,-0.062543767594595,0.013013893284889408
+deepseek_deepseek-v4-pro,macro_f1 (pre-registered wording),independent,40,-0.023949107911361622,-0.06304990457430418,0.0148932729846429
+deepseek_deepseek-v4-pro,per_record_f1 (implemented test),paired by setting and position,40,0.0201468302938891,-0.04629167729308012,0.08377304659672113
+deepseek_deepseek-v4-pro,per_record_f1 (implemented test),independent,40,0.020146830293889084,-0.040737987540280476,0.08335842699934232
+google_gemini-3-1-pro-preview,macro_f1 (pre-registered wording),paired by setting and position,40,-0.026079128454049916,-0.054578482245521344,-0.0009184457056841308
+google_gemini-3-1-pro-preview,macro_f1 (pre-registered wording),independent,40,-0.026079128454049916,-0.05578018729093013,-0.0011479618755184592
+google_gemini-3-1-pro-preview,per_record_f1 (implemented test),paired by setting and position,40,0.027479469060351442,-0.013457105394605345,0.0692996026644924
+google_gemini-3-1-pro-preview,per_record_f1 (implemented test),independent,40,0.02747946906035148,-0.013602873229711567,0.06932760438091319
+openai_gpt-5-5-2026-04-23,macro_f1 (pre-registered wording),paired by setting and position,40,-0.007310269013020898,-0.02411657821630378,0.009512815091575361
+openai_gpt-5-5-2026-04-23,macro_f1 (pre-registered wording),independent,40,-0.007310269013020898,-0.025389925661709327,0.01083017311529426
+openai_gpt-5-5-2026-04-23,per_record_f1 (implemented test),paired by setting and position,40,0.04344569538648488,0.0054234037054277364,0.08238157533900567
+openai_gpt-5-5-2026-04-23,per_record_f1 (implemented test),independent,40,0.043445695386484906,0.0066271350499775596,0.07976177558574031

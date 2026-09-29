@@ -1,0 +1,5 @@
+model,granularity,redundant,residual_fp,fn_recovered,residual_fn
+openai_gpt-5-5-2026-04-23,197,295,303,204,26
+anthropic_claude-sonnet-5,189,242,176,201,49
+google_gemini-3-1-pro-preview,174,113,82,195,55
+deepseek_deepseek-v4-pro,156,194,142,181,92

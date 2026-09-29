@@ -1,0 +1,25 @@
+model,variant,per_record_f1,ci_low,ci_high
+anthropic_claude-sonnet-5,jaccard>=0.3 or subset (looser),0.9165549626027566,0.903505495704255,0.9292944359051895
+deepseek_deepseek-v4-pro,jaccard>=0.3 or subset (looser),0.8794552367781858,0.8489825346692246,0.906481552323343
+google_gemini-3-1-pro-preview,jaccard>=0.3 or subset (looser),0.9458402708402709,0.9335010354229104,0.9575718170718172
+openai_gpt-5-5-2026-04-23,jaccard>=0.3 or subset (looser),0.8574511110879145,0.8428106922585927,0.872310458268082
+anthropic_claude-sonnet-5,jaccard>=0.5 or subset (declared rule),0.8932350135567046,0.8776779236388612,0.9086750335805941
+deepseek_deepseek-v4-pro,jaccard>=0.5 or subset (declared rule),0.8690529307508796,0.8379572011679088,0.8963315763546631
+google_gemini-3-1-pro-preview,jaccard>=0.5 or subset (declared rule),0.9311920024420024,0.9161783667721167,0.9452921071983572
+openai_gpt-5-5-2026-04-23,jaccard>=0.5 or subset (declared rule),0.8498162348380035,0.834230350298244,0.8651510183183582
+anthropic_claude-sonnet-5,jaccard>=0.7 or subset (stricter),0.8852461978381095,0.8692531259845139,0.9013547712244862
+deepseek_deepseek-v4-pro,jaccard>=0.7 or subset (stricter),0.8681600736080226,0.8369632741457674,0.895599819451382
+google_gemini-3-1-pro-preview,jaccard>=0.7 or subset (stricter),0.9311920024420024,0.9161783667721167,0.9452921071983572
+openai_gpt-5-5-2026-04-23,jaccard>=0.7 or subset (stricter),0.8486688528082684,0.8327441958894648,0.8640608005242414
+anthropic_claude-sonnet-5,"jaccard>=0.5, no subset rule",0.8364902246016797,0.8208220085969458,0.852327398261246
+deepseek_deepseek-v4-pro,"jaccard>=0.5, no subset rule",0.8265235565303289,0.7966118173192476,0.8534209244850329
+google_gemini-3-1-pro-preview,"jaccard>=0.5, no subset rule",0.8825868810519545,0.8675504705160035,0.8975434564159288
+openai_gpt-5-5-2026-04-23,"jaccard>=0.5, no subset rule",0.8000465552356999,0.7838283276522561,0.8159873151417513
+anthropic_claude-sonnet-5,exact normalized tokens + cross-domain credit,0.726561723611356,0.7053108727465346,0.748708265514102
+deepseek_deepseek-v4-pro,exact normalized tokens + cross-domain credit,0.7349038400325165,0.7044407389485514,0.7634487621498192
+google_gemini-3-1-pro-preview,exact normalized tokens + cross-domain credit,0.7720109792168616,0.7506982218404552,0.793553571785649
+openai_gpt-5-5-2026-04-23,exact normalized tokens + cross-domain credit,0.666953981560086,0.6459061718767054,0.6883401325984335
+anthropic_claude-sonnet-5,"exact normalized tokens, no cross-domain credit",0.6860637563438454,0.6653446877715938,0.7069175802200788
+deepseek_deepseek-v4-pro,"exact normalized tokens, no cross-domain credit",0.6966657144240349,0.6663887844705496,0.7251363891271375
+google_gemini-3-1-pro-preview,"exact normalized tokens, no cross-domain credit",0.7663258310317133,0.7447188764564684,0.7876406855246468
+openai_gpt-5-5-2026-04-23,"exact normalized tokens, no cross-domain credit",0.6408646478005998,0.6213858724976542,0.6606344318641992

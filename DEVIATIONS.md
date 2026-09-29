@@ -94,3 +94,65 @@ normalized scalar values and identical list key sets across runs); (e) paired-bo
 differences in per-record F1 between all model pairs under both matchings; (f) the
 adolescent-vs-neonate comparison under lenient matching. No gold file, prompt, or
 primary scoring rule was changed.
+
+
+## 2026-09-29 Results frozen with Gemini 3.1 Pro calls not completed (peds_abstraction)
+The provider's 250 requests/model/day quota left 4 of Gemini 3.1 Pro's 520 planned calls
+(3 x 160 + 40 ablation) uncompleted when the results were frozen: ablation: REC-neo-eme-006; ablation: REC-neo-eme-008; ablation: REC-neo-eme-009; ablation: REC-neo-eme-010.
+The results were frozen rather than delayed for the next quota window. Consequences: Gemini's
+record-level and field-level stability are computed over the records that have all three runs
+(160 of 160), its ablation covers 36 of 40 records, and every run-1 (primary) result is unaffected.
+The other three models are complete (3 x 160 + 40 each). The supervisor was stopped before the
+freeze, so no call was added after the results tag. No recorded output was modified.
+
+## 2026-09-29 Estimand clarification and further secondary analyses (peds_abstraction)
+Declared after an internal adversarial review of the draft manuscript built from run-1
+results, before the final results tag. No gold file, prompt, run log, or primary scoring
+rule is changed.
+ESTIMAND. config/prereg_peds_abstraction.yaml words the primary hypothesis as "macro-F1
+differs between adolescent and neonate records (per model)". The frozen scoring code
+(src/peds_abstraction/score.py, results/peds_abstraction/hypothesis.csv) implements it
+as the mean per-record micro-F1 difference, paired by care setting and construction
+position (REC-neo-<setting>-<k> with REC-ado-<setting>-<k>). The two estimands answer
+different questions: per-record F1 is item-weighted and neonatal records carry more
+keyed items; macro-F1 is domain-weighted. The paper reports BOTH, labels the code's
+version as the executed pre-specified test and the YAML wording as the pre-registered
+estimand, states the pairing structure, and keeps the independent-resampling
+sensitivity analysis. Computed by tools/peds_v2_analyses.py with record-resampling
+bootstraps (10,000, seed 20260923).
+FURTHER SECONDARY ANALYSES (descriptive, applied identically to every model):
+(g) macro-F1 by age band with bootstrap CI; (h) gold item load per band; (i) strict
+per-domain P/R/F1 and per-care-setting F1; (j) sensitivity of the lenient rule to the
+overlap threshold (Jaccard 0.3/0.5/0.7, with and without the subset rule, exact tokens
+with and without cross-domain credit); (k) maternal and perinatal history encoded as the
+infant's diagnosis in neonatal records (the taxonomy's wrong_patient_attribute class,
+which errors.py operationalizes only as a sex mismatch, is extended descriptively here;
+the pre-specified taxonomy counts are reported unchanged), with a lenient variant that
+denies cross-domain credit for maternal/pregnancy events; (l) a run manifest of
+requested versus effective decoding settings derived from the adapters and the logged
+model_version strings. CORRECTIONS TO DRAFT TEXT recorded for transparency: the seed
+was transmitted only by the OpenAI adapter (accepted; temperature rejected); the
+Anthropic, Google, and DeepSeek adapters send no seed; one run-1 omission (GPT-5.5,
+REC-neo-inp-001, "suspected early-onset sepsis" as the item name) is in the diagnoses
+domain, so "every omission was temporal" is true for all but one item; the taxonomy
+labels an unparseable record once and does not enumerate its items (DeepSeek: 31 items
+in 5 records).
+
+## 2026-09-29 Operational note (peds_abstraction): audit false positives on run logs
+Running src/common/audit.py over the completed run logs produced 40 findings, all
+false positives of two kinds: digit runs inside SHA-256 prompt hashes matched the
+"long numeric id" pattern, and a three-letter blocklist term matched a substring of
+"otitis media" in model outputs. The audit now blanks 32+ character hex digests before
+pattern scanning and matches blocklist terms as whole words; the unit test that the
+audit catches a blocklist term still passes and a real 10-digit identifier or a
+whole-word hit is still reported. No data, run log, or result was changed.
+
+## 2026-09-29 Operational note: audit exemption for the RQAF injected corpus
+At the peds_abstraction results freeze, src/common/audit.py run over the whole repository
+flagged 40 MRN-like hits in data/rqaf/injected and data/rqaf/gold. All are the RQAF study's
+deliberately injected synthetic identifier string (privacy_leak error class,
+src/rqaf/inject_errors.py: "Patient record MRN 84921736 was representative of the excluded
+cases."), which that study's detectors are required to find; the number is fictitious and
+identical in every injected record. The RQAF data, run, and result paths are added to the
+identifier-pattern exemption that already covered the PHI-leakage study. The employer and
+vendor blocklist remains enforced on every path. No data, run log, or result was changed.

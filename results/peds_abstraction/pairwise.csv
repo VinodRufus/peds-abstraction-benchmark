@@ -1,0 +1,7 @@
+model_a,model_b,n,p,n01,n10,effect,p_holm,significant
+anthropic_claude-sonnet-5,deepseek_deepseek-v4-pro,960,7.118304164714049e-08,0,31,0.03229166666666672,3.5591520823570244e-07,True
+anthropic_claude-sonnet-5,google_gemini-3-1-pro-preview,960,1.0,0,1,0.0010416666666667185,1.0,False
+anthropic_claude-sonnet-5,openai_gpt-5-5-2026-04-23,960,0.5,2,0,-0.002083333333333326,1.0,False
+deepseek_deepseek-v4-pro,google_gemini-3-1-pro-preview,960,1.1924366854416802e-07,30,0,-0.03125,4.769746741766721e-07,True
+deepseek_deepseek-v4-pro,openai_gpt-5-5-2026-04-23,960,2.5403120142884285e-08,33,0,-0.034375000000000044,1.524187208573057e-07,True
+google_gemini-3-1-pro-preview,openai_gpt-5-5-2026-04-23,960,0.25,3,0,-0.0031250000000000444,0.75,False
