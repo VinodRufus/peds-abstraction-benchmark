@@ -60,3 +60,13 @@ proceeds AFTER the freeze as validation, and the paper will report its agreement
 statistics and any disputed records, with a sensitivity analysis excluding disputed
 records if any arise; (4) the paper states plainly that no clinician approved the
 corpus before freezing, as a limitation. Gold is frozen at this commit.
+
+## 2026-09-29 Operational note (peds_abstraction): provider daily quota during the benchmark
+Gemini 3.1 Pro (preview) enforces 250 requests per model per day at the study's billing
+tier, so its 3 x 160 + 40 calls span more than one calendar day; the run logs record
+every call's timestamp (runs_meta.csv reports the span). Errored calls were stripped and
+re-issued with identical prompt, schema, and decoding settings until complete. Two
+operational changes, none affecting recorded outputs or design values: run_models.py
+stops a model's loop after five consecutive quota errors (resume-safe), and a
+supervisor script re-launches when the quota reopens. Recorded successful outputs were
+never modified.
