@@ -70,3 +70,27 @@ operational changes, none affecting recorded outputs or design values: run_model
 stops a model's loop after five consecutive quota errors (resume-safe), and a
 supervisor script re-launches when the quota reopens. Recorded successful outputs were
 never modified.
+
+## 2026-09-29 Secondary analyses declared before computation (peds_abstraction)
+After the primary strict scoring was run, read-only diagnostics (tools/peds_diagnose.py)
+showed that every omission and most false positives across all four models arose in the
+temporal domain from two construction properties of the gold standard, not from model
+errors: (1) gold temporal events carry the full sentence in `event` with `when` null,
+whereas the schema invites models to split event and time (e.g. "repeat CBC" +
+"tomorrow morning"); (2) history and plan sentences are keyed in gold under one domain
+only, while the schema admits the same concept under another domain with the same
+assertion (a historical illness as a historical diagnosis; a planned test as a planned
+procedure). The pre-specified strict scoring remains the PRIMARY analysis and is
+reported unchanged. The following SECONDARY analyses are declared here before being
+computed, use rules fixed in tools/peds_secondary_stats.py, and are applied identically
+to every model: (a) lenient matching in the i2b2/n2c2 lenient-span convention (same
+assertion; token subset or Jaccard >= 0.5 on event+when / name text; medications and
+labs keep strict value and unit equality) with cross-domain credit for the same concept
+and compatible assertion, counted separately as redundant encodings; (b) a fabrication
+audit listing every strict false positive whose content tokens do not occur in the
+source note, for manual review; (c) hard-fact F1 excluding the temporal domain;
+(d) the field-level stability rate as defined in the manuscript text (identical
+normalized scalar values and identical list key sets across runs); (e) paired-bootstrap
+differences in per-record F1 between all model pairs under both matchings; (f) the
+adolescent-vs-neonate comparison under lenient matching. No gold file, prompt, or
+primary scoring rule was changed.
