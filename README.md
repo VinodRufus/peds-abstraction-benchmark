@@ -60,3 +60,7 @@ This public repository was derived from the authors' private working repository 
 institution blocklist in `src/common/audit.py` is stored as SHA-256 digests rather than clear
 text; local filesystem paths in one operational log were replaced by `<repo>`. All data,
 run logs, results, prompts, configuration, commit dates, and tag positions are unchanged.
+
+## Licences
+
+Code: MIT (LICENSE). Synthetic data, run logs, tables and figures: CC BY 4.0 (LICENSE-DATA). Cite with CITATION.cff.

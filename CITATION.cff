@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, its data or its code, please cite it as below."
+title: "Pediatric LLM Abstraction Benchmark: Assessing Large Language Model Performance for Pediatric Clinical Data Abstraction Using Synthetic Patient Records"
+authors:
+  - family-names: Motani
+    given-names: Vinod Rufus
+    orcid: "https://orcid.org/0009-0005-3459-0859"
+  - family-names: Bayya
+    given-names: Anil Kumar
+repository-code: "https://github.com/VinodRufus/peds-abstraction-benchmark"
+license: MIT
+type: software
