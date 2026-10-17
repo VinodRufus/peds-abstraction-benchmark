@@ -166,3 +166,14 @@ source note, and empty clinician-decision columns (requested by the external met
 tools/peds_gold_narrative_check.py verifies that every frozen gold list item (910) and every
 scalar value (age, sex, weight, setting, disposition for all 160 records) appears in its
 record's narrative; it exits non-zero on any miss and reports zero misses on the frozen corpus.
+
+## 2026-10-17 Public-release verification tests and CI
+The filtered public repository at the results tag contains six test functions. Seven
+additional tests were added after the results tag to cover empty and malformed
+predictions, duplicates, null values, equivalent numeric representations, unit
+mismatch, and invalid list shapes. A GitHub Actions workflow now runs the 13-test
+suite, the identifier/institution audit, and the gold-to-narrative presence check.
+The seven added tests did not run at the preregistration, gold, or results tags.
+They change no prompt, schema, corpus, gold file, model output, scoring code,
+or reported result. The manuscript's test-suite description should distinguish
+the tagged suite from these post-release verification additions.
