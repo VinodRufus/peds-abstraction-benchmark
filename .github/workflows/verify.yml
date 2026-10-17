@@ -1,0 +1,22 @@
+name: Verify public benchmark
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install requirements
+        run: python -m pip install -r requirements.txt
+      - name: Test scoring and corpus behavior
+        run: python -m pytest tests/ -q
+      - name: Audit public files
+        run: python src/common/audit.py
+      - name: Check gold values against note text
+        run: python tools/peds_gold_narrative_check.py
