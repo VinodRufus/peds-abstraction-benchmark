@@ -177,3 +177,9 @@ The seven added tests did not run at the preregistration, gold, or results tags.
 They change no prompt, schema, corpus, gold file, model output, scoring code,
 or reported result. The manuscript's test-suite description should distinguish
 the tagged suite from these post-release verification additions.
+
+## 2026-10-17 File renames in the public repository (no content change)
+tools/peds_v2_analyses.py renamed to tools/peds_declared_analyses.py, and the four screening
+workbooks in data/peds_abstraction/screen renamed to round1_/round2_ names listed in
+SCREEN_FINDINGS.md. Contents are byte-identical to the files at the results tag; the tags
+and the history keep the old names. The manuscript (v3.10) cites the new tool name.

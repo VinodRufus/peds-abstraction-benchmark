@@ -51,3 +51,10 @@ FDA fluoxetine labeling; ISPAD DKA guidance; CDC pediatric mild TBI; NHLBI asthm
 testing guidance; UCSF neonatal antimicrobial dosing; DailyMed sertraline label.
 
 Screen/assessment workbooks stored in this folder when present.
+
+## Files
+- round1_plausibility_screen_160_records.xlsx - Round 1, all 160 records (sheets: Instructions, Review, AI pre-screen, Screen notes)
+- round1_plausibility_screen_40_record_subset.xlsx - Round 1, seeded 40-record second-reviewer subset
+- round2_clinical_assessment_160_records.xlsx - Round 2, all 160 records of the corrected corpus (sheets: Instructions, Review, AI review audit)
+- round2_clinical_assessment_40_record_subset.xlsx - Round 2, 40-record subset
+Both rounds are AI-assisted construction evidence, not clinical review; see Section III.B of the paper.

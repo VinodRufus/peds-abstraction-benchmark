@@ -40,7 +40,7 @@ python src/common/audit.py                       # identifier and institution au
 python tools/peds_gold_narrative_check.py        # every gold value appears in its narrative: must print misses: 0
 python src/peds_abstraction/score.py             # rebuilds results/peds_abstraction/*.csv from runs/
 python tools/peds_extra_stats.py && python tools/peds_secondary_stats.py
-python tools/peds_adjudicate_unsupported.py && python tools/peds_v2_analyses.py && python tools/peds_figures.py
+python tools/peds_adjudicate_unsupported.py && python tools/peds_declared_analyses.py && python tools/peds_figures.py
 ```
 
 Re-running the models needs API keys in `.env` (see `.env.example`) and will produce new

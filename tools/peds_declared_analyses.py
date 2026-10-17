@@ -21,7 +21,7 @@ Analyses and outputs (results/peds_abstraction/):
   runs_manifest.csv                     per model: requested vs effective decoding settings, versions,
                                         prompt hashes, logged calls, date span
 
-Usage: python tools/peds_v2_analyses.py
+Usage: python tools/peds_declared_analyses.py
 """
 from __future__ import annotations
 import glob
