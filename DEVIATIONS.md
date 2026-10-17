@@ -183,3 +183,11 @@ tools/peds_v2_analyses.py renamed to tools/peds_declared_analyses.py, and the fo
 workbooks in data/peds_abstraction/screen renamed to round1_/round2_ names listed in
 SCREEN_FINDINGS.md. Contents are byte-identical to the files at the results tag; the tags
 and the history keep the old names. The manuscript (v3.10) cites the new tool name.
+
+## 2026-10-17 Public history rewritten for metadata only (no content or result change)
+The public repository's history was rewritten once, before the first archival release, to
+(a) replace the author/committer e-mail on every commit with the GitHub no-reply address and
+(b) replace a real vendor name used as a fixture string in tests/test_sanity.py
+(test_audit_catches_blocklist) with a synthetic term injected at test time. Commit dates,
+messages, data, prompts, run logs, code paths and results are unchanged; the three tags were
+moved to the corresponding rewritten commits. The test suite and audit pass at every tag.
