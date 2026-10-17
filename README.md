@@ -46,6 +46,15 @@ python tools/peds_adjudicate_unsupported.py && python tools/peds_v2_analyses.py 
 Re-running the models needs API keys in `.env` (see `.env.example`) and will produce new
 outputs; the paper's numbers come from the logged runs in `runs/`.
 
+## Verification status
+
+The results tag contains six public test functions. Seven scoring edge-case tests
+were added after that tag, bringing the current suite to 13. The GitHub Actions
+workflow runs the suite, the identifier/institution audit, and the gold-to-note
+text-presence check on pushes and pull requests. This later verification adds no
+model outputs or results and does not establish clinical validity. See
+`DEVIATIONS.md` for the dates and scope of the addition.
+
 Re-running the analysis on another operating system reproduces every value reported in the
 paper. Two files are not byte-identical across platforms: `pairwise.csv` and
 `secondary_band_setting.csv` differ in the last floating-point digit, and the bootstrap
