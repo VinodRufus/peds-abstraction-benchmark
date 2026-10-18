@@ -1,5 +1,7 @@
 # Pediatric LLM Abstraction Benchmark
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23443784.svg)](https://doi.org/10.5281/zenodo.23443784)
+
 Code, synthetic data, run logs, and results for the paper
 
 > **Assessing Large Language Model Performance for Pediatric Clinical Data Abstraction Using Synthetic Patient Records**
@@ -73,3 +75,7 @@ run logs, results, prompts, configuration, commit dates, and tag positions are u
 ## Licences
 
 Code: MIT (LICENSE). Synthetic data, run logs, tables and figures: CC BY 4.0 (LICENSE-DATA). Cite with CITATION.cff.
+
+## Archival release
+
+This repository is archived on Zenodo. Concept DOI (always resolves to the latest version): https://doi.org/10.5281/zenodo.23443784. Version DOI for v1.0.1: https://doi.org/10.5281/zenodo.23443785.
